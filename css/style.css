@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --background-color: #f1eef8;
+  --title-color: #0E0664;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.9;
+  margin: auto;
+  background-color: var(--background-color);
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  border: none;
+}
+
+input[type=text]:focus {
+  outline: none !important;
+}
+
+::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5555a8;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5555a8;
+  opacity: 1; /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5555a8;
+  opacity: 1; /* Firefox */
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  vertical-align: middle;
+}
+
+.sidebar-icon {
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 48;
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+
+.sidebar {
+  width: 345px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #f7f2f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar-brand {
+  color: var(--title-color);
+  font-size: calc(1.5rem + 1vw);
+}
+.sidebar-brand .category {
+  font-size: 2.5rem;
+  color: #5555a8;
+}
+.sidebar-menu .input-container {
+  padding: 1rem 0;
+}
+.sidebar-menu .input-container .sidebar-input {
+  font-size: calc(0.5rem + 0.5vw);
+  width: 250px;
+  padding: 1rem;
+  border-radius: 20px;
+  height: 63px;
+  background-color: #e3e0f9;
+}
+.sidebar-menu .input-container .create {
+  color: #ffffff;
+  background-color: #5555a8;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+.sidebar-menu .links {
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+}
+.sidebar-menu .links .li-title {
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+.sidebar-menu .links li {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.sidebar-menu .links li a {
+  display: block;
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 500;
+  color: black;
+}
+
+.main-content {
+  margin-left: 345px;
+  padding: 20px;
+}
+.main-content header {
+  display: flex;
+  background-color: #f6f3fb;
+  padding: 1rem;
+}
+.main-content header h1 {
+  font-weight: 400;
+}
+.main-content header .header-icon-container {
+  display: flex;
+  align-items: center;
+}
+.main-content .ruler {
+  display: flex;
+  background-color: #ece9f5;
+  padding: 1rem;
+}
+.main-content .cards {
+  background-color: #fff;
+  height: 80vh;
+}/*# sourceMappingURL=style.css.map */

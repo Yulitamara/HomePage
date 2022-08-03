@@ -1,0 +1,36 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.9;
+  margin: auto;
+  background-color: var(--background-color);
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: none;
+}
+input[type="text"]:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5555a8;
+  opacity: 1; /* Firefox */
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  vertical-align: middle;
+}
+.sidebar-icon {
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 48;
+  vertical-align: middle;
+  padding-right: 1rem;
+}
