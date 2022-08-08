@@ -1,7 +1,7 @@
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Colors *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 html {
   --background-color: #f1eef8;
-  --title-color: #0E0664;
+  --title-color: #0e0664;
 }
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Weights *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -20,12 +20,9 @@ $font-weights: (
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Sizes *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 $font-sizes: (
-  "font-size-very-small": calc(0.5rem + 0.5vw),
-  "font-size-small": calc(1rem + 0.5vw),
-  "font-size-regular": calc(1.5rem + 1vw),
-  "font-size-medium": calc(1.5rem + 2vw),
-  "font-size-large": calc(1.5rem + 5vw),
-  "font-size-xlarge": calc(2.5rem + 5vw),
+  "font-size-small": 1rem,
+  "font-size-regular": 1.2rem,
+  "font-size-medium": 2.2rem,
 );
 
 @function font-size($font-size-style) {
@@ -37,6 +34,7 @@ $break-points: (
   "break-point-small": 400px,
   "break-point-medium": 600px,
   "break-point-tablet": 800px,
+  "break-point-1090": 1090px,
   "break-point-desktop": 1300px,
 );
 

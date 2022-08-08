@@ -1,0 +1,157 @@
+.info-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  padding-top: 1rem;
+  grid-gap: 1rem;
+
+  &-field {
+    .para {
+      font-size: font-size(font-size-regular);
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+
+      &-label {
+        color: #3a0a929d;
+      }
+    }
+  }
+}
+
+.field-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  border: 1px solid #f4eff4;
+  border-radius: 4px;
+  transition: ease-in-out 0.2s;
+  margin-bottom: 1rem;
+}
+
+.field-icon-container {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  align-items: center;
+}
+.title {
+  font-size: font-size(font-size-small);
+  font-weight: font-weight(font-weight-medium);
+  padding-bottom: 0.5rem;
+}
+
+.label {
+  font-size: font-size(font-size-regular);
+  padding: 0 0.5rem;
+}
+
+.star-icon-container {
+  margin: 0 0 5px 0;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  align-items: center;
+
+  background-color: #f4eff4;
+
+  transition: ease-in-out 0.2s;
+  color: #5748cf;
+  flex: 1;
+}
+
+////////////////
+fields-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 1rem;
+  gap: 10px;
+}
+
+.star-icon-container {
+  margin: 0 0 5px 0;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+
+  justify-content: space-between;
+  background-color: #fffbff;
+  flex: 1;
+}
+.input {
+  font-size: font-size(font-size-regular);
+  color: #21005d;
+  border: none;
+  background-color: transparent;
+  max-width: 100;
+}
+
+input:focus {
+  outline: none !important;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #150066;
+  opacity: 1; /* Firefox */
+}
+
+.input-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4eff4;
+  padding: 0 0.5rem;
+}
+
+.field-type {
+  font-size: font-size(font-size-regular);
+
+  color: #150066;
+  padding: 0.5rem;
+}
+
+.active {
+  display: none;
+}
+
+@include media-1090 {
+  .info-fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include media-tablet {
+  .info-fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@include media-small {
+  .info-fields {
+    grid-template-columns: repeat(1, 1fr);
+    width: 350px;
+  }
+  .field-container {
+    flex-direction: column;
+  }
+
+  .label-container {
+    height: 1rem;
+    padding: 0;
+    label {
+      font-size: font-size(font-size-small);
+    }
+  }
+
+  .input-container {
+    padding: 0.6rem;
+  }
+}

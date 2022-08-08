@@ -1,5 +1,4 @@
 .main-content {
-  margin-left: 345px;
   padding: 20px;
 
   header {
@@ -23,7 +22,36 @@
   }
 
   .cards {
-    background-color: #fff;
-    height: 80vh;
+    background-color: #e4e1ec;
+    padding: 1.5rem;
+    display: flex;
+
+    .inner-sidebar {
+      min-width: 280px;
+      height: 100%;
+      background-color: #f7f2f9;
+      display: flex;
+      flex-direction: column;
+
+      li {
+        padding: 2rem 2rem 0;
+        font-size: font-size(font-size-regular);
+        font-weight: font-weight(font-weight-medium);
+      }
+    }
+
+    &-main-content {
+      max-width: 1700px;
+    }
+  }
+}
+
+// .active-main-content {
+//   margin-left: 345px;
+// }
+
+@include media-tablet {
+  .main-content {
+    padding: 0;
   }
 }

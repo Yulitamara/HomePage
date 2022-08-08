@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Skyz Page</title>
     <script
@@ -22,124 +26,511 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script> -->
   </head>
   <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
     <div class="sidebar">
       <div class="sidebar-brand">
-        <span>Skyz</span><span class="category"> Sales</span>
+        <span>Skyz<span class="category"> CRM</span></span>
+        <span class="nav-close-btn"> <i class="fa fa-times"></i> </span>
       </div>
 
       <div class="sidebar-menu">
         <div class="input-container">
-          <input class="sidebar-input" type="text" placeholder="Search..." />
+          <input class="sidebar-input" type="text" placeholder="Search" />
         </div>
         <div class="input-container">
           <div class="sidebar-input create">Create</div>
         </div>
 
         <div class="links">
-          <div class="li-title">Section Header</div>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
+          <div class="item">
+            <a href="#" class="sub-btn"
+              >Section Header<i class="fas fa-angle-right dropdown"></i
+            ></a>
+            <div class="sub-menu">
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined sidebar-icon">
+                    circle
+                  </span>
+                  <span>Label</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined sidebar-icon">
+                    circle
+                  </span>
+                  <span>Label</span>
+                </a>
+              </li>
+              <li></li>
+            </div>
+          </div>
+         
         </div>
         <div class="links">
-          <div class="li-title">Section Header</div>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
+          <div class="item">
+            <a href="#" class="sub-btn"
+              >Section Header<i class="fas fa-angle-right dropdown"></i
+            ></a>
+            <div class="sub-menu">
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined sidebar-icon">
+                    circle
+                  </span>
+                  <span>Label</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-symbols-outlined sidebar-icon">
+                    circle
+                  </span>
+                  <span>Label</span>
+                </a>
+              </li>
+              <li></li>
+            </div>
+          </div>
+         
         </div>
-        <div class="links">
-          <div class="li-title">Section Header</div>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined sidebar-icon">
-                circle
-              </span>
-              <span>Label</span>
-            </a>
-          </li>
+      </div>
+      </div>
+
+
+      <div class="main-content">
+        <header>
+          <h1>Organizations</h1>
+          <div class="header-icon-container">
+            <span class="material-symbols-outlined"> description </span>
+          </div>
+          <div class="header-icon-container">
+            <span class="material-symbols-outlined"> description </span>
+          </div>
+          <div class="header-icon-container">
+            <span class="material-symbols-outlined"> description </span>
+          </div>
+        </header>
+        <div class="ruler">
+          <div class="location">1-18 from 120,000</div>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+          <div class="inner-sidebar" style="display: none">
+            <li>Louis Vuitton</li>
+            <li>The Walt Disney Company</li>
+            <li>eBay</li>
+            <li>Gillette</li>
+            <li>McDonald's</li>
+            <li>Louis Vuitton</li>
+            <li>The Walt Disney Company</li>
+            <li>Ferrari</li>
+            <li>Apple</li>
+            <li>Sonny</li>
+          </div>
+          <div class="cards-main-content">
+            <div class="info-fields">
+              <div class="info-fields-field">
+                <span class="material-symbols-outlined title-icon">
+                  badge
+                </span>
+                <span class="clsImpFieldTitleRW title"> details </span>
+
+                <div class="para">
+                  <span class="para-label">Name</span>
+                    <span>Mr. bob Herbert Wilde junour</span>
+                  <span class="material-symbols-outlined stop-icon">
+                    stop
+                  </span>
+                 <span class="para-label">ID</span>
+                    <span>056031853</span>
+                  <span class="material-symbols-outlined stop-icon">
+                    stop
+                  </span>
+                 <span class="para-label">BirthDate</span>
+                    <span>12/1</span>
+                </div>
+              </div>
+
+              <div class="info-fields-field">
+                <span class="material-symbols-outlined title-icon">
+                  share
+                </span>
+
+                <span class="clsImpFieldTitleRW title"> belonging </span>
+
+                <div class="para">
+                  <span class="para-label">Classification</span>
+                    <span>Sales</span>
+                    <span>|</span>
+                    <span>Lecturer</span>
+                </div>
+              </div>
+
+              <div class="info-fields-field">
+                <span class="material-symbols-outlined title-icon">
+                  settings_input_antenna
+                </span>
+                <span class="clsImpFieldTitleRW title"> links </span>
+                <div class="para">
+                <span class="para-label">Organisation</span>
+                    <span>Figma</span>
+                  <span class="material-symbols-outlined stop-icon">
+                    stop
+                  </span>
+                  <span class="para-label"> Main </span>
+                    <span>02303230</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="debit">
+              <div class="debit-header">
+                <div class="title">
+                  <span class="material-symbols-outlined title-icon">
+                    account_balance_wallet
+                  </span>
+                  DEBIT PLANS
+                </div>
+                <div class="title">
+                  12/12/2022
+                  <span class="material-symbols-outlined title-icon">
+                    fiber_smart_record
+                  </span>
+                  <span class="material-symbols-outlined title-icon">
+                    expand_more
+                  </span>
+                </div>
+              </div>
+
+              <div class="debit-slider" id="tabs">
+                <div class="debit-slider--title__container">
+                  <ul class="title">
+                    <li><a class="link active-link" href="#tabs-1">DEFINITIONS</a></li>
+                    <li><a class="link" href="#tabs-2">PAYMENTS</a></li>
+                    <li><a class="link" href="#tabs-3">CURRENCY</a></li>
+                  </ul>
+                  <div class="title">
+                    <span
+                      class="material-symbols-outlined close-icon close-section"
+                    >
+                      close
+                    </span>
+                  </div>
+                </div>
+
+                <div class="debit-slider--content tab-content" id="tabs-1">
+                  <div class="container">
+                    <div class="fields-section">
+                      <div class="title">
+                        <div class="title-content">
+                          <span class="material-symbols-outlined title-icon">
+                            price_change
+                          </span>
+                          <span>PAMYMENT</span>
+                        </div>
+                   
+                      </div>
+                      <div class="field-container">
+                        <div class="label-container">
+                          <div class="field-icon-container">
+                            <span
+                              class="material-symbols-outlined field-icon label-icon"
+                            >
+                              account_balance_wallet
+                            </span>
+                          </div>
+                          <div class="label-text-container">
+                            <label class="label"> <nobr> Type of receipt </nobr> </label>
+                          </div>
+                          <div class="rquired" style="display: none">*</div>
+                        </div>
+
+                        <div class="input-container">
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Bank transfer"
+                          />
+
+                          <div class="input-right" style="display: none">
+                            <div class="field-type">work</div>
+                            <div class="field-icon-container">
+                              <span
+                                class="material-symbols-outlined collapse-icon field-icon"
+                              >
+                                expand_more
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field-container">
+                        <div class="label-container">
+                          <div class="field-icon-container">
+                            <span
+                              class="material-symbols-outlined field-icon label-icon"
+                            >
+                              account_balance_wallet
+                            </span>
+                          </div>
+                          <div class="label-text-container">
+                            <label class="label"> <nobr> Type of receipt </nobr> </label>
+                          </div>
+                          <div class="rquired" style="display: none">*</div>
+                        </div>
+
+                        <div class="input-container">
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Bank transfer"
+                          />
+
+                       
+                          <div class="input-right" style="display: none">
+                            <div class="field-type">work</div>
+                            <div class="field-icon-container">
+                              <span
+                                class="material-symbols-outlined collapse-icon field-icon"
+                              >
+                                expand_more
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field-container">
+                        <div class="label-container">
+                          <div class="field-icon-container">
+                            <span
+                              class="material-symbols-outlined field-icon label-icon"
+                            >
+                              account_balance_wallet
+                            </span>
+                          </div>
+                          <div class="label-text-container">
+                            <label class="label"> <nobr> Type of receipt </nobr> </label>
+                          </div>
+                          <div class="rquired" style="display: none">*</div>
+                        </div>
+
+                        <div class="input-container">
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Bank transfer"
+                          />
+
+                          <div class="input-right" style="display: none">
+                            <div class="field-type">work</div>
+                            <div class="field-icon-container">
+                              <span
+                                class="material-symbols-outlined collapse-icon field-icon"
+                              >
+                                expand_more
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="container">
+                   
+                    <div class="fields-section">
+                      <div class="title">
+                        <div class="title-content">
+                          <span class="material-symbols-outlined title-icon">
+                            price_change
+                          </span>
+                          <span>PERIODIC SETTINGS</span>
+                        </div>
+                   
+                      </div>
+                      <div class="field-container">
+                        <div class="label-container">
+                          <div class="field-icon-container">
+                            <span
+                              class="material-symbols-outlined field-icon label-icon"
+                            >
+                              account_balance_wallet
+                            </span>
+                          </div>
+                          <div class="label-text-container">
+                            <label class="label"> <nobr> Type of receipt </nobr> </label>
+                          </div>
+                          <div class="rquired" style="display: none">*</div>
+                        </div>
+
+                        <div class="input-container">
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Bank transfer"
+                          />
+
+                          <div class="input-right" style="display: none">
+                            <div class="field-type">work</div>
+                            <div class="field-icon-container">
+                              <span
+                                class="material-symbols-outlined collapse-icon field-icon"
+                              >
+                                expand_more
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field-container">
+                        <div class="label-container">
+                          <div class="field-icon-container">
+                            <span
+                              class="material-symbols-outlined field-icon label-icon"
+                            >
+                              account_balance_wallet
+                            </span>
+                          </div>
+                          <div class="label-text-container">
+                            <label class="label"> <nobr> Type of receipt </nobr> </label>
+                          </div>
+                          <div class="rquired" style="display: none">*</div>
+                        </div>
+
+                        <div class="input-container">
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Bank transfer"
+                          />
+                          <div class="input-right" style="display: none">
+                            <div class="field-type">work</div>
+                            <div class="field-icon-container">
+                              <span
+                                class="material-symbols-outlined collapse-icon field-icon"
+                              >
+                                expand_more
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field-container">
+                        <div class="label-container">
+                          <div class="field-icon-container">
+                            <span
+                              class="material-symbols-outlined field-icon label-icon"
+                            >
+                              account_balance_wallet
+                            </span>
+                          </div>
+                          <div class="label-text-container">
+                            <label class="label"> <nobr> Type of receipt </nobr> </label>
+                          </div>
+                          <div class="rquired" style="display: none">*</div>
+                        </div>
+
+                        <div class="input-container">
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Bank transfer"
+                          />
+                          <div class="input-right" style="display: none">
+                            <div class="field-type">work</div>
+                            <div class="field-icon-container">
+                              <span
+                                class="material-symbols-outlined collapse-icon field-icon"
+                              >
+                                expand_more
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="debit-slider--content tab-content" id="tabs-2">
+                  <div class="container">
+                    <div class="title">
+                      <div class="title-content">
+                        <span class="material-symbols-outlined title-icon">
+                          price_change
+                        </span>
+                        <span>PAMYMENT</span>
+                      </div>
+                    </div>
+                    <div class="table-container">
+                      <div class="header">
+                        <span class="hashtag">#</span>
+                        <span class="type">Type</span>
+                        <span class="status">Status</span>
+                        <span class="customer"><strong>Customer</strong></span>
+                        <span class="fin-account"
+                          ><nobr>Fin Account</nobr></span
+                        >
+                        <span class="owner">Owner</span>
+                        <span class="close-date"><nobr>close date</nobr></span>
+                        <span class="total">Total</span>
+                        <span class="total-no-tax"
+                          ><nobr>Total without tax</nobr></span
+                        >
+                      </div>
+                      <div class="row">
+                        <span class="hashtag">3247891116</span>
+                        <span class="type">Quote</span>
+                        <span class="status">Close</span>
+                        <span class="customer"><strong>Apple</strong></span>
+                        <span class="fin-account">BA9212320</span>
+                        <span class="owner">verak, motti, yael</span>
+                        <span class="close-date">16/08/2013</span>
+                        <span class="total">$779.58</span>
+                        <span class="total-no-tax">$710.68</span>
+                      </div>
+                      <div class="row">
+                        <span class="hashtag">3247896</span>
+                        <span class="type">Quote</span>
+                        <span class="status">Close</span>
+                        <span class="customer"><strong>Apple</strong></span>
+                        <span class="fin-account">BA9212320</span>
+                        <span class="owner">verak</span>
+                        <span class="close-date">16/08/2013</span>
+                        <span class="total">$779.58</span>
+                        <span class="total-no-tax">$710.68</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="debit-slider--content tab-content" id="tabs-3">
+                  <div class="container">
+                    <div class="title">
+                      <div class="title-content">
+                        <span class="material-symbols-outlined title-icon">
+                          attach_money
+                        </span>
+                        <span>CURRENCY</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="main-content">
-      <header>
-        <h1>Organizations</h1>
-        <div class="header-icon-container">
-          <span class="material-symbols-outlined"> description </span>
-        </div>
-        <div class="header-icon-container">
-          <span class="material-symbols-outlined"> description </span>
-        </div>
-        <div class="header-icon-container">
-          <span class="material-symbols-outlined"> description </span>
-        </div>
-      </header>
-      <div class="ruler">
-        <div class="location">1-18 from 120,000</div>
-      </div>
-
-      <!-- Cards -->
-      <div class="cards"></div>
-    </div>
+    <script src="/HomePage/JS/app.js"></script>
   </body>
 </html>
