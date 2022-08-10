@@ -11,40 +11,33 @@
     padding: 10px;
     border-radius: 4px;
     width: fit-content;
+
     &--content {
       display: flex;
       flex-direction: row;
       gap: 10px;
-
-      .container {
-        .fields-section {
-          background-color: #e4e1ec;
-          padding: 10px;
-
-          .title {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-          }
-        }
-      }
     }
 
-    &--title__container {
+    &-title-content {
       display: flex;
       justify-content: space-between;
-      a {
-        font-size: font-size(font-size-small);
-        color: #efb8c8;
-      }
-      .title {
+      align-items: center;
+      ul {
         display: flex;
         gap: 20px;
-
         li {
           font-size: font-size(font-size-regular);
           font-weight: font-weight(font-weight-medium);
         }
+        a {
+          font-size: font-size(font-size-small);
+          color: #efb8c8;
+        }
+      }
+      .close-icon {
+        font-size: font-size(font-size-regular);
+        padding-left: 1rem;
+        padding-bottom: 0.3rem;
       }
     }
   }

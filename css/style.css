@@ -77,8 +77,6 @@ input[type=text]:focus {
 .close-icon {
   font-variation-settings: "wght" 500;
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
 .sidebar {
@@ -331,103 +329,6 @@ input[type=text]:focus {
   flex: 1;
 }
 
-fields-row {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding-top: 1rem;
-  gap: 10px;
-}
-
-.star-icon-container {
-  margin: 0 0 5px 0;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: row;
-  padding: 0 1rem;
-  justify-content: space-between;
-  background-color: #fffbff;
-  flex: 1;
-}
-
-.input {
-  font-size: 1.2rem;
-  color: #21005d;
-  border: none;
-  background-color: transparent;
-  max-width: 100;
-}
-
-input:focus {
-  outline: none !important;
-}
-
-::-moz-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #150066;
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #150066;
-  opacity: 1; /* Firefox */
-}
-
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #150066;
-  opacity: 1; /* Firefox */
-}
-
-.input-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4eff4;
-  padding: 0 0.5rem;
-}
-
-.field-type {
-  font-size: 1.2rem;
-  color: #150066;
-  padding: 0.5rem;
-}
-
-.active {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
-  .info-fields {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 800px) {
-  .info-fields {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (max-width: 400px) {
-  .info-fields .para {
-    font-size: 0.8rem;
-  }
-  .title {
-    font-size: 0.8rem;
-  }
-  .label-container {
-    height: 1rem;
-    padding: 0;
-  }
-  .label-container label {
-    font-size: 14px;
-  }
-  .input-container {
-    padding: 0.6rem;
-  }
-}
 .debit {
   margin-top: 4rem;
 }
@@ -448,30 +349,27 @@ input:focus {
   flex-direction: row;
   gap: 10px;
 }
-.debit-slider--content .container .fields-section {
-  background-color: #e4e1ec;
-  padding: 10px;
-}
-.debit-slider--content .container .fields-section .title {
+.debit-slider-title-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
 }
-.debit-slider--title__container {
-  display: flex;
-  justify-content: space-between;
-}
-.debit-slider--title__container a {
-  font-size: 14px;
-  color: #efb8c8;
-}
-.debit-slider--title__container .title {
+.debit-slider-title-content ul {
   display: flex;
   gap: 20px;
 }
-.debit-slider--title__container .title li {
+.debit-slider-title-content ul li {
   font-size: 1.2rem;
   font-weight: 500;
+}
+.debit-slider-title-content ul a {
+  font-size: 14px;
+  color: #efb8c8;
+}
+.debit-slider-title-content .close-icon {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
 }
 
 .active-link {
