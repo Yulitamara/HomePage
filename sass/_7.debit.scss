@@ -10,8 +10,7 @@
     background-color: #fff;
     padding: 10px;
     border-radius: 4px;
-    // max-width: 300px;
-
+    width: fit-content;
     &--content {
       display: flex;
       flex-direction: row;
@@ -35,6 +34,7 @@
       display: flex;
       justify-content: space-between;
       a {
+        font-size: font-size(font-size-small);
         color: #efb8c8;
       }
       .title {
@@ -60,7 +60,6 @@
   display: flex;
   flex-direction: column;
   gap: 1px;
-  font-size: font-size(font-size-regular);
   background-color: #f1eef8a8;
   padding: 1rem;
   border-radius: 4px;
@@ -72,6 +71,7 @@
   gap: 0.2rem;
   justify-content: flex-start;
   flex-wrap: wrap;
+  font-size: font-size(font-size-small);
 }
 
 .header {
@@ -128,12 +128,31 @@
   min-width: 200px;
 }
 
-@include media-1090 {
+@include media-tablet {
   .debit {
     &-slider {
       &--content {
         flex-direction: column;
       }
     }
+  }
+}
+
+@include media-small {
+  .debit {
+    &-slider {
+      &--title__container {
+        a {
+          font-size: font-size(font-size-x-small);
+        }
+        .close-icon {
+          font-size: font-size(font-size-small);
+        }
+      }
+    }
+  }
+  .header,
+  .row {
+    font-size: font-size(font-size-x-small);
   }
 }

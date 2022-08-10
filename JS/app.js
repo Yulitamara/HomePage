@@ -8,17 +8,17 @@ $(document).ready(function () {
   });
 
   // expand and collapse the sidebar
-  $(".menu-btn").click(function () {
-    $(".sidebar").addClass("active-sidebar");
-    $(".main-content").addClass("active-main-content");
-    $(".menu-btn").css("visibility", "hidden");
-  });
+  //   $(".menu-btn").click(function () {
+  //     $(".sidebar").addClass("active-sidebar");
+  //     $(".main-content").addClass("active-main-content");
+  //     $(".menu-btn").css("visibility", "hidden");
+  //   });
 
-  $(".nav-close-btn").click(function () {
-    $(".sidebar").removeClass("active-sidebar");
-    $(".main-content").removeClass("active-main-content");
-    $(".menu-btn").css("visibility", "visible");
-  });
+  //   $(".nav-close-btn").click(function () {
+  //     $(".sidebar").removeClass("active-sidebar");
+  //     $(".main-content").removeClass("active-main-content");
+  //     $(".menu-btn").css("visibility", "visible");
+  //   });
 });
 
 // Debit Plan Tabs
@@ -37,10 +37,10 @@ $(function () {
   });
 });
 
-// $(function () {
-//   $(".close-section").click(function () {
-//     $(".tab-content").hide();
+$(function () {
+  $(".close-section").click(function () {
+    $(".tab-content").hide();
 
-//     $(".link").removeClass("active-link");
-//   });
-// });
+    $(".link").removeClass("active-link");
+  });
+});

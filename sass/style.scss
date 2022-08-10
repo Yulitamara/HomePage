@@ -5,8 +5,8 @@
   }
 }
 //*-*-*-*-*-*-*-*-*-*-- The 1090px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
-@mixin media-1090 {
-  @media screen and (max-width: break-point(break-point-1090)) {
+@mixin media-1200 {
+  @media screen and (max-width: break-point(break-point-1200)) {
     @content;
   }
 }

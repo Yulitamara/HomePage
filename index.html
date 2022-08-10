@@ -26,81 +26,65 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script> -->
   </head>
   <body>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
+   
     <div class="sidebar">
-      <div class="sidebar-brand">
-        <span>Skyz<span class="category"> CRM</span></span>
-        <span class="nav-close-btn"> <i class="fa fa-times"></i> </span>
+      <div class="sidebar-logo-content">
+        <div class="logo">
+          <span class="logo-name">Skyz<span class="logo-category"> CRM</span></span>
+        </div>
+         <span class="material-symbols-outlined sidebar-close-btn" id="sidebar-close-btn">
+          menu
+          </span>
       </div>
 
-      <div class="sidebar-menu">
-        <div class="input-container">
-          <input class="sidebar-input" type="text" placeholder="Search" />
-        </div>
-        <div class="input-container">
-          <div class="sidebar-input create">Create</div>
-        </div>
+    <ul class="nav_list">
+      <li>
+          <span class="material-symbols-outlined search-icon">
+            search
+            </span>
+            <input type="text" placeholder="Search...">
+        <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined nav-icon">
+            grid_view
+            </span>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined nav-icon">
+            grid_view
+            </span>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined nav-icon">
+            grid_view
+            </span>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined nav-icon">
+            grid_view
+            </span>
+          <span class="links_name">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+    </ul>
 
-        <div class="links">
-          <div class="item">
-            <a href="#" class="sub-btn"
-              >Section Header<i class="fas fa-angle-right dropdown"></i
-            ></a>
-            <div class="sub-menu">
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined sidebar-icon">
-                    circle
-                  </span>
-                  <span>Label</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined sidebar-icon">
-                    circle
-                  </span>
-                  <span>Label</span>
-                </a>
-              </li>
-              <li></li>
-            </div>
-          </div>
-         
-        </div>
-        <div class="links">
-          <div class="item">
-            <a href="#" class="sub-btn"
-              >Section Header<i class="fas fa-angle-right dropdown"></i
-            ></a>
-            <div class="sub-menu">
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined sidebar-icon">
-                    circle
-                  </span>
-                  <span>Label</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="material-symbols-outlined sidebar-icon">
-                    circle
-                  </span>
-                  <span>Label</span>
-                </a>
-              </li>
-              <li></li>
-            </div>
-          </div>
-         
-        </div>
-      </div>
       </div>
 
 
@@ -145,7 +129,7 @@
 
                 <div class="para">
                   <span class="para-label">Name</span>
-                    <span>Mr. bob Herbert Wilde junour</span>
+                    <nobr>Mr. bob Herbert Wilde</nobr>
                   <span class="material-symbols-outlined stop-icon">
                     stop
                   </span>

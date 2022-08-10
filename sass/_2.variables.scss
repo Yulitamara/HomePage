@@ -20,7 +20,8 @@ $font-weights: (
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Sizes *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 $font-sizes: (
-  "font-size-small": 1rem,
+  "font-size-x-small": 0.8rem,
+  "font-size-small": 14px,
   "font-size-regular": 1.2rem,
   "font-size-medium": 2.2rem,
 );
@@ -34,7 +35,7 @@ $break-points: (
   "break-point-small": 400px,
   "break-point-medium": 600px,
   "break-point-tablet": 800px,
-  "break-point-1090": 1090px,
+  "break-point-1200": 1200px,
   "break-point-desktop": 1300px,
 );
 
