@@ -133,6 +133,10 @@ input:focus {
   display: flex;
   gap: 10px;
   flex-flow: row wrap;
+
+  &-singular {
+    flex-grow: 1;
+  }
 }
 .debit-header {
   display: flex;
@@ -158,6 +162,9 @@ input:focus {
 
 .links-expand {
   background-color: #fff;
+  // display: flex;
+  // flex-direction: row;
+  // flex-flow: row wrap;
 }
 
 /* Was fields-section before */
@@ -165,6 +172,8 @@ input:focus {
   padding: 10px;
   display: flex;
   flex-direction: column;
+
+  flex-grow: 1;
 }
 
 .expand-btn {

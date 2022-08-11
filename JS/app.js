@@ -25,11 +25,16 @@ $(function () {
 
 // Expand Section
 $("#expand-btn-1").click(function () {
-  $("#links-unexpand-1").toggle();
+  // $("#links-unexpand-1").toggle();
   $("#links-expand-1").toggle();
 });
 
 $("#expand-btn-2").click(function () {
-  $("#links-unexpand-2").toggle();
+  // $("#links-unexpand-2").toggle();
   $("#links-expand-2").toggle();
+});
+
+$("#expand-btn-3").click(function () {
+  // $("#links-unexpand-2").toggle();
+  $("#links-expand-3").toggle();
 });

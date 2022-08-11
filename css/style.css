@@ -418,6 +418,9 @@ input:focus {
   gap: 10px;
   flex-flow: row wrap;
 }
+.expand-section-singular {
+  flex-grow: 1;
+}
 
 .debit-header {
   display: flex;
@@ -450,6 +453,7 @@ input:focus {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .expand-btn {
