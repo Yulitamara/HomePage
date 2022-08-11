@@ -1,0 +1,221 @@
+input[type="text"] {
+  box-sizing: border-box;
+  border: none;
+}
+input[type="text"]:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5555a8;
+  opacity: 1; /* Firefox */
+}
+
+.fields-section {
+  background-color: #e4e1ec;
+  padding: 10px;
+}
+
+.title-content {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  font-size: font-size(font-size-regular);
+  font-weight: 500;
+  color: var(--dark-color);
+}
+.title-content .title-text {
+  font-size: font-size(font-size-regular);
+}
+.title-content .title-icon {
+  font-size: font-size(font-size-regular);
+}
+
+.field-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 500px;
+
+  border: 1px solid #f4eff4;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.field-icon-container {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  align-items: center;
+}
+.label-container {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  background-color: #f4eff4;
+  color: var(--dark-color);
+}
+.label-container .label-icon,
+.label-container .label-text,
+.label-container .rquired {
+  font-size: font-size(font-size-regular);
+}
+
+.label-container .rquired {
+  color: red;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  background-color: #fffbff;
+  flex: 1;
+  min-width: 0;
+}
+
+input[type="text"] {
+  min-width: 0;
+  padding-left: 0.5rem;
+  border: none;
+  font-size: font-size(font-size-regular);
+  background-color: transparent;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #150066;
+  opacity: 1; /* Firefox */
+}
+
+.input-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4eff4;
+  color: var(--light-color);
+}
+
+.input-type .input-type-text,
+.input-type .input-icon {
+  font-size: font-size(font-size-regular);
+  padding: 0.2rem 0.5rem;
+}
+
+.input-type .input-icon {
+  color: var(--dark-color);
+}
+
+/* FORM - with label text, without icon, without input-type-text (flex 1 added to label container, remove background color for input-type) */
+
+.flex-1 {
+  flex: 1;
+}
+
+.no-background {
+  background-color: transparent;
+}
+
+.light-color {
+  color: var(--light-color);
+}
+
+/* EXPAND SECTION */
+.expand-section {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+}
+.debit-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-unexpand {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: font-size(font-size-regular);
+}
+
+.stop-icon {
+  color: #aac7ff;
+  font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
+  padding: 0.3rem;
+  font-size: font-size(font-size-regular);
+}
+
+.links-expand {
+  background-color: #fff;
+}
+
+/* Was fields-section before */
+.fields-section__expand {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expand-btn {
+  cursor: pointer;
+}
+
+.active {
+  display: none;
+}
+
+.input-container__expand {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  background-color: #fff;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Form - Vertical - without input-type (change field-container flex direction, smaller height for label container, bigger height for input container) */
+.flex-column {
+  flex-direction: column;
+}
+
+.small-font {
+  font-size: font-size(font-size-small) !important;
+}
+
+.height-small {
+  height: 20px;
+}
+
+.height-big {
+  flex: auto;
+  height: 30px;
+}
+
+@include media-small {
+  .title-content,
+  .title-content .title-text,
+  .title-content .title-icon,
+  .title-content,
+  .label-container .label-icon,
+  .label-container .label-text,
+  .label-container .rquired,
+  input[type="text"],
+  .input-type .input-type-text,
+  .input-type .input-icon,
+  .links-unexpand,
+  .stop-icon {
+    font-size: font-size(font-size-small);
+  }
+}

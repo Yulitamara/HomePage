@@ -6,22 +6,9 @@
 
   header {
     display: flex;
+    flex-direction: column;
     background-color: #f6f3fb;
     padding: 0.5rem 1rem;
-
-    h1 {
-      font-weight: font-weight(font-weight-regular);
-    }
-    .header-icon-container {
-      display: flex;
-      align-items: center;
-    }
-  }
-
-  .ruler {
-    display: flex;
-    background-color: #ece9f5;
-    padding: 1rem;
   }
 
   .cards {

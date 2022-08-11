@@ -1,0 +1,81 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: #f1eef8a8;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.header,
+.row {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: font-size(font-size-small);
+}
+
+.header {
+  padding-bottom: 0.5rem;
+}
+.row {
+  padding-bottom: 4px;
+}
+
+.header span,
+.row span {
+  padding: 0 1rem;
+  flex: 0 1 50px;
+}
+
+.header span {
+  background-color: #e7e4f3;
+}
+
+.row span {
+  background-color: #fff;
+}
+
+.hashtag {
+  min-width: 150px;
+}
+
+.type {
+  min-width: 160px;
+}
+
+.status {
+  min-width: 160px;
+}
+
+.customer {
+  min-width: 160px;
+}
+
+.fin-account {
+  min-width: 200px;
+}
+
+.owner {
+  min-width: 200px;
+}
+
+.close-date {
+  min-width: 160px;
+}
+
+.total,
+.total-no-tax {
+  min-width: 200px;
+}
+
+@include media-tablet {
+  .debit {
+    &-slider {
+      &--content {
+        flex-direction: column;
+      }
+    }
+  }
+}
