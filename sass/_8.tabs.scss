@@ -28,7 +28,8 @@
       }
     }
 
-    .definitions-container {
+    .definitions-container,
+    .currency-container {
       display: flex;
       flex-flow: row wrap;
       gap: 12px;
@@ -65,4 +66,10 @@
   .row {
     font-size: font-size(font-size-x-small);
   }
+}
+
+@include media-x-small {
+   .tabs-section {
+    max-width: 300px;
+   }
 }

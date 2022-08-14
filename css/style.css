@@ -428,7 +428,7 @@ input:focus {
 
 /* EXPAND SECTION */
 .expand-section {
-  display: inline-flex;
+  display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -519,6 +519,11 @@ input[type=text],
     font-size: 12px;
   }
 }
+@media screen and (max-width: 330px) {
+  .expand-section {
+    max-width: 300px;
+  }
+}
 .debit-plan-section {
   margin-top: 2rem;
 }
@@ -569,7 +574,8 @@ input[type=text],
   font-size: 14px;
   padding-left: 1rem;
 }
-.tabs-section-slider .definitions-container {
+.tabs-section-slider .definitions-container,
+.tabs-section-slider .currency-container {
   display: flex;
   flex-flow: row wrap;
   gap: 12px;
@@ -593,6 +599,11 @@ input[type=text],
   .header,
 .row {
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .tabs-section {
+    max-width: 300px;
   }
 }
 .table-container {

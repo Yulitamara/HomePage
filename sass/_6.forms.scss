@@ -129,13 +129,14 @@ input:focus {
 
 /* EXPAND SECTION */
 .expand-section {
-  display: inline-flex;
+  display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  // &-singular {
-  // flex-grow: 1;
-  // max-width: max-content;
-  // }
+
+  //   &-singular {
+  //     flex-grow: 1;
+  //     max-width: max-content;
+  //   }
 }
 .debit-header {
   display: flex;
@@ -226,5 +227,11 @@ input:focus {
   .links-unexpand,
   .stop-icon {
     font-size: font-size(font-size-small);
+  }
+}
+
+@include media-x-small {
+  .expand-section {
+    max-width: 300px;
   }
 }
