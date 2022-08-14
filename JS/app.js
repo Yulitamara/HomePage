@@ -1,5 +1,12 @@
 // SIDEBAR
 
+$(function () {
+  $("#sidebar-close-btn").click(function () {
+    $(".sidebar").hide();
+    $(".main-content").addClass("active-sidebar");
+  });
+});
+
 // Debit Plan Tabs
 $(function () {
   $("#tabs").tabs();
@@ -33,4 +40,3 @@ $("#expand-btn-2").click(function () {
   // $("#links-unexpand-2").toggle();
   $("#links-expand-2").toggle();
 });
-

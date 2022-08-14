@@ -1,0 +1,16 @@
+.inner-sidebar {
+  min-width: 200px;
+  background-color: #fffbff;
+
+  li {
+    padding: 1rem 1rem 0;
+    font-size: font-size(font-size-regular);
+    font-weight: font-weight(font-weight-medium);
+  }
+}
+
+@include media-tablet {
+  .inner-sidebar {
+    display: none;
+  }
+}
