@@ -34,7 +34,3 @@ $("#expand-btn-2").click(function () {
   $("#links-expand-2").toggle();
 });
 
-$("#expand-btn-3").click(function () {
-  // $("#links-unexpand-2").toggle();
-  $("#links-expand-3").toggle();
-});

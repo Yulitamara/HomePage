@@ -13,8 +13,8 @@ input[type="text"]:focus {
 }
 
 .fields-section {
-  background-color: #e4e1ec;
-  padding: 10px;
+  flex-grow: 1;
+  max-width: 500px;
 }
 
 .title-content {
@@ -38,7 +38,6 @@ input[type="text"]:focus {
   justify-content: center;
   flex-direction: row;
   justify-content: space-evenly;
-  max-width: 500px;
 
   border: 1px solid #f4eff4;
   border-radius: 4px;
@@ -53,7 +52,7 @@ input[type="text"]:focus {
 }
 .label-container {
   display: flex;
-  padding: 0.5rem;
+  padding: 0.4rem;
   align-items: center;
   background-color: #f4eff4;
   color: var(--dark-color);
@@ -130,13 +129,13 @@ input:focus {
 
 /* EXPAND SECTION */
 .expand-section {
-  display: flex;
+  display: inline-flex;
   gap: 10px;
-  flex-flow: row wrap;
-
-  &-singular {
-    flex-grow: 1;
-  }
+  flex-wrap: wrap;
+  // &-singular {
+  // flex-grow: 1;
+  // max-width: max-content;
+  // }
 }
 .debit-header {
   display: flex;
@@ -174,6 +173,7 @@ input:focus {
   flex-direction: column;
 
   flex-grow: 1;
+  max-width: 500px;
 }
 
 .expand-btn {
