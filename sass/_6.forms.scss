@@ -14,7 +14,7 @@ input[type="text"]:focus {
 
 .fields-section {
   flex-grow: 1;
-  max-width: 200px;
+  max-width: 500px;
 }
 
 .title-content {
@@ -233,5 +233,8 @@ input:focus {
 @include media-x-small {
   .expand-section {
     max-width: 300px;
+  }
+  .fields-section {
+    max-width: 240px;
   }
 }
