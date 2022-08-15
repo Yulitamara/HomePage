@@ -200,17 +200,17 @@ input:focus {
   flex-direction: column;
 }
 
-.small-font {
-  font-size: font-size(font-size-small) !important;
-}
+// .small-font {
+//   font-size: font-size(font-size-small) !important;
+// }
 
 .height-small {
-  height: 20px;
+  height: 35px;
 }
 
 .height-big {
   flex: auto;
-  height: 30px;
+  height: 35px;
 }
 
 @include media-small {

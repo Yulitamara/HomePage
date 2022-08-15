@@ -116,6 +116,7 @@ input[type=text]:focus {
 .sidebar-logo-content .sidebar-close-btn {
   font-size: 22px;
   cursor: pointer;
+  display: none;
 }
 .sidebar ul {
   margin-top: 20px;
@@ -148,6 +149,7 @@ input[type=text]:focus {
 
 @media screen and (max-width: 860px) {
   .sidebar {
+    background-color: rgba(247, 242, 249, 0.9019607843);
     display: none;
   }
 }
@@ -448,17 +450,13 @@ input:focus {
   flex-direction: column;
 }
 
-.small-font {
-  font-size: 12px !important;
-}
-
 .height-small {
-  height: 20px;
+  height: 35px;
 }
 
 .height-big {
   flex: auto;
-  height: 30px;
+  height: 35px;
 }
 
 @media screen and (max-width: 420px) {
@@ -651,14 +649,21 @@ input[type=text],
 .upper-navbar {
   border-radius: 4px 4px 0 0;
   display: flex;
+  justify-content: space-between;
 }
-.upper-navbar-tag {
+.upper-navbar-tags {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.upper-navbar-tag span {
+.upper-navbar-tags--tag span {
   font-size: 14px;
+}
+.upper-navbar .sidebar-close-btn {
+  font-size: 22px;
+  cursor: pointer;
+  color: #5555a8;
+  opacity: 0;
 }
 
 .bottom-navbar {
@@ -686,8 +691,11 @@ input[type=text],
   .upper-navbar {
     margin-top: 10px;
   }
-  .upper-navbar-tag {
+  .upper-navbar-tags--tag {
     font-size: 12px;
+  }
+  .upper-navbar .sidebar-close-btn {
+    opacity: 1;
   }
   .bottom-navbar-btns span {
     padding: 0 4px;
@@ -698,7 +706,7 @@ input[type=text],
   }
 }
 @media screen and (max-width: 420px) {
-  .upper-navbar-tag span {
+  .upper-navbar-tags--tag span {
     font-size: 12px;
   }
   .bottom-navbar-btns {
