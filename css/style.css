@@ -217,7 +217,7 @@ input[type=text]:focus {
     font-weight: 500;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .main-content .cards .cards-content .cards-main-content header {
     font-size: 12px;
   }
@@ -461,7 +461,7 @@ input:focus {
   height: 30px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .title-content,
 .title-content .title-text,
 .title-content .title-icon,
@@ -500,7 +500,7 @@ input[type=text],
   color: var(--red-color);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .next-current .next-payment,
 .next-current .current-payment {
     font-size: 12px;
@@ -549,7 +549,7 @@ input[type=text],
   color: #b58392 !important;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .tabs-section-slider-title ul a {
     font-size: 12px;
   }
@@ -691,20 +691,17 @@ input[type=text],
   }
   .bottom-navbar-btns span {
     padding: 0 4px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .arrow {
-    font-size: 14px;
+    font-size: 19px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .upper-navbar-tag span {
     font-size: 12px;
   }
   .bottom-navbar-btns {
     display: none;
-  }
-  .arrow {
-    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

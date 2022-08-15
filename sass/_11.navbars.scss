@@ -57,12 +57,12 @@
       span {
         padding: 0 4px;
 
-        font-size: font-size(font-size-regular);
+        font-size: 16px;
       }
     }
   }
   .arrow {
-    font-size: font-size(font-size-regular);
+    font-size: 19px;
   }
 }
 
@@ -81,8 +81,5 @@
     &-btns {
       display: none;
     }
-  }
-  .arrow {
-    font-size: font-size(font-size-small);
   }
 }
