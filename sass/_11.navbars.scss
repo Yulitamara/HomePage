@@ -7,14 +7,24 @@
 .upper-navbar {
   border-radius: 4px 4px 0 0;
   display: flex;
+  justify-content: space-between;
 
-  &-tag {
+  &-tags {
     display: flex;
     align-items: center;
     gap: 5px;
-    span {
-      font-size: font-size(font-size-regular);
+    &--tag {
+      span {
+        font-size: font-size(font-size-regular);
+      }
     }
+  }
+
+  .sidebar-close-btn {
+    font-size: font-size(font-size-medium);
+    cursor: pointer;
+    color: #5555a8;
+    opacity: 0;
   }
 }
 
@@ -45,8 +55,13 @@
 @include media-tablet {
   .upper-navbar {
     margin-top: 10px;
-    &-tag {
-      font-size: font-size(font-size-small);
+    &-tags {
+      &--tag {
+        font-size: font-size(font-size-small);
+      }
+    }
+    .sidebar-close-btn {
+      opacity: 1;
     }
   }
   .bottom-navbar {
@@ -68,9 +83,11 @@
 
 @include media-small {
   .upper-navbar {
-    &-tag {
-      span {
-        font-size: font-size(font-size-small);
+    &-tags {
+      &--tag {
+        span {
+          font-size: font-size(font-size-small);
+        }
       }
     }
   }

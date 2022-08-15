@@ -1,8 +1,15 @@
 // SIDEBAR
 
+// $(function () {
+//   $("#sidebar-close-btn").click(function () {
+//     $(".sidebar").hide();
+//     $(".main-content").addClass("active-sidebar");
+//   });
+// });
+
 $(function () {
-  $("#sidebar-close-btn").click(function () {
-    $(".sidebar").hide();
+  $("#sidebar-out-btn").click(function () {
+    $(".sidebar").toggle();
     $(".main-content").addClass("active-sidebar");
   });
 });
