@@ -12,7 +12,9 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: font-size(font-size-regular);
+    span {
+      font-size: font-size(font-size-regular);
+    }
   }
 }
 
@@ -42,6 +44,7 @@
 
 @include media-tablet {
   .upper-navbar {
+    margin-top: 10px;
     &-tag {
       font-size: font-size(font-size-small);
     }
@@ -64,6 +67,13 @@
 }
 
 @include media-small {
+  .upper-navbar {
+    &-tag {
+      span {
+        font-size: font-size(font-size-small);
+      }
+    }
+  }
   .bottom-navbar {
     &-pages {
       font-size: font-size(font-size-samll);
