@@ -52,3 +52,9 @@ $("#display-btn").click(function () {
   $(".cards-content").toggle();
   $(".cards-content--grid-display").toggleClass("active-grid-display");
 });
+
+$(".bottom-navbar-btns--list").hide();
+
+$(".more-btn").click(function () {
+  $(".bottom-navbar-btns--list").toggle();
+});

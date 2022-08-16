@@ -749,17 +749,35 @@ input[type=text],
   gap: 25px;
   font-size: 16px;
 }
-.bottom-navbar-btns span {
-  padding: 0 6px;
+.bottom-navbar-btns--more {
+  position: relative;
+}
+.bottom-navbar-btns--more .more-btn {
+  font-size: 22px;
+  cursor: pointer;
+}
+.bottom-navbar-btns--list {
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  margin: -7px 40px 0 -40px;
+}
+.bottom-navbar-btns--list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px;
+}
+.bottom-navbar-btns--list .list-item .list-item-icon {
   font-size: 22px;
 }
-
 .arrow {
   font-size: 22px;
   color: var(--dark-color);
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 600px) {
   .upper-navbar {
     margin-top: 10px;
   }
@@ -772,17 +790,17 @@ input[type=text],
   .bottom-navbar-pages {
     font-size: 16px;
   }
-  .bottom-navbar-btns span {
-    padding: 0 4px;
-    font-size: 22px;
+  .bottom-navbar-pages--user .user-name {
+    display: none;
+  }
+  .bottom-navbar-btns--list {
+    margin: -7px 40px 0 -20px;
+  }
+  .bottom-navbar-btns--list .list-item .pin {
+    display: none;
   }
   .arrow {
     font-size: 19px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .bottom-navbar-btns {
-    display: none;
   }
 }
 @media screen and (max-width: 420px) {
@@ -790,9 +808,6 @@ input[type=text],
     gap: 20px;
   }
   .bottom-navbar-pages--number .of-pages {
-    display: none;
-  }
-  .bottom-navbar-btns {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
