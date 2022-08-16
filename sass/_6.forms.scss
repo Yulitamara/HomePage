@@ -134,8 +134,8 @@ input:focus {
   flex-wrap: wrap;
 
   // &-singular {
-  //   flex-grow: 1;
-  //   max-width: max-content;
+  // flex-grow: 1;
+  // width: 100%;
   // }
 }
 .debit-header {
@@ -223,19 +223,27 @@ input:focus {
 //   }
 // }
 
-// @include media-tablet {
-//   .links-unexpand,
-//   .links-expand {
-//     width: 550px;
-//   }
-// }
+@include media-tablet {
+  // .expand-section {
+  //   &-singular {
+  //     // flex-grow: 1;
+  //     width: 100%;
+  //   }
+  // }
+  // .links-unexpand {
+  // }
+  // .links-expand {
+  // }
+}
 
-// @include media-medium {
-//   .links-unexpand,
-//   .links-expand {
-//     width: 400px;
-//   }
-// }
+@include media-medium {
+  .expand-section {
+    &-singular {
+      // flex-grow: 1;
+      width: 100%;
+    }
+  }
+}
 
 @include media-small {
   .title-content,
@@ -252,18 +260,10 @@ input:focus {
   .stop-icon {
     font-size: font-size(font-size-regular);
   }
-  .links-unexpand,
-  .links-expand {
-    width: 320px;
-  }
 }
 
-@include media-x-small {
-  .fields-section {
-    max-width: 220px;
-  }
-  .links-unexpand,
-  .links-expand {
-    width: 300px;
-  }
-}
+// @include media-x-small {
+//   .fields-section {
+//     max-width: 220px;
+//   }
+// }

@@ -481,6 +481,11 @@ input:focus {
   height: 35px;
 }
 
+@media screen and (max-width: 600px) {
+  .expand-section-singular {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 420px) {
   .title-content,
 .title-content .title-text,
@@ -495,19 +500,6 @@ input[type=text],
 .links-unexpand,
 .stop-icon {
     font-size: 16px;
-  }
-  .links-unexpand,
-.links-expand {
-    width: 320px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .fields-section {
-    max-width: 220px;
-  }
-  .links-unexpand,
-.links-expand {
-    width: 300px;
   }
 }
 .debit-plan-section {
