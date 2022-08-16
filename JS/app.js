@@ -35,7 +35,7 @@ $("#expand-btn-1").click(function () {
   $("#links-expand-1").slideToggle();
 });
 
-if ($(window).width() < 410) {
+if ($(window).width() < 500) {
   $(".field-container").addClass("flex-column");
   $(".label-container").addClass("height-small");
   $(".label-text").addClass("small-font");
