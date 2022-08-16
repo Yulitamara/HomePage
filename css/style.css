@@ -433,7 +433,8 @@ input:focus {
 
 .links-expand {
   background-color: #fff;
-  max-width: 600px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* Was fields-section before */
@@ -441,7 +442,7 @@ input:focus {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1 1 500px;
   max-width: 500px;
 }
 

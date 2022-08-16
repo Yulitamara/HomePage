@@ -30,6 +30,8 @@ $(function () {
 });
 
 // Expand Section
+$(".links-expand").hide();
+
 $("#expand-btn-1").click(function () {
   $("#links-unexpand-1").slideToggle();
   $("#links-expand-1").slideToggle();

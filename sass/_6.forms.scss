@@ -133,10 +133,10 @@ input:focus {
   gap: 10px;
   flex-wrap: wrap;
 
-  //   &-singular {
-  //     flex-grow: 1;
-  //     max-width: max-content;
-  //   }
+  // &-singular {
+  //   flex-grow: 1;
+  //   max-width: max-content;
+  // }
 }
 .debit-header {
   display: flex;
@@ -151,7 +151,6 @@ input:focus {
   align-items: center;
   flex-flow: row wrap;
   font-size: font-size(font-size-regular);
-  // width: 600px;
   .links-unexpand-tag {
     margin-left: 5px;
   }
@@ -166,7 +165,9 @@ input:focus {
 
 .links-expand {
   background-color: #fff;
-  max-width: 600px;
+
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* Was fields-section before */
@@ -174,8 +175,8 @@ input:focus {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  flex: 1 1 500px;
 
-  flex-grow: 1;
   max-width: 500px;
 }
 
