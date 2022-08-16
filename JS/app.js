@@ -42,3 +42,13 @@ if ($(window).width() < 410) {
   $(".input-container__expand").addClass("height-big");
   $(".input-container").addClass("height-big");
 }
+
+// Display Change btn
+$("#display-options-btn").click(function () {
+  $(".display-options").toggleClass("opacity-1");
+});
+
+$("#display-btn").click(function () {
+  $(".cards-content").toggle();
+  $(".cards-content--grid-display").toggleClass("active-grid-display");
+});

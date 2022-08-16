@@ -34,6 +34,32 @@
   justify-content: space-between;
   padding-left: 10px;
 
+  &-display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span {
+      font-size: font-size(font-size-medium);
+      cursor: pointer;
+    }
+    span:hover {
+      color: #0000008e;
+    }
+    .display-options-container {
+      .display-options-btn {
+        position: relative;
+      }
+
+      .display-options {
+        position: absolute;
+        margin-top: -8px;
+        background-color: #fff;
+        padding: 5px;
+        box-shadow: 2px 2px 10px rgb(0 0 0 / 25%);
+        opacity: 0;
+      }
+    }
+  }
   &-pages {
     display: flex;
     gap: 25px;
@@ -57,7 +83,7 @@
     margin-top: 10px;
     &-tags {
       &--tag {
-        font-size: font-size(font-size-small);
+        font-size: font-size(font-size-regular);
       }
     }
     .sidebar-close-btn {
@@ -66,13 +92,12 @@
   }
   .bottom-navbar {
     &-pages {
-      font-size: font-size(font-size-samll);
+      font-size: font-size(font-size-regular);
     }
     &-btns {
       span {
         padding: 0 4px;
-
-        font-size: 16px;
+        font-size: font-size(font-size-medium);
       }
     }
   }
@@ -81,19 +106,23 @@
   }
 }
 
-@include media-small {
-  .upper-navbar {
-    &-tags {
-      &--tag {
-        span {
-          font-size: font-size(font-size-small);
-        }
-      }
+@include media-medium {
+  .bottom-navbar {
+    &-btns {
+      display: none;
     }
   }
+}
+@include media-small {
   .bottom-navbar {
     &-pages {
       font-size: font-size(font-size-samll);
+      gap: 20px;
+      &--number {
+        .of-pages {
+          display: none;
+        }
+      }
     }
     &-btns {
       display: none;

@@ -151,7 +151,10 @@ input:focus {
   align-items: center;
   flex-flow: row wrap;
   font-size: font-size(font-size-regular);
-  width: 600px;
+  // width: 600px;
+  .links-unexpand-tag {
+    margin-left: 5px;
+  }
 }
 
 .stop-icon {
@@ -163,7 +166,7 @@ input:focus {
 
 .links-expand {
   background-color: #fff;
-  width: 600px;
+  max-width: 600px;
 }
 
 /* Was fields-section before */
@@ -212,26 +215,26 @@ input:focus {
   height: 35px;
 }
 
-@include media-1200 {
-  .links-unexpand,
-  .links-expand {
-    width: 370px;
-  }
-}
+// @include media-1200 {
+//   .links-unexpand,
+//   .links-expand {
+//     width: 370px;
+//   }
+// }
 
-@include media-tablet {
-  .links-unexpand,
-  .links-expand {
-    width: 550px;
-  }
-}
+// @include media-tablet {
+//   .links-unexpand,
+//   .links-expand {
+//     width: 550px;
+//   }
+// }
 
-@include media-medium {
-  .links-unexpand,
-  .links-expand {
-    width: 400px;
-  }
-}
+// @include media-medium {
+//   .links-unexpand,
+//   .links-expand {
+//     width: 400px;
+//   }
+// }
 
 @include media-small {
   .title-content,
@@ -250,16 +253,16 @@ input:focus {
   }
   .links-unexpand,
   .links-expand {
-    width: 300px;
+    width: 320px;
   }
 }
 
 @include media-x-small {
+  .fields-section {
+    max-width: 220px;
+  }
   .links-unexpand,
   .links-expand {
-    width: 280px;
-  }
-  .fields-section {
-    max-width: 240px;
+    width: 300px;
   }
 }

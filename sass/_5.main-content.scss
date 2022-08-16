@@ -58,6 +58,12 @@
         display: inline-flex;
       }
     }
+
+    .cards-content--grid-display {
+      display: flex;
+      width: 100%;
+      padding: 1rem;
+    }
   }
 }
 
@@ -106,4 +112,8 @@
 .active-sidebar {
   width: 100%;
   left: 0;
+}
+
+.active-grid-display {
+  display: none !important;
 }
