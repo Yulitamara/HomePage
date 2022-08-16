@@ -8,7 +8,6 @@
 .header,
 .row {
   display: flex;
-  gap: 0.2rem;
   justify-content: flex-start;
   flex-wrap: wrap;
   font-size: font-size(font-size-regular);
@@ -40,16 +39,16 @@
 }
 
 .due {
-  min-width: 80px;
+  min-width: 50px;
   color: var(--red-color);
 }
 
 .date {
-  min-width: 100px;
+  min-width: 75px;
 }
 
 .status {
-  min-width: 100px;
+  min-width: 65px;
   color: var(--light-color);
 }
 

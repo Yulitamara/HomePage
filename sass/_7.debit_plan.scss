@@ -20,10 +20,10 @@
 }
 
 @include media-small {
-  .next-current {
-    .next-payment,
-    .current-payment {
-      font-size: font-size(font-size-small);
-    }
-  }
+  // .next-current {
+  //   .next-payment,
+  //   .current-payment {
+  //     font-size: font-size(font-size-small);
+  //   }
+  // }
 }

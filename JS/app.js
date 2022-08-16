@@ -1,12 +1,4 @@
 // SIDEBAR
-
-// $(function () {
-//   $("#sidebar-close-btn").click(function () {
-//     $(".sidebar").hide();
-//     $(".main-content").addClass("active-sidebar");
-//   });
-// });
-
 $(function () {
   $("#sidebar-out-btn").click(function () {
     $(".sidebar").toggle();
@@ -39,11 +31,14 @@ $(function () {
 
 // Expand Section
 $("#expand-btn-1").click(function () {
-  // $("#links-unexpand-1").toggle();
-  $("#links-expand-1").toggle();
+  $("#links-unexpand-1").slideToggle();
+  $("#links-expand-1").slideToggle();
 });
 
-$("#expand-btn-2").click(function () {
-  // $("#links-unexpand-2").toggle();
-  $("#links-expand-2").toggle();
-});
+if ($(window).width() < 410) {
+  $(".field-container").addClass("flex-column");
+  $(".label-container").addClass("height-small");
+  $(".label-text").addClass("small-font");
+  $(".input-container__expand").addClass("height-big");
+  $(".input-container").addClass("height-big");
+}
