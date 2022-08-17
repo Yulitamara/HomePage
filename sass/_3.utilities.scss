@@ -56,10 +56,18 @@ input[type="text"]:focus {
 
 .tag {
   background-color: #e4dfff;
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 50px;
 }
 
 .opacity-1 {
   opacity: 1 !important;
+}
+
+.circle {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.circle-fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }

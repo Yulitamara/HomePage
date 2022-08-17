@@ -8,22 +8,22 @@
   border-radius: 4px 4px 0 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &-tags {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     &--tag {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       span {
         font-size: font-size(font-size-regular);
       }
     }
   }
-
   .sidebar-close-btn {
-    font-size: font-size(font-size-medium);
-    cursor: pointer;
-    color: #5555a8;
     opacity: 0;
   }
 }
@@ -33,6 +33,7 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
+  font-size: font-size(font-size-medium);
 
   &-display {
     display: flex;
@@ -62,9 +63,25 @@
   }
   &-pages {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 20px;
     font-size: font-size(font-size-regular);
+    &--user {
+      // keep text in one line
+      width: 190px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      .user-name {
+        padding: 5px 15px;
+        border-radius: 4px;
+        background-color: #e4dfff;
+        font-size: font-size(font-size-regular);
+      }
+    }
   }
+
   &-btns {
     &--more {
       position: relative;
@@ -103,22 +120,23 @@
   color: var(--dark-color);
 }
 
-@include media-medium {
+@include media-tablet {
   .upper-navbar {
-    margin-top: 10px;
     &-tags {
-      &--tag {
-        font-size: font-size(font-size-regular);
-      }
+      margin-top: 10px;
     }
     .sidebar-close-btn {
+      font-size: 40px;
+      cursor: pointer;
+      color: #5555a8;
       opacity: 1;
     }
   }
   .bottom-navbar {
     &-pages {
-      font-size: font-size(font-size-regular);
+      gap: 20px;
       &--user {
+        width: fit-content;
         .user-name {
           display: none;
         }
@@ -136,16 +154,11 @@
       }
     }
   }
-  .arrow {
-    font-size: 19px;
-  }
 }
 
 @include media-small {
   .bottom-navbar {
     &-pages {
-      font-size: font-size(font-size-samll);
-      gap: 20px;
       &--number {
         .of-pages {
           display: none;

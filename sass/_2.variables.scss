@@ -23,11 +23,10 @@ $font-weights: (
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Font Sizes *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 $font-sizes: (
-  "font-size-x-small": 10px,
-  "font-size-small": 12px,
+  "font-size-x-small": 12px,
+  "font-size-small": 14px,
   "font-size-regular": 16px,
   "font-size-medium": 22px,
-  "font-size-mobile": 16px,
 );
 
 @function font-size($font-size-style) {

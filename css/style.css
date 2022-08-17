@@ -61,7 +61,7 @@ input[type=text]:focus {
   align-items: center;
   gap: 5px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .material-symbols-outlined {
@@ -84,12 +84,20 @@ input[type=text]:focus {
 
 .tag {
   background-color: #e4dfff;
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 50px;
 }
 
 .opacity-1 {
   opacity: 1 !important;
+}
+
+.circle {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.circle-fill {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 .sidebar {
@@ -205,7 +213,7 @@ input[type=text]:focus {
   gap: 10px;
   padding: 5px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   border: 1px solid var(--dark-color);
 }
 .main-content .cards .cards-content--grid-display {
@@ -221,7 +229,7 @@ input[type=text]:focus {
     left: 0;
   }
   .main-content .cards .cards-content .cards-main-content header {
-    font-size: 12px;
+    font-size: 16px;
   }
   .main-content .cards .cards-content .cards-main-content header .header-content-text {
     font-size: 16px;
@@ -230,7 +238,7 @@ input[type=text]:focus {
 }
 @media screen and (max-width: 420px) {
   .main-content .cards .cards-content .cards-main-content header {
-    font-size: 12px;
+    font-size: 16px;
   }
   .main-content .cards .cards-content .cards-main-content header .header-content-text {
     font-size: 16px;
@@ -399,11 +407,43 @@ input:focus {
   color: var(--light-color);
 }
 
+/* Form - Vertical - without input-type (change field-container flex direction, smaller height for label container, bigger height for input container) */
+.flex-column {
+  flex-direction: column;
+}
+
+.small-font {
+  font-size: 14px !important;
+}
+
+.height-small {
+  height: 30px;
+}
+
+.height-big {
+  flex: auto;
+  height: 35px;
+}
+
+@media screen and (max-width: 420px) {
+  .title-content,
+.title-content .title-text,
+.title-content .title-icon,
+.title-content,
+.label-container .label-icon,
+.label-container .label-text,
+.label-container .rquired,
+input[type=text],
+.input-type .input-type-text,
+.input-type .input-icon {
+    font-size: 16px;
+  }
+}
 /* EXPAND SECTION */
 .expand-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  flex-wrap: wrap;
 }
 
 .debit-header {
@@ -432,18 +472,21 @@ input:focus {
 }
 
 .links-expand {
-  background-color: #fff;
+  background-color: #f4eff4;
+  padding: 5px;
   display: flex;
   flex-flow: row wrap;
 }
 
 /* Was fields-section before */
 .fields-section__expand {
+  margin: 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   flex: 1 1 500px;
   max-width: 500px;
+  background-color: #fff;
 }
 
 .expand-btn {
@@ -463,41 +506,23 @@ input:focus {
   min-width: 0;
 }
 
-/* Form - Vertical - without input-type (change field-container flex direction, smaller height for label container, bigger height for input container) */
-.flex-column {
-  flex-direction: column;
+@media screen and (max-width: 1200px) {
+  .expand-section {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
-
-.small-font {
-  font-size: 12px !important;
+@media screen and (max-width: 860px) {
+  .expand-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.height-small {
-  height: 30px;
-}
-
-.height-big {
-  flex: auto;
-  height: 35px;
-}
-
 @media screen and (max-width: 600px) {
-  .expand-section-singular {
-    width: 100%;
+  .expand-section {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 420px) {
-  .title-content,
-.title-content .title-text,
-.title-content .title-icon,
-.title-content,
-.label-container .label-icon,
-.label-container .label-text,
-.label-container .rquired,
-input[type=text],
-.input-type .input-type-text,
-.input-type .input-icon,
-.links-unexpand,
+  .links-unexpand,
 .stop-icon {
     font-size: 16px;
   }
@@ -508,13 +533,6 @@ input[type=text],
 .debit-plan-section .debit-plan-content {
   font-size: 16px;
   color: var(--dark-color);
-}
-.debit-plan-section .debit-plan-content .next-payment-label,
-.debit-plan-section .debit-plan-content .current-payment-label {
-  color: var(--light-color);
-}
-.debit-plan-section .debit-plan-content .current-payment-days {
-  color: var(--red-color);
 }
 
 .tabs-section {
@@ -562,14 +580,14 @@ input[type=text],
 
 @media screen and (max-width: 420px) {
   .tabs-section-slider-title ul a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .tabs-section-slider-title .tabs-close-icon {
-    font-size: 12px;
+    font-size: 14px;
   }
   .header,
 .row {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -692,19 +710,22 @@ input[type=text],
   border-radius: 4px 4px 0 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .upper-navbar-tags {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+}
+.upper-navbar-tags--tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .upper-navbar-tags--tag span {
   font-size: 16px;
 }
 .upper-navbar .sidebar-close-btn {
-  font-size: 22px;
-  cursor: pointer;
-  color: #5555a8;
   opacity: 0;
 }
 
@@ -713,6 +734,7 @@ input[type=text],
   align-items: center;
   justify-content: space-between;
   padding-left: 10px;
+  font-size: 22px;
 }
 .bottom-navbar-display {
   display: flex;
@@ -739,7 +761,20 @@ input[type=text],
 }
 .bottom-navbar-pages {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+}
+.bottom-navbar-pages--user {
+  width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bottom-navbar-pages--user .user-name {
+  padding: 5px 15px;
+  border-radius: 4px;
+  background-color: #e4dfff;
   font-size: 16px;
 }
 .bottom-navbar-btns--more {
@@ -770,18 +805,23 @@ input[type=text],
   color: var(--dark-color);
 }
 
-@media screen and (max-width: 600px) {
-  .upper-navbar {
+@media screen and (max-width: 860px) {
+  .upper-navbar-tags {
     margin-top: 10px;
   }
-  .upper-navbar-tags--tag {
-    font-size: 16px;
-  }
   .upper-navbar .sidebar-close-btn {
+    font-size: 40px;
+    cursor: pointer;
+    color: #5555a8;
     opacity: 1;
   }
   .bottom-navbar-pages {
-    font-size: 16px;
+    gap: 20px;
+  }
+  .bottom-navbar-pages--user {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .bottom-navbar-pages--user .user-name {
     display: none;
@@ -792,14 +832,8 @@ input[type=text],
   .bottom-navbar-btns--list .list-item .pin {
     display: none;
   }
-  .arrow {
-    font-size: 19px;
-  }
 }
 @media screen and (max-width: 420px) {
-  .bottom-navbar-pages {
-    gap: 20px;
-  }
   .bottom-navbar-pages--number .of-pages {
     display: none;
   }
