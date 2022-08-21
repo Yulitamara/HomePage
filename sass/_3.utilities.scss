@@ -54,6 +54,13 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
+.big-close-icon {
+  font-variation-settings: "wght" 600;
+  font-size: font-size(font-size-medium);
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
 .tag {
   background-color: #e4dfff;
   padding: 0 10px;

@@ -31,8 +31,9 @@ $(function () {
 
 // Expand Section
 $(".links-expanded").hide();
+$(".big-close-icon").hide();
 
-$(".expand-btn").click(function () {
+$(".expand-btn, .links-unexpand").click(function () {
   $(".links-unexpand").addClass("links-unexpand-clicked");
   $(".expand-section").addClass("expand-section-clicked");
   $(".links-unexpand-tag").addClass("no-background");
@@ -41,11 +42,21 @@ $(".expand-btn").click(function () {
   $("#links-unexpand-2").html("Stages");
   $("#links-unexpand-3").html("Debit Plans");
   $("#links-unexpand-4").html("Related");
+  $(".big-close-icon").show();
+});
+
+$(".big-close-icon").click(function () {
+  $(".big-close-icon").hide();
+  $(".links-unexpand").removeClass("links-unexpand-clicked");
+  $(".expand-section").removeClass("expand-section-clicked");
+  $(".links-unexpand-tag").removeClass("no-background");
+  $(".type-header").removeClass("display-none");
 });
 
 $("#expand-btn-1, #links-unexpand-1").click(function () {
   $("#links-unexpand-1").toggleClass("links-unexpand-focus");
   $("#links-expanded-1").slideToggle();
+  $("body").scrollTo("#expand-btn-1");
 });
 
 $("#expand-btn-2, #links-unexpand-2").click(function () {
@@ -62,13 +73,14 @@ $("#expand-btn-4, #links-unexpand-4").click(function () {
   $("#links-unexpand-4").toggleClass("links-unexpand-focus");
   $("#links-expanded-4").slideToggle();
 });
-// if ($(window).width() < 500) {
-//   $(".field-container").addClass("flex-column");
-//   $(".label-container").addClass("height-small");
-//   $(".label-text").addClass("small-font");
-//   $(".input-container__expand").addClass("height-big");
-//   $(".input-container").addClass("height-big");
-// }
+
+if ($(window).width() < 900) {
+  $(".field-container-responsive").addClass("flex-column");
+  $(".label-container").addClass("height-small");
+  $(".label-text").addClass("small-font");
+  $(".input-container__expand").addClass("height-big");
+  $(".input-container").addClass("height-big");
+}
 
 // Display Change btn
 $("#display-options-btn").click(function () {
