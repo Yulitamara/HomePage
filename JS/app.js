@@ -36,21 +36,29 @@ $(".expand-btn").click(function () {
   $(".links-unexpand").addClass("links-unexpand-clicked");
   $(".expand-section").addClass("expand-section-clicked");
   $(".links-unexpand-tag").addClass("no-background");
+  $(".type-header").addClass("display-none");
+  $("#links-unexpand-1").html("Links");
+  $("#links-unexpand-2").html("Stages");
+  $("#links-unexpand-3").html("Debit Plans");
+  $("#links-unexpand-4").html("Related");
 });
 
-$("#expand-btn-1").click(function () {
+$("#expand-btn-1, #links-unexpand-1").click(function () {
   $("#links-unexpand-1").toggleClass("links-unexpand-focus");
   $("#links-expanded-1").slideToggle();
 });
-$("#expand-btn-2").click(function () {
+
+$("#expand-btn-2, #links-unexpand-2").click(function () {
   $("#links-unexpand-2").toggleClass("links-unexpand-focus");
   $("#links-expanded-2").slideToggle();
 });
-$("#expand-btn-3").click(function () {
+
+$("#expand-btn-3, #links-unexpand-3").click(function () {
   $("#links-unexpand-3").toggleClass("links-unexpand-focus");
   $("#links-expanded-3").slideToggle();
 });
-$("#expand-btn-4").click(function () {
+
+$("#expand-btn-4, #links-unexpand-4").click(function () {
   $("#links-unexpand-4").toggleClass("links-unexpand-focus");
   $("#links-expanded-4").slideToggle();
 });
