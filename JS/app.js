@@ -30,11 +30,62 @@ $(function () {
 });
 
 // Expand Section
-$(".links-expand").hide();
+$(".links-expanded").hide();
 
 $("#expand-btn-1").click(function () {
-  $("#links-unexpand-1").slideToggle();
-  $("#links-expand-1").slideToggle();
+  $("#links-unexpand-1").addClass("links-unexpand-disabled");
+  $("#title-text-1").addClass("type-header-disabled");
+  $("#expand-btn-1").hide();
+  $("#links-expanded-1").slideToggle();
+});
+
+$("#links-unexpand-1").click(function () {
+  $("#links-unexpand-1").removeClass("links-unexpand-disabled");
+  $("#title-text-1").removeClass("type-header-disabled");
+  $("#expand-btn-1").show();
+  $("#links-expanded-1").hide();
+});
+
+$("#expand-btn-2").click(function () {
+  $("#links-unexpand-2").addClass("links-unexpand-disabled");
+  $("#title-text-2").addClass("type-header-disabled");
+  $("#expand-btn-2").hide();
+  $("#links-expanded-2").slideToggle();
+});
+
+$("#links-unexpand-2").click(function () {
+  $("#links-unexpand-2").removeClass("links-unexpand-disabled");
+  $("#title-text-2").removeClass("type-header-disabled");
+  $("#expand-btn-2").show();
+  $("#links-expanded-2").hide();
+});
+
+$("#expand-btn-3").click(function () {
+  $("#links-unexpand-3").addClass("links-unexpand-disabled");
+  $("#title-text-3").addClass("type-header-disabled");
+  $("#expand-btn-3").hide();
+  $("#links-expanded-3").slideToggle();
+});
+
+$("#links-unexpand-3").click(function () {
+  $("#links-unexpand-3").removeClass("links-unexpand-disabled");
+  $("#title-text-3").removeClass("type-header-disabled");
+  $("#expand-btn-3").show();
+  $("#links-expanded-3").hide();
+});
+
+$("#expand-btn-4").click(function () {
+  $("#links-unexpand-4").addClass("links-unexpand-disabled");
+  $("#title-text-4").addClass("type-header-disabled");
+  $("#expand-btn-4").hide();
+  $("#links-expanded-4").slideToggle();
+});
+
+$("#links-unexpand-4").click(function () {
+  $("#links-unexpand-4").removeClass("links-unexpand-disabled");
+  $("#title-text-4").removeClass("type-header-disabled");
+  $("#expand-btn-4").show();
+  $("#links-expanded-4").hide();
 });
 
 if ($(window).width() < 500) {

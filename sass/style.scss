@@ -4,9 +4,9 @@
     @content;
   }
 }
-//*-*-*-*-*-*-*-*-*-*-- The 1200px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
-@mixin media-1200 {
-  @media screen and (max-width: break-point(break-point-1200)) {
+//*-*-*-*-*-*-*-*-*-*-- The 1290px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-1290 {
+  @media screen and (max-width: break-point(break-point-1290)) {
     @content;
   }
 }
