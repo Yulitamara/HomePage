@@ -88,13 +88,13 @@ $("#links-unexpand-4").click(function () {
   $("#links-expanded-4").hide();
 });
 
-if ($(window).width() < 500) {
-  $(".field-container").addClass("flex-column");
-  $(".label-container").addClass("height-small");
-  $(".label-text").addClass("small-font");
-  $(".input-container__expand").addClass("height-big");
-  $(".input-container").addClass("height-big");
-}
+// if ($(window).width() < 500) {
+//   $(".field-container").addClass("flex-column");
+//   $(".label-container").addClass("height-small");
+//   $(".label-text").addClass("small-font");
+//   $(".input-container__expand").addClass("height-big");
+//   $(".input-container").addClass("height-big");
+// }
 
 // Display Change btn
 $("#display-options-btn").click(function () {
