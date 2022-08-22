@@ -146,8 +146,9 @@ $("#display-options-btn").click(function () {
 });
 
 $("#display-btn").click(function () {
-  $(".cards-content").toggle();
+  $(".cards-main-content").toggle();
   $(".cards-content--grid-display").toggleClass("active-grid-display");
+  // $(this).html() == "web" ? $(this).html("view_module") : $(this).html("web");
 });
 
 $(".bottom-navbar-btns--list").hide();

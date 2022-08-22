@@ -11,76 +11,107 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   font-size: font-size(font-size-regular);
+  margin-bottom: 10px;
 }
 
 .header {
-  padding-bottom: 0.5rem;
-}
-.row {
-  padding-bottom: 4px;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    &--label {
+      font-size: font-size(font-size-x-small);
+      font-weight: font-weight(font-weight-medium);
+      color: var(--light-color);
+      height: 17px;
+      letter-spacing: 0.5px;
+    }
+    // &--name {
+    // }
+  }
 }
 
 .header span,
 .row span {
-  padding: 0 0.5rem;
-  flex: 0 1 50px;
+  padding: 0 0.2rem;
+  flex: 0 1 0px;
+  margin: 2px;
 }
 
 .header span {
-  background-color: #e7e4f3;
-  margin-bottom: 0.2rem;
+  background-color: rgb(241, 229, 244);
+  margin-bottom: 4px;
 }
 
 .row span {
   background-color: #fff;
-  margin-bottom: 0.2rem;
+  margin-bottom: 2px;
 }
 
 .total {
-  min-width: 100px;
+  min-width: 80px;
 }
 
 .due {
-  min-width: 50px;
+  min-width: 80px;
   color: var(--red-color);
 }
 
-.date {
-  min-width: 150px;
-}
-
+.date,
 .close-date {
   min-width: 150px;
 }
 
 .status {
-  min-width: 75px;
-  color: var(--light-color);
+  min-width: 80px;
 }
 
 //
 .hashtag {
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .type {
-  min-width: 75px;
+  min-width: 80px;
 }
 
 .customer {
-  min-width: 100px;
+  min-width: 90px;
 }
 
 .fin-account {
-  min-width: 100px;
+  min-width: 140px;
 }
 
 .owner {
-  min-width: 200px;
+  min-width: 140px;
 }
 
 .total-no-tax {
-  min-width: 160px;
+  min-width: 140px;
+}
+
+.category {
+  min-width: 80px;
+}
+
+.external,
+.internal {
+  min-width: 80px;
+}
+
+.header-2 span {
+  flex-grow: 1;
+  margin: 2px;
+  background-color: #fff;
+}
+
+.row-2 span {
+  flex: 1;
+  margin: 2px;
+  padding: 0 0.5rem;
 }
 
 @include media-tablet {
