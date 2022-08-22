@@ -83,7 +83,8 @@ input[type=text]:focus {
   cursor: pointer;
 }
 
-.big-close-icon {
+.big-expand-btn,
+.big-close-btn {
   font-variation-settings: "wght" 600;
   font-size: 22px;
   color: var(--dark-color);
@@ -563,10 +564,7 @@ input[type=text],
 .links-unexpand-focus {
   border: 2px solid;
   border-color: rgba(66, 48, 186, 0.5450980392);
-}
-
-.expand-section-clicked {
-  display: flex;
+  background-color: rgba(255, 255, 255, 0.749);
 }
 
 .tabs-section {

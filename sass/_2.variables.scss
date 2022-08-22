@@ -28,6 +28,7 @@ $font-sizes: (
   "font-size-small": 14px,
   "font-size-regular": 16px,
   "font-size-medium": 22px,
+  "font-size-large": 30px,
 );
 
 @function font-size($font-size-style) {

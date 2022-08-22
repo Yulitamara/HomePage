@@ -54,7 +54,8 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
-.big-close-icon {
+.big-expand-btn,
+.big-close-btn {
   font-variation-settings: "wght" 600;
   font-size: font-size(font-size-medium);
   color: var(--dark-color);
