@@ -145,6 +145,11 @@ input:focus {
   height: 35px;
 }
 
+@include media-desktop {
+  input[type="text"] {
+    width: 500px;
+  }
+}
 @include media-small {
   .title-content,
   .title-content .title-text,
