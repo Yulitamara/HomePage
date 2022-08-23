@@ -14,25 +14,6 @@
   margin-bottom: 10px;
 }
 
-.header {
-  &-text {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    white-space: nowrap;
-    text-overflow: clip;
-    &--label {
-      font-size: font-size(font-size-x-small);
-      font-weight: font-weight(font-weight-medium);
-      color: var(--light-color);
-      height: 17px;
-      letter-spacing: 0.5px;
-    }
-    // &--name {
-    // }
-  }
-}
-
 .header span,
 .row span {
   padding: 0 0.2rem;
@@ -50,8 +31,9 @@
   margin-bottom: 2px;
 }
 
-.total {
-  min-width: 80px;
+.total,
+.total-no-tax {
+  min-width: 100px;
 }
 
 .due {
@@ -61,11 +43,11 @@
 
 .date,
 .close-date {
-  min-width: 150px;
+  min-width: 120px;
 }
 
 .status {
-  min-width: 80px;
+  min-width: 100px;
 }
 
 //
@@ -78,18 +60,14 @@
 }
 
 .customer {
-  min-width: 90px;
+  min-width: 140px;
 }
 
 .fin-account {
-  min-width: 140px;
+  min-width: 100px;
 }
 
 .owner {
-  min-width: 140px;
-}
-
-.total-no-tax {
   min-width: 140px;
 }
 
@@ -99,19 +77,50 @@
 
 .external,
 .internal {
-  min-width: 80px;
+  // min-width: max-content;
+  flex-grow: 1;
 }
 
-.header-2 span {
-  flex-grow: 1;
-  margin: 2px;
-  background-color: #fff;
+.header-2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: font-size(font-size-regular);
+  margin-bottom: 10px;
+  span {
+    margin: 2px;
+    background-color: #fff;
+    padding: 2px;
+  }
+  .header-text {
+    display: flex;
+    flex-direction: column;
+
+    &--label {
+      font-size: font-size(font-size-x-small);
+      font-weight: font-weight(font-weight-medium);
+      color: var(--light-color);
+      height: 17px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .header-long-content {
+    min-width: fit-content;
+    padding: 5px;
+  }
 }
 
 .row-2 span {
   flex: 1;
   margin: 2px;
   padding: 0 0.5rem;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @include media-tablet {

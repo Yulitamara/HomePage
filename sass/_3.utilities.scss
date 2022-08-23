@@ -63,9 +63,10 @@ input[type="text"]:focus {
 }
 
 .tag {
-  background-color: #e4dfff;
-  padding: 0 10px;
-  border-radius: 50px;
+  background-color: #e4dfff !important;
+  padding: 0 10px !important;
+  border-radius: 50px !important;
+  width: max-content;
 }
 
 .create-tag {
