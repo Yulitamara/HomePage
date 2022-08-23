@@ -523,7 +523,7 @@ input[type=text],
   align-items: center;
   flex-flow: row wrap;
   font-size: 16px;
-  height: 50px;
+  height: 47px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
