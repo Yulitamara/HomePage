@@ -33,6 +33,22 @@ input[type="text"]:focus {
   font-size: font-size(font-size-regular);
 }
 
+// .phone-mail-container {
+//   display: flex;
+//   gap: 10px;
+// }
+
+// .field-phone-mail {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+
+//   border: 1px solid #f4eff4;
+//   border-radius: 4px;
+//   margin-bottom: 0.5rem;
+// }
+
 .field-container {
   display: flex;
   justify-content: center;
@@ -145,11 +161,6 @@ input:focus {
   height: 35px;
 }
 
-@include media-desktop {
-  input[type="text"] {
-    width: 500px;
-  }
-}
 @include media-small {
   .title-content,
   .title-content .title-text,

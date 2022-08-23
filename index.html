@@ -9,8 +9,10 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Skyz Page</title>
@@ -80,8 +82,8 @@
     <div class="cards">
       <!-- Navbars Start -->
       <div class="upper-navbar">
-        <div class="upper-navbar-tags">
-          <div class="upper-navbar-tags--tag tag">
+        <div class="tags">
+          <div class="tag tag-purple">
             <span class="material-symbols-outlined">
               done
             </span>
@@ -90,7 +92,7 @@
               arrow_drop_down
             </span>
           </div>
-          <div class="upper-navbar-tags--tag tag">
+          <div class="tag tag-purple">
             <span class="material-symbols-outlined">
               done
             </span>
@@ -201,23 +203,39 @@
         <div class="cards-main-content">
           <header>
             <div class="header-content">
-              <div class="header-content-date">12/12/2022</div>
-              <div class="header-content-text">Debit Order</div>
-              <div class="header-content-subtext">#431027</div>
-            </div>
-            <div class="header-status">
-              <span class="header-status-tag create-tag">
-                <span>Create</span>
-              </span>
-              <span class="header-status-tag">
-                <span class="material-symbols-outlined">
-                  fiber_smart_record
-                </span>
-                <span>ON GOING</span>
-                <span class="material-symbols-outlined">
-                  expand_more
-                </span>
-              </span>
+              <div class="header-status">
+                <div class="header-status-scheduled">
+                  <span class="header-date">12/12/2022</span>
+                  <span class="header-time">12:00</span>
+                  <span class="header-duration">1:15h</span>
+                </div>
+                <div class="tags">
+                  <span class="tag-create">
+                    <span class="material-symbols-outlined">
+                      add
+                    </span>
+                  </span>
+                  <div class="tag-status">
+                    <span class="material-symbols-outlined">
+                      fiber_smart_record
+                    </span>
+                    <span>ON GOING</span>
+                    <span class="material-symbols-outlined">
+                      expand_more
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="header-details">
+                <div class="header-type">
+                  <span class="type">Debit Order</span>
+                  <div class="debit-number">#431027</div>
+                </div>
+                <div class="header-tags">
+                  <span class="amount-tag">$9,775.46</span>
+                  <span class="amount-tag-red">$3251.82</span>
+                </div>
+              </div>
             </div>
           </header>
           <!-- Expand Section -->
@@ -258,10 +276,10 @@
               </div>
               <div class="links-unexpand" id="links-unexpand-2">
                 <span class="label">5/7/2022 </span>
-                <span class="links-unexpand-tag tag">Planned</span>
+                <span class="links-unexpand-tag">Planned</span>
                 <span class="material-symbols-outlined stop-icon"> stop </span>
                 <span class="label">5/7/2022 </span>
-                <span class="links-unexpand-tag tag">On going</span>
+                <span class="links-unexpand-tag">On going</span>
               </div>
             </div>
             <div class="expand-section-singular">
@@ -355,16 +373,17 @@
                   </div>
                 </div>
                 <!-- FORM - only icon -->
-                <div class="field-container">
-                  <div class="label-container">
-                    <span class="material-symbols-outlined label-icon"> call </span>
-                    <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                    <!-- <div class="rquired">*</div> -->
-                  </div>
+                <div class="phone-mail-container">
+                  <div class="field-container">
+                    <div class="label-container">
+                      <span class="material-symbols-outlined label-icon"> call </span>
+                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
 
-                  <div class="input-container__expand">
-                    <input type="text" class="input" placeholder="054-4582987" />
-                    <!-- <div class="input-type">
+                    <div class="input-container__expand">
+                      <input type="text" class="input" placeholder="054-4582987" />
+                      <!-- <div class="input-type">
                                                               <div class="input-type-text">Personal</div>
                                                               <span
                                                                 class="material-symbols-outlined collapse-icon input-icon"
@@ -372,21 +391,21 @@
                                                                 expand_more
                                                               </span>
                                                             </div> -->
+                    </div>
                   </div>
-                </div>
-                <!-- FORM - only icon -->
-                <div class="field-container">
-                  <div class="label-container">
-                    <span class="material-symbols-outlined label-icon">
-                      alternate_email
-                    </span>
-                    <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                    <!-- <div class="rquired">*</div> -->
-                  </div>
+                  <!-- FORM - only icon -->
+                  <div class="field-container">
+                    <div class="label-container">
+                      <span class="material-symbols-outlined label-icon">
+                        alternate_email
+                      </span>
+                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
 
-                  <div class="input-container__expand">
-                    <input type="text" class="input" placeholder="inv3@figma.com" />
-                    <!-- <div class="input-type">
+                    <div class="input-container__expand">
+                      <input type="text" class="input" placeholder="inv3@figma.com" />
+                      <!-- <div class="input-type">
                                                               <div class="input-type-text">Personal</div>
                                                               <span
                                                                 class="material-symbols-outlined collapse-icon input-icon"
@@ -394,6 +413,7 @@
                                                                 expand_more
                                                               </span>
                                                             </div> -->
+                    </div>
                   </div>
                 </div>
                 <!-- Form - Vertical -->
@@ -921,6 +941,9 @@
               <div class="title-content">
                 <span class="material-symbols-outlined title-icon"> category </span>
                 <div class="title-text" id="title-text-1">Related</div>
+                <span class="material-symbols-outlined visibility-icon" id="headers-visibilty-btn">
+                  visibility
+                </span>
               </div>
               <div class="title-content">
                 <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-4">
@@ -936,9 +959,14 @@
                 </span>
                 <span class="header-text status">
                   <span class="header-text--label">Status</span>
-                  <span class="header-text--name tag">Planned</span>
+                  <span class="tag tag-grey">
+                    <div class="material-symbols-outlined circle">
+                      circle
+                    </div>
+                    <div class="header-text--name">Planned</div>
+                  </span>
                 </span>
-                <span class="header-text external text-overflow">
+                <span class="header-text external">
                   <span class="header-text--label">External</span>
                   <span class="header-text--name">Jacob Johns, FIgma Inc</span>
                 </span>
@@ -949,6 +977,18 @@
                 <span class="header-text date">
                   <span class="header-text--label">Date</span>
                   <span class="header-text--name">3/08/2022 Tu</span>
+                </span>
+                <span class="header-text total">
+                  <span class="header-text--label">Total</span>
+                  <span class="header-text--name">$9,775.46</span>
+                </span>
+                <span class="header-text payment">
+                  <span class="header-text--label">Next Payment</span>
+                  <span class="header-text--name">$9,775.46</span>
+                </span>
+                <span class="header-text payment">
+                  <span class="header-text--label">Current Payment</span>
+                  <span class="header-text--name">$3251.82</span>
                 </span>
                 <span class="header-long-content">
                   <h4 class="title">ORDER #883969670 - Your TrustLogo is ready!</h4>
@@ -967,6 +1007,7 @@
           </div>
           <!-- Expand Section Ends  -->
         </div>
+        <!-- Cards Content End -->
         <div class="cards-content--grid-display active-grid-display">
           <div class="table-container">
             <div class="header">
@@ -1010,9 +1051,9 @@
             </div>
           </div>
         </div>
-        <!-- Cards Content End -->
+        <div class="cards-content--notes-display" style="display: none;">
 
-
+        </div>
       </div>
     </div>
     <script src="JS/app.js"></script>

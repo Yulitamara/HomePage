@@ -32,8 +32,9 @@
 }
 
 .total,
-.total-no-tax {
-  min-width: 100px;
+.total-no-tax,
+.payment {
+  min-width: 110px;
 }
 
 .due {
@@ -43,7 +44,7 @@
 
 .date,
 .close-date {
-  min-width: 120px;
+  min-width: 150px;
 }
 
 .status {
@@ -95,6 +96,10 @@
   .header-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &--label {
       font-size: font-size(font-size-x-small);

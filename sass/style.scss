@@ -10,7 +10,7 @@
     @content;
   }
 }
-//*-*-*-*-*-*-*-*-*-*-- The 800px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+//*-*-*-*-*-*-*-*-*-*-- The 900px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
 @mixin media-tablet {
   @media screen and (max-width: break-point(break-point-tablet)) {
     @content;
@@ -49,3 +49,5 @@
 @import "9.table";
 @import "10.inner-sidebar";
 @import "11.navbars";
+@import "header";
+

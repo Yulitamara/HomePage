@@ -156,3 +156,11 @@ $(".bottom-navbar-btns--list").hide();
 $(".more-btn").click(function () {
   $(".bottom-navbar-btns--list").toggle();
 });
+
+// Category hide headers
+$("#headers-visibilty-btn").click(function () {
+  $(".header-text--label").slideToggle();
+  $("#headers-visibilty-btn").html() == "visibility_off"
+    ? $(this).html("visibility")
+    : $(this).html("visibility_off");
+});
