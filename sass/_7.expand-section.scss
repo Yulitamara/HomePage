@@ -4,8 +4,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   align-items: center;
-  //   &-singular {
-  //   }
+  // &-singular {
+  //   height: 70px;
+  // }
 }
 .type-header {
   display: flex;
@@ -101,6 +102,18 @@
   .expand-section,
   .fields-section__expand--container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .links-expanded {
+    padding: 0;
+
+    .title-content {
+      padding: 0 5px;
+    }
+  }
+  .fields-section__expand {
+    margin: 0;
+    margin-bottom: 5px;
   }
 }
 

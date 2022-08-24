@@ -164,3 +164,11 @@ $("#headers-visibilty-btn").click(function () {
     ? $(this).html("visibility")
     : $(this).html("visibility_off");
 });
+
+// Media Medium
+const mediaMedium = window.matchMedia("(min-width: 600px)");
+// Check if the media Medium is true
+if (mediaMedium.matches) {
+  // Then trigger an alert
+  $(".links-unexpann").hide();
+}
