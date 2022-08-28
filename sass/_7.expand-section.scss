@@ -83,16 +83,16 @@
   }
 }
 
-@include media-tablet {
-  .expand-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@include media-medium {
-  .expand-section {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+// @include media-tablet {
+//   .expand-section {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+// @include media-medium {
+//   .expand-section {
+//     grid-template-columns: repeat(1, 1fr);
+//   }
+// }
 
 @include media-small {
   .links-unexpand,

@@ -200,11 +200,17 @@ input[type=text]:focus {
 }
 
 .circle-fill {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 48;
+  font-size: small;
 }
 
 .display-none {
   display: none !important;
+}
+
+.red-text {
+  color: #690005;
+  font-weight: 600;
 }
 
 .sidebar {
@@ -581,16 +587,6 @@ input[type=text],
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media screen and (max-width: 900px) {
-  .expand-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 600px) {
-  .expand-section {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 @media screen and (max-width: 420px) {
   .links-unexpand,
 .stop-icon {
@@ -693,24 +689,43 @@ input[type=text],
 }
 .table-container {
   display: flex;
-  flex-direction: column;
-  gap: 1px;
   border-radius: 4px;
+  flex-grow: 1;
+}
+
+.table-item {
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.row-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-label {
+  color: purple;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.table-input {
+  padding-right: 10px;
 }
 
 .header,
 .row {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .header span,
 .row span {
+  display: flex;
   padding: 0 0.2rem;
-  flex: 0 1 0px;
+  flex: 1;
   margin: 2px;
 }
 
@@ -745,7 +760,7 @@ input[type=text],
 }
 
 .hashtag {
-  min-width: 100px;
+  min-width: 110px;
 }
 
 .type {
@@ -761,7 +776,7 @@ input[type=text],
 }
 
 .owner {
-  min-width: 140px;
+  min-width: 190px;
 }
 
 .category {
@@ -779,6 +794,7 @@ input[type=text],
   flex-wrap: wrap;
   font-size: 16px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .header-2 span {
   margin: 2px;
@@ -804,7 +820,11 @@ input[type=text],
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  padding: 5px;
+  padding: 5px 10px;
+  width: 100%;
+}
+.header-2 .header-long-content .title {
+  color: #5555a8;
 }
 
 .row-2 span {
@@ -824,6 +844,18 @@ input[type=text],
     flex-direction: column;
   }
 }
+.display-none {
+  display: none;
+}
+
+.carousel-nav {
+  text-align: center;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
 .inner-sidebar {
   min-width: 200px;
   background-color: #fffbff;
