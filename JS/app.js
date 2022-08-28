@@ -170,36 +170,37 @@ $(
 ).hide();
 
 if ($(window).width() < 1290) {
+  $(".links-expanded").css("margin-top", "0");
   $("#expand-btn-1, #links-unexpand-1").click(function () {
     $("#links-unexpand-1").slideToggle();
     $("#links-unexpand-1").removeClass("links-unexpand-focus");
     $("#expanded-small-1").slideToggle();
-    $("#expanded-small-1").append($("#links-expanded-1"));
     $("#type-header-small").hide();
+    $("#expanded-small-1").append($("#links-expanded-1"));
   });
 
   $("#expand-btn-2, #links-unexpand-2").click(function () {
     $("#links-unexpand-2").slideToggle();
     $("#links-unexpand-2").removeClass("links-unexpand-focus");
     $("#expanded-small-2").slideToggle();
+    $("#type-header-small-2").hide();
     $("#expanded-small-2").append($("#links-expanded-2"));
-    $("#type-header-small").hide();
   });
 
   $("#expand-btn-3, #links-unexpand-3").click(function () {
     $("#links-unexpand-3").slideToggle();
     $("#links-unexpand-3").removeClass("links-unexpand-focus");
     $("#expanded-small-3").slideToggle();
+    $("#type-header-small-3").hide();
     $("#expanded-small-3").append($("#links-expanded-3"));
-    $("#type-header-small").hide();
   });
 
   $("#expand-btn-4, #links-unexpand-4").click(function () {
     $("#links-unexpand-4").slideToggle();
     $("#links-unexpand-4").removeClass("links-unexpand-focus");
     $("#expanded-small-4").slideToggle();
+    $("#type-header-small-4").hide();
     $("#expanded-small-4").append($("#links-expanded-4"));
-    $("#type-header-small").hide();
   });
 }
 
