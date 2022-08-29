@@ -224,7 +224,7 @@ $(function () {
 });
 
 // table
-$(".table-label").hide();
+// $(".table-label").hide();
 
 if ($(window).width() < 1655) {
   $(".table-container").removeClass("table-container-1");
@@ -232,7 +232,11 @@ if ($(window).width() < 1655) {
   $(".header").hide();
   $(".row").addClass("header-2");
   $(".row").removeClass("row");
-  $(".table-label").show();
+  // $(".table-label").show();
+}
+
+if ($(window).width() < 1290) {
+  $(".label-type-small").removeClass("display-none");
 }
 
 // Create Section

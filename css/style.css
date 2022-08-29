@@ -697,12 +697,6 @@ input[type=text],
   background-color: #fff;
 }
 
-.table-label {
-  color: purple;
-  padding: 0 10px;
-  font-size: 14px;
-}
-
 .table-input {
   padding-right: 10px;
 }
@@ -803,15 +797,6 @@ input[type=text],
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.header-2 .header-text--label {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--light-color);
-  height: 17px;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-}
 .header-2 .header-long-content {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -852,13 +837,13 @@ input[type=text],
   flex-direction: column;
   background-color: #f4eff4;
   padding: 4px;
+  width: 100%;
 }
 
 .header-3,
 .row-3 {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   font-size: 16px;
   margin: 3px;
   padding: 2px;
@@ -892,6 +877,56 @@ input[type=text],
 
 .qty {
   min-width: 60px;
+}
+
+@media screen and (max-width: 1290px) {
+  .row-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+  .row-3 span {
+    color: var(--dark-color);
+    font-weight: 500;
+  }
+  .row-3 .circle {
+    display: none;
+  }
+  .row-3-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .row-3 {
+    background-color: transparent;
+  }
+  .row-3 span {
+    margin: 2px;
+    background: #fffbff;
+    padding: 4px;
+  }
+  .header-3 {
+    display: none;
+  }
+  .item-name {
+    min-width: 200px;
+  }
+  .sku {
+    flex: 1;
+  }
+}
+.label-type-small {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--light-color);
+  height: 17px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
 }
 
 .inner-sidebar {
@@ -1096,4 +1131,13 @@ header .header-content .header-details .header-type .type {
 .create-section .create-content {
   background-color: #fff;
   padding: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .create-section .create-header span {
+    font-size: 22px;
+  }
+  .create-section .create-header-small {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
