@@ -892,6 +892,7 @@ input[type=text],
   .row-3 span {
     color: var(--dark-color);
     font-weight: 500;
+    background-color: #fff !important;
   }
   .row-3 .circle {
     display: none;
