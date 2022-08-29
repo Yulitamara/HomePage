@@ -164,7 +164,7 @@ $(".more-btn").click(function () {
 
 // Category hide headers
 $("#headers-visibilty-btn").click(function () {
-  $(".header-text--label").slideToggle();
+  $(".label-type-small").slideToggle();
   $("#headers-visibilty-btn").html() == "visibility_off"
     ? $(this).html("visibility")
     : $(this).html("visibility_off");
