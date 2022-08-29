@@ -151,8 +151,8 @@ $("#display-options-btn").click(function () {
 });
 
 $("#display-btn").click(function () {
-  $(".cards-main-content").toggle();
-  $(".cards-content--grid-display").toggleClass("active-grid-display");
+  $(".cards-content").toggle();
+  $(".cards-content--grid-display").toggleClass("display-none");
   // $(this).html() == "web" ? $(this).html("view_module") : $(this).html("web");
 });
 
@@ -226,11 +226,18 @@ $(function () {
 // table
 $(".table-label").hide();
 
-$(".header-text--label").hide();
 if ($(window).width() < 1655) {
-  $(".header-text--label").show();
+  $(".table-container").removeClass("table-container-1");
+  $(".header-text--label").removeClass("display-none");
   $(".header").hide();
   $(".row").addClass("header-2");
   $(".row").removeClass("row");
   $(".table-label").show();
 }
+
+// Create Section
+$("#create-section-btn").click(function () {
+  $(".expand-section-wrapper").toggle();
+  $(".create-section").toggleClass("display-none");
+  $(this).toggleClass("half-opacity");
+});
