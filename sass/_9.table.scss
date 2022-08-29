@@ -1,20 +1,11 @@
 .table-container {
   display: flex;
+  flex-direction: column;
   // gap: 16px;
-  border-radius: 4px;
   flex-grow: 1;
-}
-.table-item {
-  // background-color: rgb(191, 185, 191);
-  // padding: 3px;
-  border-radius: 4px;
+  // background-color: #fff;
 }
 
-.row-small {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .table-label {
   color: purple;
   padding: 0 10px;
@@ -24,12 +15,10 @@
   padding-right: 10px;
 }
 
-// .same-type-rows {
-// }
 .header,
 .row {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   font-size: font-size(font-size-regular);
   margin-bottom: 2px;
 }
@@ -43,12 +32,12 @@
 }
 
 .header span {
-  background-color: rgb(241, 229, 244);
+  background-color: #eadaf6;
   margin-bottom: 4px;
 }
 
 .row span {
-  background-color: #fff;
+  background-color: #f5f1f5;
   margin-bottom: 2px;
 }
 
@@ -82,7 +71,9 @@
 }
 
 .customer {
-  min-width: 140px;
+  // min-width: 140px;s
+  flex-grow: 1;
+
 }
 
 .fin-account {
@@ -130,6 +121,8 @@
       color: var(--light-color);
       height: 17px;
       letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
     }
   }
 
@@ -154,16 +147,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-@include media-tablet {
-  .debit {
-    &-slider {
-      &--content {
-        flex-direction: column;
-      }
-    }
-  }
 }
 
 .display-none {

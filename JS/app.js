@@ -226,13 +226,11 @@ $(function () {
 // table
 $(".table-label").hide();
 
-if ($(window).width() < 1675) {
-  $(".table-container").css("flex-direction", "column");
-}
-
-if ($(window).width() < 1005) {
+$(".header-text--label").hide();
+if ($(window).width() < 1655) {
+  $(".header-text--label").show();
   $(".header").hide();
-  $(".row").css("flex-direction", "column");
+  $(".row").addClass("header-2");
+  $(".row").removeClass("row");
   $(".table-label").show();
-  // $(".same-type-rows").css("flex-direction", "row");
 }

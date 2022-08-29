@@ -83,10 +83,8 @@ input[type="text"]:focus {
   padding: 0 10px !important;
   border-radius: 25px;
   width: max-content;
-  height: 35px;
-  span {
-    font-size: font-size(font-size-regular);
-  }
+  height: 30px;
+  font-size: font-size(font-size-small);
 }
 
 .text-tag-wrapper {

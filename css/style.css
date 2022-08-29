@@ -114,10 +114,8 @@ input[type=text]:focus {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: 35px;
-}
-.tag span {
-  font-size: 16px;
+  height: 30px;
+  font-size: 14px;
 }
 
 .text-tag-wrapper {
@@ -689,18 +687,8 @@ input[type=text],
 }
 .table-container {
   display: flex;
-  border-radius: 4px;
+  flex-direction: column;
   flex-grow: 1;
-}
-
-.table-item {
-  border-radius: 4px;
-}
-
-.row-small {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .table-label {
@@ -716,6 +704,7 @@ input[type=text],
 .header,
 .row {
   display: flex;
+  flex-wrap: wrap;
   font-size: 16px;
   margin-bottom: 2px;
 }
@@ -729,12 +718,12 @@ input[type=text],
 }
 
 .header span {
-  background-color: rgb(241, 229, 244);
+  background-color: #eadaf6;
   margin-bottom: 4px;
 }
 
 .row span {
-  background-color: #fff;
+  background-color: #f5f1f5;
   margin-bottom: 2px;
 }
 
@@ -767,7 +756,7 @@ input[type=text],
 }
 
 .customer {
-  min-width: 140px;
+  flex-grow: 1;
 }
 
 .fin-account {
@@ -814,6 +803,8 @@ input[type=text],
   color: var(--light-color);
   height: 17px;
   letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
 }
 .header-2 .header-long-content {
   min-width: -webkit-fit-content;
@@ -838,11 +829,6 @@ input[type=text],
   text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 900px) {
-  .debit-slider--content {
-    flex-direction: column;
-  }
-}
 .display-none {
   display: none;
 }
