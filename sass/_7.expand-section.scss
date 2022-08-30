@@ -81,6 +81,9 @@
   .fields-section__expand--container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .links-expanded {
+    margin-top: 0;
+  }
 }
 
 // @include media-tablet {
