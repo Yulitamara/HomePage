@@ -31,11 +31,6 @@ $(function () {
 // Expand Section
 $(".links-expanded").hide();
 
-$(".big-expand-btn, .links-unexpand").click(function () {
-  $(".links-unexpand").addClass("links-unexpand-clicked");
-  $(".expand-section").addClass("expand-section-clicked");
-});
-
 // links
 $("#expand-btn-1, #links-unexpand-1").click(function () {
   $("#links-unexpand-1").toggleClass("links-unexpand-focus");
@@ -43,15 +38,6 @@ $("#expand-btn-1, #links-unexpand-1").click(function () {
   $("#expand-btn-1").html() == "close"
     ? $("#expand-btn-1").html("expand_more")
     : $("#expand-btn-1").html("close");
-
-  // if ($(window).width() < 1290) {
-  //   $([document.documentElement, document.body]).animate(
-  //     {
-  //       scrollTop: $("#links-expanded-1").offset().top,
-  //     },
-  //     1000
-  //   );
-  // }
 });
 
 $("#close-links-expaned-1").click(function () {
@@ -120,13 +106,6 @@ $("#expand-btn-4, #links-unexpand-4").click(function () {
   $("#expand-btn-4").html() == "close"
     ? $("#expand-btn-4").html("expand_more")
     : $("#expand-btn-4").html("close");
-
-  // $([document.documentElement, document.body]).animate(
-  //   {
-  //     scrollTop: $("#links-expanded-4").offset().top,
-  //   },
-  //   1000
-  // );
 });
 
 $("#close-links-expaned-4").click(function () {
@@ -135,6 +114,42 @@ $("#close-links-expaned-4").click(function () {
   $("#expand-btn-4").html() == "close"
     ? $("#expand-btn-4").html("expand_more")
     : $("#expand-btn-4").html("close");
+});
+
+// Info
+$("#expand-btn-5, #links-unexpand-5").click(function () {
+  $("#links-unexpand-5").toggleClass("links-unexpand-focus");
+  $("#links-expanded-5").slideToggle();
+
+  $("#expand-btn-5").html() == "close"
+    ? $("#expand-btn-5").html("expand_more")
+    : $("#expand-btn-5").html("close");
+});
+
+$("#close-links-expaned-5").click(function () {
+  $("#links-unexpand-5").toggleClass("links-unexpand-focus");
+  $("#links-expanded-5").slideToggle();
+  $("#expand-btn-5").html() == "close"
+    ? $("#expand-btn-5").html("expand_more")
+    : $("#expand-btn-5").html("close");
+});
+
+// Related sales documents
+$("#expand-btn-6, #links-unexpand-6").click(function () {
+  $("#links-unexpand-6").toggleClass("links-unexpand-focus");
+  $("#links-expanded-6").slideToggle();
+
+  $("#expand-btn-6").html() == "close"
+    ? $("#expand-btn-6").html("expand_more")
+    : $("#expand-btn-6").html("close");
+});
+
+$("#close-links-expaned-6").click(function () {
+  $("#links-unexpand-6").toggleClass("links-unexpand-focus");
+  $("#links-expanded-6").slideToggle();
+  $("#expand-btn-6").html() == "close"
+    ? $("#expand-btn-6").html("expand_more")
+    : $("#expand-btn-6").html("close");
 });
 
 if ($(window).width() < 900) {
@@ -171,7 +186,7 @@ $("#headers-visibilty-btn").click(function () {
 });
 
 $(
-  "#expanded-small-1, #expanded-small-2, #expanded-small-3, #expanded-small-4"
+  "#expanded-small-1, #expanded-small-2, #expanded-small-3, #expanded-small-4, #expanded-small-5, #expanded-small-6"
 ).hide();
 
 if ($(window).width() < 1290) {
@@ -201,6 +216,20 @@ if ($(window).width() < 1290) {
     $("#links-unexpand-4").removeClass("links-unexpand-focus");
     $("#type-header-small-4").hide();
     $("#expanded-small-4").append($("#links-expanded-4")).show("slow");
+  });
+
+  $("#expand-btn-5, #links-unexpand-5").click(function () {
+    $("#links-unexpand-5").slideToggle();
+    $("#links-unexpand-5").removeClass("links-unexpand-focus");
+    $("#type-header-small-5").hide();
+    $("#expanded-small-5").append($("#links-expanded-5")).show("slow");
+  });
+
+  $("#expand-btn-6, #links-unexpand-6").click(function () {
+    $("#links-unexpand-6").slideToggle();
+    $("#links-unexpand-6").removeClass("links-unexpand-focus");
+    $("#type-header-small-6").hide();
+    $("#expanded-small-6").append($("#links-expanded-6")).show("slow");
   });
 }
 
@@ -235,8 +264,20 @@ if ($(window).width() < 1290) {
 }
 
 // Create Section
-$("#create-section-btn").click(function () {
-  $(".expand-section-wrapper").toggle();
-  $(".create-section").toggleClass("display-none");
-  $(this).toggleClass("half-opacity");
+$("#open-create-section").click(function () {
+  $(".expand-section-wrapper").hide();
+  $(".create-section").removeClass("display-none");
+  $(this).hide();
+});
+
+$("#close-create-section").click(function () {
+  $(".expand-section-wrapper").show();
+  $(".create-section").addClass("display-none");
+  $("#open-create-section").show();
+});
+
+$(".create-circle").click(function () {
+  $(this).html() == "check_circle"
+    ? $(this).html("circle")
+    : $(this).html("check_circle");
 });

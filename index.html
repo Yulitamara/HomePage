@@ -210,7 +210,7 @@
                   <span class="header-duration">1:15h</span>
                 </div>
                 <div class="tags">
-                  <span class="tag-create" id="create-section-btn">
+                  <span class="tag-create" id="open-create-section">
                     <span class="material-symbols-outlined">
                       add
                     </span>
@@ -353,15 +353,15 @@
                 <div class="type-header">
                   <div class="title-content">
                     <span class="material-symbols-outlined title-icon"> info </span>
-                    <div class="title-text">Info</div>
+                    <div class="title-text" id="title-text-5">Info</div>
                   </div>
                   <div class="title-content">
-                    <span class="material-symbols-outlined big-expand-btn">
+                    <span class="material-symbols-outlined big-expand-btn" id="expand-btn-5">
                       expand_more
                     </span>
                   </div>
                 </div>
-                <div class="links-unexpand">
+                <div class="links-unexpand" id="links-unexpand-5">
                   <span class="label">Created from </span>
                   <span class="links-unexpand-tag">Invoice 91191 (391173-1)</span>
                   <span class="material-symbols-outlined stop-icon"> stop </span>
@@ -371,21 +371,22 @@
                   <span class="label">Sales profile </span>
                   <span class="links-unexpand-tag">Ceneter</span>
                 </div>
-
+                <div class="links-expanded-small" id="expanded-small-5">
+                </div>
               </div>
               <div class="expand-section-singular">
                 <div class="type-header">
                   <div class="title-content">
                     <span class="material-symbols-outlined title-icon"> category </span>
-                    <div class="title-text">related sales documents</div>
+                    <div class="title-text" id="title-text-6">Related sales doccuments</div>
                   </div>
                   <div class="title-content">
-                    <span class="material-symbols-outlined big-expand-btn">
+                    <span class="material-symbols-outlined big-expand-btn" id="expand-btn-6">
                       expand_more
                     </span>
                   </div>
                 </div>
-                <div class="links-unexpand">
+                <div class="links-unexpand" id="links-unexpand-6">
                   <span class="label">invoice </span>
                   <span class="links-unexpand-tag">6/8/2022</span>
                   <span class="links-unexpand-tag">$3050</span>
@@ -394,50 +395,36 @@
                   <span class="links-unexpand-tag">6/7/2022</span>
                   <span class="links-unexpand-tag">1200</span>
                 </div>
-
+                <div class="links-expanded-small" id="expanded-small-6">
+                </div>
               </div>
-              <div class="expand-section-singular">
+              <div class="writing-area-section">
                 <div class="type-header">
                   <div class="title-content">
                     <span class="material-symbols-outlined title-icon"> short_text </span>
                     <div class="title-text">Opening remarks</div>
                   </div>
-                  <div class="title-content">
-                    <span class="material-symbols-outlined big-expand-btn">
-                      expand_more
-                    </span>
-                  </div>
                 </div>
                 <div class="links-unexpand">
                   <input type="text" placeholder="Type...">
                 </div>
               </div>
-              <div class="expand-section-singular">
+              <div class="writing-area-section">
                 <div class="type-header">
                   <div class="title-content">
                     <span class="material-symbols-outlined title-icon"> short_text </span>
                     <div class="title-text">Notes</div>
                   </div>
-                  <div class="title-content">
-                    <span class="material-symbols-outlined big-expand-btn">
-                      expand_more
-                    </span>
-                  </div>
                 </div>
                 <div class="links-unexpand">
                   <input type="text" placeholder="Type...">
                 </div>
               </div>
-              <div class="expand-section-singular">
+              <div class="writing-area-section">
                 <div class="type-header">
                   <div class="title-content">
                     <span class="material-symbols-outlined title-icon"> short_text </span>
                     <div class="title-text">More notes</div>
-                  </div>
-                  <div class="title-content">
-                    <span class="material-symbols-outlined big-expand-btn">
-                      expand_more
-                    </span>
                   </div>
                 </div>
                 <div class="links-unexpand">
@@ -797,6 +784,79 @@
                   </span>
                 </div>
               </div>
+              <div class="fields-section__expand--container">
+                <!--  *************** Table ******** -->
+                <div class="fields-section__expand">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> attach_money </span>
+                    <div class="title-text">Payments</div>
+                  </div>
+                  <div class="table-container-3">
+                    <div class="header-3">
+                      <span class="total-create">Total</span>
+                      <span class="due">Due</span>
+                      <span class="date">Date</span>
+                      <span class="status">Status</span>
+                    </div>
+                    <div class="row-3-container">
+                      <div class="row-3">
+                        <span class="total-create">
+                          <div class="label-type-small display-none">Total</div>
+                          <div>$3251.82</div>
+                        </span>
+                        <span class="due">
+                          <div class="label-type-small display-none">Due</div>
+                          <div>12d</div>
+                        </span>
+                        <span class="date">
+                          <div class="label-type-small display-none">Date</div>
+                          <div>16/8/13 Th</div>
+                        </span>
+                        <span class="status">
+                          <div class="label-type-small display-none">Status</div>
+                          <div>Ended</div>
+                        </span>
+                      </div>
+                      <div class="row-3">
+                        <span class="total-create">
+                          <div class="label-type-small display-none">Total</div>
+                          <div>$3251.82</div>
+                        </span>
+                        <span class="due">
+                          <div class="label-type-small display-none">Due</div>
+                          <div>12d</div>
+                        </span>
+                        <span class="date">
+                          <div class="label-type-small display-none">Date</div>
+                          <div>16/8/13 Th</div>
+                        </span>
+                        <span class="status">
+                          <div class="label-type-small display-none">Status</div>
+                          <div>Ended</div>
+                        </span>
+                      </div>
+                      <div class="row-3">
+                        <span class="total-create">
+                          <div class="label-type-small display-none">Total</div>
+                          <div>$3251.82</div>
+                        </span>
+                        <span class="due">
+                          <div class="label-type-small display-none">Due</div>
+                          <div>12d</div>
+                        </span>
+                        <span class="date">
+                          <div class="label-type-small display-none">Date</div>
+                          <div>16/8/13 Th</div>
+                        </span>
+                        <span class="status">
+                          <div class="label-type-small display-none">Status</div>
+                          <div>Ended</div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- Debit Plans Expanded -->
             <div class="links-expanded type-debit-plans" id="links-expanded-3">
@@ -1012,9 +1072,6 @@
                   </div>
                   <div class="table-container-3">
                     <div class="header-3">
-                      <span class="material-symbols-outlined circle">
-                        circle
-                      </span>
                       <span class="total-create">Total</span>
                       <span class="due">Due</span>
                       <span class="date">Date</span>
@@ -1022,9 +1079,6 @@
                     </div>
                     <div class="row-3-container">
                       <div class="row-3">
-                        <span class="material-symbols-outlined circle">
-                          circle
-                        </span>
                         <span class="total-create">
                           <div class="label-type-small display-none">Total</div>
                           <div>$3251.82</div>
@@ -1043,9 +1097,6 @@
                         </span>
                       </div>
                       <div class="row-3">
-                        <span class="material-symbols-outlined circle">
-                          circle
-                        </span>
                         <span class="total-create">
                           <div class="label-type-small display-none">Total</div>
                           <div>$3251.82</div>
@@ -1064,9 +1115,6 @@
                         </span>
                       </div>
                       <div class="row-3">
-                        <span class="material-symbols-outlined circle">
-                          circle
-                        </span>
                         <span class="total-create">
                           <div class="label-type-small display-none">Total</div>
                           <div>$3251.82</div>
@@ -1222,6 +1270,301 @@
                 </div>
               </div>
             </div>
+            <!-- Info Expanded -->
+            <div class="links-expanded type-info" id="links-expanded-5">
+              <div class="type-header" id="type-header-small-5">
+                <div class="title-content">
+                  <span class="material-symbols-outlined title-icon"> info </span>
+                  <div class="title-text" id="title-text-1">Info</div>
+                </div>
+                <div class="title-content">
+                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-5">
+                    close
+                  </span>
+                </div>
+              </div>
+              <div class="fields-section__expand--container">
+                <div class="fields-section__expand">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> attach_money </span>
+                    <div class="title-text">Payments</div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> Type Of Receipt </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="Bank Tranfer" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> Bank Account </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="Type..." />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> Total </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="$ 9,775.46" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> Start Date </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="03/08/2021" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  *************** Period Settings ******** -->
+                <div class="fields-section__expand">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> repeat </span>
+                    <div class="title-text">Preiod Settings</div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> End Date </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="03/10/2021" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> Period </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="Every 1 Month" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> # Of Payments </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="3" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> Payment Amount </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="$3251.82" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FORM - with label text, without icon -->
+                  <div class="field-container field-container-responsive">
+                    <div class="label-container flex-1">
+                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                      <label class="label-text light-color">
+                        <nobr> # Of Repetitions </nobr>
+                      </label>
+                      <!-- <div class="rquired">*</div> -->
+                    </div>
+                    <div class="input-container">
+                      <input type="text" class="input" placeholder="1" />
+                      <div class="input-type no-background">
+                        <!-- <div class="input-type-text">Personal</div> -->
+                        <span class="material-symbols-outlined collapse-icon input-icon">
+                          expand_more
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Related sales documents -->
+            <div class="links-expanded type" id="links-expanded-6">
+              <div class="type-header" id="type-header-small-6">
+                <div class="title-content">
+                  <span class="material-symbols-outlined title-icon"> link </span>
+                  <div class="title-text" id="title-text-1">Stages</div>
+                </div>
+                <div class="title-content">
+                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-6">
+                    close
+                  </span>
+                </div>
+              </div>
+              <div class="fields-section__expand--container">
+                <!--  *************** Table ******** -->
+                <div class="fields-section__expand">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> attach_money </span>
+                    <div class="title-text">Payments</div>
+                  </div>
+                  <div class="table-container-3">
+                    <div class="header-3">
+                      <span class="total-create">Total</span>
+                      <span class="due">Due</span>
+                      <span class="date">Date</span>
+                      <span class="status">Status</span>
+                    </div>
+                    <div class="row-3-container">
+                      <div class="row-3">
+                        <span class="total-create">
+                          <div class="label-type-small display-none">Total</div>
+                          <div>$3251.82</div>
+                        </span>
+                        <span class="due">
+                          <div class="label-type-small display-none">Due</div>
+                          <div>12d</div>
+                        </span>
+                        <span class="date">
+                          <div class="label-type-small display-none">Date</div>
+                          <div>16/8/13 Th</div>
+                        </span>
+                        <span class="status">
+                          <div class="label-type-small display-none">Status</div>
+                          <div>Ended</div>
+                        </span>
+                      </div>
+                      <div class="row-3">
+                        <span class="total-create">
+                          <div class="label-type-small display-none">Total</div>
+                          <div>$3251.82</div>
+                        </span>
+                        <span class="due">
+                          <div class="label-type-small display-none">Due</div>
+                          <div>12d</div>
+                        </span>
+                        <span class="date">
+                          <div class="label-type-small display-none">Date</div>
+                          <div>16/8/13 Th</div>
+                        </span>
+                        <span class="status">
+                          <div class="label-type-small display-none">Status</div>
+                          <div>Ended</div>
+                        </span>
+                      </div>
+                      <div class="row-3">
+                        <span class="total-create">
+                          <div class="label-type-small display-none">Total</div>
+                          <div>$3251.82</div>
+                        </span>
+                        <span class="due">
+                          <div class="label-type-small display-none">Due</div>
+                          <div>12d</div>
+                        </span>
+                        <span class="date">
+                          <div class="label-type-small display-none">Date</div>
+                          <div>16/8/13 Th</div>
+                        </span>
+                        <span class="status">
+                          <div class="label-type-small display-none">Status</div>
+                          <div>Ended</div>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Expand Section End -->
 
@@ -1229,7 +1572,7 @@
           <div class="create-section display-none">
             <div class="create-header">
               <span class="create-title-text">Create recites/invoice:</span>
-              <span class="material-symbols-outlined">
+              <span class="material-symbols-outlined close-btn" id="close-create-section">
                 close
               </span>
             </div>
@@ -1262,7 +1605,7 @@
               </div>
               <div class="table-container-3">
                 <div class="header-3">
-                  <span class="material-symbols-outlined circle">
+                  <span class="material-symbols-outlined circle create-circle">
                     circle
                   </span>
                   <span class="total-create">Total</span>
@@ -1270,9 +1613,9 @@
                   <span class="date">Date</span>
                 </div>
                 <div class="row-3">
-                  <span class="material-symbols-outlined circle">
+                  <div class="material-symbols-outlined circle create-circle">
                     circle
-                  </span>
+                  </div>
                   <span class="total-create">
                     <div class="label-type-small display-none">Total</div>
                     <div>$10,000,000</div>
@@ -1299,7 +1642,7 @@
               </div>
               <div class="table-container-3">
                 <div class="header-3">
-                  <span class="material-symbols-outlined circle">
+                  <span class="material-symbols-outlined circle create-circle">
                     circle
                   </span>
                   <span class="sku">SKU</span>
@@ -1309,9 +1652,9 @@
                 </div>
                 <div class="row-3-container">
                   <div class="row-3">
-                    <span class="material-symbols-outlined circle">
+                    <div class="material-symbols-outlined circle create-circle">
                       circle
-                    </span>
+                    </div>
                     <span class="sku">
                       <div class="label-type-small display-none">SKU</div>
                       <div>30</div>
@@ -1330,9 +1673,9 @@
                     </span>
                   </div>
                   <div class="row-3">
-                    <span class="material-symbols-outlined circle">
+                    <div class="material-symbols-outlined circle create-circle">
                       circle
-                    </span>
+                    </div>
                     <span class="sku">
                       <div class="label-type-small display-none">SKU</div>
                       <div>138-A</div>
@@ -1353,13 +1696,23 @@
                 </div>
               </div>
             </div>
+
+            <!-- btns -->
+            <div class="create-btns-container">
+              <div class="tags">
+                <span class="tag-create">
+                  <span>Select</span>
+                </span>
+                <div class="tag-status">
+                  <span>Cancel</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Create Section End -->
       </div>
       <!-- Cards Content End -->
-
-
       <div class="cards-content--grid-display display-none">
         <div class="table-container table-container-1">
           <div class="header">

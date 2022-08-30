@@ -4,9 +4,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   align-items: center;
-  // &-singular {
-  //   height: 70px;
-  // }
+  &-singular {
+    cursor: pointer;
+  }
 }
 .type-header {
   display: flex;
@@ -25,7 +25,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
 
   .links-unexpand-tag {
     margin-left: 5px;

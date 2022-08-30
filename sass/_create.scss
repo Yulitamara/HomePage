@@ -19,6 +19,9 @@
     background-color: #fff;
     padding: 0.5rem;
   }
+  .create-btns-container {
+    margin-top: 20px;
+  }
 }
 
 @include media-medium {
@@ -32,4 +35,7 @@
       font-size: font-size(font-size-regular);
     }
   }
+}
+.create-circle {
+  cursor: pointer;
 }

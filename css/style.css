@@ -91,6 +91,10 @@ input[type=text]:focus {
   cursor: pointer;
 }
 
+.close-btn {
+  cursor: pointer;
+}
+
 .big-expand-btn,
 .big-close-btn {
   font-variation-settings: "wght" 600;
@@ -172,7 +176,7 @@ input[type=text]:focus {
   justify-content: center;
   border-radius: 40px;
   cursor: pointer;
-  width: 35px;
+  padding: 10px;
   height: 30px;
 }
 
@@ -513,6 +517,9 @@ input[type=text],
   gap: 10px;
   align-items: center;
 }
+.expand-section-singular {
+  cursor: pointer;
+}
 
 .type-header {
   display: flex;
@@ -531,7 +538,6 @@ input[type=text],
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  cursor: pointer;
 }
 .links-unexpand .links-unexpand-tag {
   margin-left: 5px;
@@ -849,13 +855,17 @@ input[type=text],
   align-items: center;
   font-size: 16px;
   margin: 3px;
-  padding: 2px;
+  padding: 0 5px;
   gap: 6px;
 }
 .header-3 span,
 .row-3 span {
   color: var(--dark-color);
   font-weight: 500;
+}
+.header-3 .circle,
+.row-3 .circle {
+  font-size: 22px;
 }
 
 .row-3 {
@@ -898,7 +908,7 @@ input[type=text],
     background-color: #fff !important;
   }
   .row-3 .circle {
-    display: none;
+    padding: 0 5px;
   }
   .row-3-container {
     display: flex;
@@ -1136,6 +1146,9 @@ header .header-content .header-details .header-type .type {
   background-color: #fff;
   padding: 0.5rem;
 }
+.create-section .create-btns-container {
+  margin-top: 20px;
+}
 
 @media screen and (max-width: 600px) {
   .create-section .create-header span {
@@ -1144,4 +1157,7 @@ header .header-content .header-details .header-type .type {
   .create-section .create-header-small {
     font-size: 16px;
   }
+}
+.create-circle {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -167,12 +167,15 @@
   // flex-wrap: wrap;
   font-size: font-size(font-size-regular);
   margin: 3px;
-  padding: 2px;
+  padding: 0 5px;
   gap: 6px;
 
   span {
     color: var(--dark-color);
     font-weight: font-weight(font-weight-medium);
+  }
+  .circle {
+    font-size: font-size(font-size-medium);
   }
 }
 
@@ -216,9 +219,11 @@
       color: var(--dark-color);
       font-weight: font-weight(font-weight-medium);
       background-color: #fff !important;
+      // height: 57px;
     }
     .circle {
-      display: none;
+      padding: 0 5px;
+      font-weight: font-weight(font-weight-large);
     }
   }
 
