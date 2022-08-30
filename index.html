@@ -224,6 +224,9 @@
                       expand_more
                     </span>
                   </div>
+                  <span class="material-symbols-outlined edit-btn">
+                    edit
+                  </span>
                 </div>
               </div>
               <div class="header-details">
@@ -268,7 +271,7 @@
               <div class="expand-section-singular">
                 <div class="type-header">
                   <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> link </span>
+                    <span class="material-symbols-outlined title-icon"> account_balance_wallet </span>
                     <div class="title-text" id="title-text-2">Stages</div>
                   </div>
                   <div class="title-content">
@@ -433,38 +436,220 @@
               </div>
             </div>
             <!-- Links Expended -->
-            <div class="links-expanded type-links" id="links-expanded-1">
-              <div class="type-header" id="type-header-small">
-                <div class="title-content">
-                  <span class="material-symbols-outlined title-icon"> link </span>
-                  <div class="title-text" id="title-text-1">links</div>
-                </div>
-                <div class="title-content">
-                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-1">
-                    close
-                  </span>
-                </div>
-              </div>
-              <div class="fields-section__expand--container">
-                <div class="fields-section__expand">
+            <div class="links-expanded-container">
+              <div class="links-expanded type-links" id="links-expanded-1">
+                <div class="type-header" id="type-header-small">
                   <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> domain </span>
-                    <div class="title-text">Organization</div>
+                    <span class="material-symbols-outlined title-icon"> link </span>
+                    <div class="title-text" id="title-text-1">links</div>
                   </div>
-                  <!-- FORM - only input and input type -->
-                  <div class="field-container">
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="Figma" />
-                      <div class="input-type">
-                        <div class="input-type-text">Customer</div>
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
+                  <div class="title-content">
+                    <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-1">
+                      close
+                    </span>
+                  </div>
+                </div>
+                <div class="fields-section__expand--container">
+                  <div class="fields-section__expand">
+                    <div class="title-content">
+                      <span class="material-symbols-outlined title-icon"> domain </span>
+                      <div class="title-text">Organization</div>
+                    </div>
+                    <!-- FORM - only input and input type -->
+                    <div class="field-container">
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="Figma" />
+                        <div class="input-type">
+                          <div class="input-type-text">Customer</div>
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - only icon -->
+                    <div class="phone-mail-container">
+                      <div class="field-container">
+                        <div class="label-container">
+                          <span class="material-symbols-outlined label-icon"> call </span>
+                          <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                          <!-- <div class="rquired">*</div> -->
+                        </div>
+
+                        <div class="input-container__expand">
+                          <input type="text" class="input" placeholder="054-4582987" />
+                          <!-- <div class="input-type">
+                                                              <div class="input-type-text">Personal</div>
+                                                              <span
+                                                                class="material-symbols-outlined collapse-icon input-icon"
+                                                              >
+                                                                expand_more
+                                                              </span>
+                                                            </div> -->
+                        </div>
+                      </div>
+                      <!-- FORM - only icon -->
+                      <div class="field-container">
+                        <div class="label-container">
+                          <span class="material-symbols-outlined label-icon">
+                            alternate_email
+                          </span>
+                          <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                          <!-- <div class="rquired">*</div> -->
+                        </div>
+
+                        <div class="input-container__expand">
+                          <input type="text" class="input" placeholder="inv3@figma.com" />
+                          <!-- <div class="input-type">
+                                                              <div class="input-type-text">Personal</div>
+                                                              <span
+                                                                class="material-symbols-outlined collapse-icon input-icon"
+                                                              >
+                                                                expand_more
+                                                              </span>
+                                                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Form - Vertical -->
+                    <div class="field-container flex-column">
+                      <div class="label-container height-small">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text small-font">
+                          <nobr> Account </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container height-big">
+                        <input type="text" class="input" placeholder="Figma Inc, 2322124-558" />
+                        <!-- <div class="input-type">
+                                  <div class="input-type-text">Personal</div>
+                                  <span class="material-symbols-outlined collapse-icon input-icon">
+                                    expand_more
+                                  </span>
+                                </div> -->
+                      </div>
+                    </div>
+                    <!-- FORM - only icon -->
+                    <div class="field-container">
+                      <div class="label-container">
+                        <span class="material-symbols-outlined label-icon"> account_balance </span>
+                        <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="6391 Elgin St. Celina, Delaware 10299" />
+                        <!-- <div class="input-type">
+                                                                                    <div class="input-type-text">Personal</div>
+                                                                                    <span
+                                                                                      class="material-symbols-outlined collapse-icon input-icon"
+                                                                                    >
+                                                                                      expand_more
+                                                                                    </span>
+                                                                                  </div> -->
+                      </div>
+                    </div>
+                    <!-- FORM - only icon -->
+                    <div class="field-container">
+                      <div class="label-container">
+                        <span class="material-symbols-outlined label-icon"> loyalty </span>
+                        <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="3517 W. Gray St. Utica, Pennsylvania 57867" />
+                        <!-- <div class="input-type">
+                                                                                                  <div class="input-type-text">Personal</div>
+                                                                                                  <span
+                                                                                                    class="material-symbols-outlined collapse-icon input-icon"
+                                                                                                  >
+                                                                                                    expand_more
+                                                                                                  </span>
+                                                                                                </div> -->
                       </div>
                     </div>
                   </div>
-                  <!-- FORM - only icon -->
-                  <div class="phone-mail-container">
+                  <div class="fields-section__expand">
+                    <div class="title-content">
+                      <span class="material-symbols-outlined title-icon"> person </span>
+                      <div class="title-text">Person</div>
+                    </div>
+                    <!-- FORM - only input and input type -->
+                    <div class="field-container">
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="Brooklyn Simmons" />
+                        <div class="input-type">
+                          <div class="input-type-text">Owner</div>
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - only icon -->
+                    <div class="field-container">
+                      <div class="label-container">
+                        <span class="material-symbols-outlined label-icon"> call </span>
+                        <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="054-4582333" />
+                        <!-- <div class="input-type">
+                                                              <div class="input-type-text">Personal</div>
+                                                              <span
+                                                                class="material-symbols-outlined collapse-icon input-icon"
+                                                              >
+                                                                expand_more
+                                                              </span>
+                                                            </div> -->
+                      </div>
+                    </div>
+                    <!-- FORM - only icon -->
+                    <div class="field-container">
+                      <div class="label-container">
+                        <span class="material-symbols-outlined label-icon">
+                          alternate_email
+                        </span>
+                        <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="Brooklyn.s@skyz.com" />
+                        <!-- <div class="input-type">
+                                                              <div class="input-type-text">Personal</div>
+                                                              <span
+                                                                class="material-symbols-outlined collapse-icon input-icon"
+                                                              >
+                                                                expand_more
+                                                              </span>
+                                                            </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fields-section__expand">
+                    <div class="title-content">
+                      <span class="material-symbols-outlined title-icon"> person </span>
+                      <div class="title-text">Person</div>
+                    </div>
+                    <!-- FORM - only input and input type -->
+                    <div class="field-container">
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="Jacob Johns" />
+                        <div class="input-type">
+                          <div class="input-type-text">To</div>
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - only icon -->
                     <div class="field-container">
                       <div class="label-container">
                         <span class="material-symbols-outlined label-icon"> call </span>
@@ -495,7 +680,7 @@
                       </div>
 
                       <div class="input-container__expand">
-                        <input type="text" class="input" placeholder="inv3@figma.com" />
+                        <input type="text" class="input" placeholder="jacob.j@figma.com" />
                         <!-- <div class="input-type">
                                                               <div class="input-type-text">Personal</div>
                                                               <span
@@ -507,215 +692,34 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Form - Vertical -->
-                  <div class="field-container flex-column">
-                    <div class="label-container height-small">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text small-font">
-                        <nobr> Account </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
+                  <div class="fields-section__expand">
+                    <div class="title-content">
+                      <span class="material-symbols-outlined title-icon"> domain </span>
+                      <div class="title-text">Organization</div>
                     </div>
-
-                    <div class="input-container height-big">
-                      <input type="text" class="input" placeholder="Figma Inc, 2322124-558" />
-                      <!-- <div class="input-type">
-                                  <div class="input-type-text">Personal</div>
-                                  <span class="material-symbols-outlined collapse-icon input-icon">
-                                    expand_more
-                                  </span>
-                                </div> -->
-                    </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon"> account_balance </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="6391 Elgin St. Celina, Delaware 10299" />
-                      <!-- <div class="input-type">
-                                                                                    <div class="input-type-text">Personal</div>
-                                                                                    <span
-                                                                                      class="material-symbols-outlined collapse-icon input-icon"
-                                                                                    >
-                                                                                      expand_more
-                                                                                    </span>
-                                                                                  </div> -->
-                    </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon"> loyalty </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="3517 W. Gray St. Utica, Pennsylvania 57867" />
-                      <!-- <div class="input-type">
-                                                                                                  <div class="input-type-text">Personal</div>
-                                                                                                  <span
-                                                                                                    class="material-symbols-outlined collapse-icon input-icon"
-                                                                                                  >
-                                                                                                    expand_more
-                                                                                                  </span>
-                                                                                                </div> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> person </span>
-                    <div class="title-text">Person</div>
-                  </div>
-                  <!-- FORM - only input and input type -->
-                  <div class="field-container">
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="Brooklyn Simmons" />
-                      <div class="input-type">
-                        <div class="input-type-text">Owner</div>
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
+                    <!-- FORM - only input and input type -->
+                    <div class="field-container">
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="Slyz Inc" />
+                        <div class="input-type">
+                          <div class="input-type-text">Supplier</div>
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon"> call </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="054-4582333" />
-                      <!-- <div class="input-type">
-                                                              <div class="input-type-text">Personal</div>
-                                                              <span
-                                                                class="material-symbols-outlined collapse-icon input-icon"
-                                                              >
-                                                                expand_more
-                                                              </span>
-                                                            </div> -->
-                    </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon">
-                        alternate_email
-                      </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="Brooklyn.s@skyz.com" />
-                      <!-- <div class="input-type">
-                                                              <div class="input-type-text">Personal</div>
-                                                              <span
-                                                                class="material-symbols-outlined collapse-icon input-icon"
-                                                              >
-                                                                expand_more
-                                                              </span>
-                                                            </div> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> person </span>
-                    <div class="title-text">Person</div>
-                  </div>
-                  <!-- FORM - only input and input type -->
-                  <div class="field-container">
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="Jacob Johns" />
-                      <div class="input-type">
-                        <div class="input-type-text">To</div>
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
+                    <!-- FORM - only icon -->
+                    <div class="field-container">
+                      <div class="label-container">
+                        <span class="material-symbols-outlined label-icon"> call </span>
+                        <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                        <!-- <div class="rquired">*</div> -->
                       </div>
-                    </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon"> call </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
 
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="054-4582987" />
-                      <!-- <div class="input-type">
-                                                              <div class="input-type-text">Personal</div>
-                                                              <span
-                                                                class="material-symbols-outlined collapse-icon input-icon"
-                                                              >
-                                                                expand_more
-                                                              </span>
-                                                            </div> -->
-                    </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon">
-                        alternate_email
-                      </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="jacob.j@figma.com" />
-                      <!-- <div class="input-type">
-                                                              <div class="input-type-text">Personal</div>
-                                                              <span
-                                                                class="material-symbols-outlined collapse-icon input-icon"
-                                                              >
-                                                                expand_more
-                                                              </span>
-                                                            </div> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> domain </span>
-                    <div class="title-text">Organization</div>
-                  </div>
-                  <!-- FORM - only input and input type -->
-                  <div class="field-container">
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="Slyz Inc" />
-                      <div class="input-type">
-                        <div class="input-type-text">Supplier</div>
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon"> call </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="(406) 555-0120" />
-                      <!-- <div class="input-type">
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="(406) 555-0120" />
+                        <!-- <div class="input-type">
                                                                         <div class="input-type-text">Personal</div>
                                                                         <span
                                                                           class="material-symbols-outlined collapse-icon input-icon"
@@ -723,21 +727,21 @@
                                                                           expand_more
                                                                         </span>
                                                                       </div> -->
+                      </div>
                     </div>
-                  </div>
-                  <!-- FORM - only icon -->
-                  <div class="field-container">
-                    <div class="label-container">
-                      <span class="material-symbols-outlined label-icon">
-                        alternate_email
-                      </span>
-                      <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
+                    <!-- FORM - only icon -->
+                    <div class="field-container">
+                      <div class="label-container">
+                        <span class="material-symbols-outlined label-icon">
+                          alternate_email
+                        </span>
+                        <!-- <label class="label-text"> <nobr> Type of receipt </nobr> </label> -->
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
 
-                    <div class="input-container__expand">
-                      <input type="text" class="input" placeholder="inv3@figma.com" />
-                      <!-- <div class="input-type">
+                      <div class="input-container__expand">
+                        <input type="text" class="input" placeholder="inv3@figma.com" />
+                        <!-- <div class="input-type">
                                                                         <div class="input-type-text">Personal</div>
                                                                         <span
                                                                           class="material-symbols-outlined collapse-icon input-icon"
@@ -745,826 +749,684 @@
                                                                           expand_more
                                                                         </span>
                                                                       </div> -->
+                      </div>
                     </div>
-                  </div>
-                  <!-- Form - Vertical -->
-                  <div class="field-container flex-column">
-                    <div class="label-container height-small">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text small-font">
-                        <nobr> Account </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
+                    <!-- Form - Vertical -->
+                    <div class="field-container flex-column">
+                      <div class="label-container height-small">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text small-font">
+                          <nobr> Account </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
 
-                    <div class="input-container height-big">
-                      <input type="text" class="input" placeholder="Skyz, 512275983" />
-                      <!-- <div class="input-type">
+                      <div class="input-container height-big">
+                        <input type="text" class="input" placeholder="Skyz, 512275983" />
+                        <!-- <div class="input-type">
                                             <div class="input-type-text">Personal</div>
                                             <span class="material-symbols-outlined collapse-icon input-icon">
                                               expand_more
                                             </span>
                                           </div> -->
+                      </div>
                     </div>
-                  </div>
 
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Stages Expanded -->
-            <div class="links-expanded type-stages" id="links-expanded-2">
-              <div class="type-header" id="type-header-small-2">
-                <div class="title-content">
-                  <span class="material-symbols-outlined title-icon"> link </span>
-                  <div class="title-text" id="title-text-1">Stages</div>
-                </div>
-                <div class="title-content">
-                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-2">
-                    close
-                  </span>
-                </div>
-              </div>
-              <div class="fields-section__expand--container">
-                <!--  *************** Table ******** -->
-                <div class="fields-section__expand">
+              <!-- Stages Expanded -->
+              <div class="links-expanded type-stages" id="links-expanded-2">
+                <div class="type-header" id="type-header-small-2">
                   <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> attach_money </span>
-                    <div class="title-text">Payments</div>
+                    <span class="material-symbols-outlined title-icon"> account_balance_wallet </span>
+                    <div class="title-text" id="title-text-1">Stages</div>
                   </div>
-                  <div class="table-container-3">
-                    <div class="header-3">
-                      <span class="total-create">Total</span>
-                      <span class="due">Due</span>
-                      <span class="date">Date</span>
-                      <span class="status">Status</span>
-                    </div>
-                    <div class="row-3-container">
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Debit Plans Expanded -->
-            <div class="links-expanded type-debit-plans" id="links-expanded-3">
-              <div class="type-header" id="type-header-small-3">
-                <div class="title-content">
-                  <span class="material-symbols-outlined title-icon"> price_change </span>
-                  <div class="title-text" id="title-text-1">Debit Plans</div>
-                </div>
-                <div class="title-content">
-                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-3">
-                    close
-                  </span>
-                </div>
-              </div>
-              <div class="fields-section__expand--container">
-                <div class="fields-section__expand">
                   <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> attach_money </span>
-                    <div class="title-text">Payments</div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Type Of Receipt </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="Bank Tranfer" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Bank Account </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="Type..." />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Total </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="$ 9,775.46" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Start Date </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="03/08/2021" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  *************** Period Settings ******** -->
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> repeat </span>
-                    <div class="title-text">Preiod Settings</div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> End Date </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="03/10/2021" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Period </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="Every 1 Month" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> # Of Payments </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="3" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Payment Amount </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="$3251.82" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> # Of Repetitions </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="1" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  *************** Table ******** -->
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> attach_money </span>
-                    <div class="title-text">Payments</div>
-                  </div>
-                  <div class="table-container-3">
-                    <div class="header-3">
-                      <span class="total-create">Total</span>
-                      <span class="due">Due</span>
-                      <span class="date">Date</span>
-                      <span class="status">Status</span>
-                    </div>
-                    <div class="row-3-container">
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Related Expanded -->
-            <div class="links-expanded type-related" id="links-expanded-4">
-              <div class="type-header" id="type-header-small-4">
-                <div class="title-content">
-                  <span class="material-symbols-outlined title-icon"> category </span>
-                  <div class="title-text" id="title-text-1">Related</div>
-                  <span class="material-symbols-outlined visibility-icon" id="headers-visibilty-btn">
-                    visibility
-                  </span>
-                </div>
-                <div class="title-content">
-                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-4">
-                    close
-                  </span>
-                </div>
-              </div>
-              <div class="table-container">
-                <div class="header-2">
-                  <span class="header-text category draggable" draggable="true">
-                    <span class="label-type-small">Category</span>
-                    <span class="header-text--name red-text">Meeting</span>
-                  </span>
-                  <span class="header-text status draggable" draggable="true">
-                    <span class="label-type-small">Status</span>
-                    <span class="tag tag-grey">
-                      <div class="material-symbols-outlined circle">
-                        circle
-                      </div>
-                      <div class="header-text--name">Planned</div>
+                    <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-2">
+                      close
                     </span>
-                  </span>
-                  <span class="header-text external draggable" draggable="true">
-                    <span class="label-type-small">External</span>
-                    <span class="header-text--name">Jacob Johns, FIgma Inc</span>
-                  </span>
-                  <span class="header-text internal draggable" draggable="true">
-                    <span class="label-type-small">Internal</span>
-                    <span class="header-text--name">Dian.K</span>
-                  </span>
-                  <span class="header-text date draggable" draggable="true">
-                    <span class="label-type-small">Date</span>
-                    <span class="header-text--name">3/08/2022 Tu</span>
-                  </span>
-                  <span class="header-long-content">
-                    <h4 class="title">ORDER #883969670 - Your TrustLogo is ready!</h4>
-                    <p class="para">Despite years of fractured relations during the era of former US president Donald
-                      Trump and
-                      the Covid-19
-                      pandemic, the
-                      trans-Atlantic alliance has managed to pull together and reach agreements on financial support and
-                      the
-                      donation of
-                      weapons to Kyiv, agreements to stop using</p>
-                  </span>
+                  </div>
+                </div>
+                <div class="fields-section__expand--container">
+                  <!--  *************** Table ******** -->
+                  <div class="fields-section__expand">
+                    <div class="table-container-3">
+                      <div class="header-3">
+                        <span class="stage">Stage</span>
+                        <span class="due">Due</span>
+                        <span class="date">Date</span>
+                      </div>
+                      <div class="row-3-container">
+                        <div class="row-3">
+                          <span class="stage">
+                            <div class="label-type-small display-none">Stage</div>
+                            <div>4</div>
+                          </span>
+                          <span class="due">
+                            <div class="label-type-small display-none">Due</div>
+                            <div>12d</div>
+                          </span>
+                          <span class="date">
+                            <div class="label-type-small display-none">Date</div>
+                            <div>16/8/13 Th</div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="table-container">
-                <div class="header-2">
-                  <span class="header-text category draggable" draggable="true">
-                    <span class="label-type-small">Category</span>
-                    <span class="header-text--name red-text">Call</span>
-                  </span>
-                  <span class="header-text status draggable" draggable="true">
-                    <span class="label-type-small">Status</span>
-                    <span class="tag tag-green">
-                      <div class="material-symbols-outlined circle">
-                        circle
-                      </div>
-                      <div class="header-text--name">On going</div>
+              <!-- Debit Plans Expanded -->
+              <div class="links-expanded type-debit-plans" id="links-expanded-3">
+                <div class="type-header" id="type-header-small-3">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> price_change </span>
+                    <div class="title-text" id="title-text-1">Debit Plans</div>
+                  </div>
+                  <div class="title-content">
+                    <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-3">
+                      close
                     </span>
-                  </span>
-                  <span class="header-text external draggable" draggable="true">
-                    <span class="label-type-small">External</span>
-                    <span class="header-text--name">Jacob Johns, FIgma Inc</span>
-                  </span>
-                  <span class="header-text internal draggable" draggable="true">
-                    <span class="label-type-small">Internal</span>
-                    <span class="header-text--name">Dian.K</span>
-                  </span>
-                  <span class="header-text date draggable" draggable="true">
-                    <span class="label-type-small">Date</span>
-                    <span class="header-text--name">3/08/2022 Mo</span>
-                  </span>
-                  <span class="header-long-content">
-                    <h4 class="title">A grim winter will test Europe</h4>
-                    <!-- <p class="para"></p> -->
-                  </span>
+                  </div>
                 </div>
-
-              </div>
-              <div class="table-container">
-                <div class="header-2">
-                  <span class="header-text category draggable" draggable="true">
-                    <span class="label-type-small">Category</span>
-                    <span class="header-text--name red-text">Debit Order</span>
-                  </span>
-                  <span class="header-text status draggable" draggable="true">
-                    <span class="label-type-small">Status</span>
-                    <span class="tag tag-green">
-                      <div class="material-symbols-outlined circle">
-                        circle
+                <div class="fields-section__expand--container">
+                  <div class="fields-section__expand">
+                    <div class="title-content">
+                      <span class="material-symbols-outlined title-icon"> attach_money </span>
+                      <div class="title-text">Payments</div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Type Of Receipt </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
                       </div>
-                      <div class="header-text--name">On going</div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="Bank Tranfer" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Bank Account </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="Type..." />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Total </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="$ 9,775.46" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Start Date </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="03/08/2021" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  *************** Period Settings ******** -->
+                  <div class="fields-section__expand">
+                    <div class="title-content">
+                      <span class="material-symbols-outlined title-icon"> repeat </span>
+                      <div class="title-text">Preiod Settings</div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> End Date </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="03/10/2021" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Period </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="Every 1 Month" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> # Of Payments </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="3" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Payment Amount </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="$3251.82" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> # Of Repetitions </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="1" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  *************** Table ******** -->
+                  <div class="fields-section__expand">
+                    <div class="title-content">
+                      <span class="material-symbols-outlined title-icon"> attach_money </span>
+                      <div class="title-text">Payments</div>
+                    </div>
+                    <div class="table-container-3">
+                      <div class="header-3">
+                        <span class="total-create">Total</span>
+                        <span class="due">Due</span>
+                        <span class="date">Date</span>
+                        <span class="status">Status</span>
+                      </div>
+                      <div class="row-3-container">
+                        <div class="row-3">
+                          <span class="total-create">
+                            <div class="label-type-small display-none">Total</div>
+                            <div>$3251.82</div>
+                          </span>
+                          <span class="due">
+                            <div class="label-type-small display-none">Due</div>
+                            <div>12d</div>
+                          </span>
+                          <span class="date">
+                            <div class="label-type-small display-none">Date</div>
+                            <div>16/8/13 Th</div>
+                          </span>
+                          <span class="status">
+                            <div class="label-type-small display-none">Status</div>
+                            <div>Ended</div>
+                          </span>
+                        </div>
+                        <div class="row-3">
+                          <span class="total-create">
+                            <div class="label-type-small display-none">Total</div>
+                            <div>$3251.82</div>
+                          </span>
+                          <span class="due">
+                            <div class="label-type-small display-none">Due</div>
+                            <div>12d</div>
+                          </span>
+                          <span class="date">
+                            <div class="label-type-small display-none">Date</div>
+                            <div>16/8/13 Th</div>
+                          </span>
+                          <span class="status">
+                            <div class="label-type-small display-none">Status</div>
+                            <div>Ended</div>
+                          </span>
+                        </div>
+                        <div class="row-3">
+                          <span class="total-create">
+                            <div class="label-type-small display-none">Total</div>
+                            <div>$3251.82</div>
+                          </span>
+                          <span class="due">
+                            <div class="label-type-small display-none">Due</div>
+                            <div>12d</div>
+                          </span>
+                          <span class="date">
+                            <div class="label-type-small display-none">Date</div>
+                            <div>16/8/13 Th</div>
+                          </span>
+                          <span class="status">
+                            <div class="label-type-small display-none">Status</div>
+                            <div>Ended</div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Related Expanded -->
+              <div class="links-expanded type-related" id="links-expanded-4">
+                <div class="type-header" id="type-header-small-4">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> category </span>
+                    <div class="title-text" id="title-text-1">Related</div>
+                    <span class="material-symbols-outlined visibility-icon" id="headers-visibilty-btn">
+                      visibility
                     </span>
-                  </span>
-                  <span class="header-text external draggable" draggable="true">
-                    <span class="label-type-small">External</span>
-                    <span class="header-text--name">Jacob Johns, FIgma Inc</span>
-                  </span>
-                  <span class="header-text internal draggable" draggable="true">
-                    <span class="label-type-small">Internal</span>
-                    <span class="header-text--name">Dian.K</span>
-                  </span>
-                  <span class="header-text date draggable" draggable="true">
-                    <span class="label-type-small">Date</span>
-                    <span class="header-text--name">3/08/2022 Mo</span>
-                  </span>
-                  <span class="header-text total draggable" draggable="true">
-                    <span class="label-type-small">Total</span>
-                    <span class="header-text--name">$9,775.46</span>
-                  </span>
-                  <span class="header-text payment draggable" draggable="true">
-                    <span class="label-type-small">Next Payment</span>
-                    <span class="header-text--name">$9,775.46</span>
-                  </span>
-                  <span class="header-text payment draggable" draggable="true">
-                    <span class="label-type-small">Current Payment</span>
-                    <span class="header-text--name">$3251.82</span>
-                  </span>
+                  </div>
+                  <div class="title-content">
+                    <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-4">
+                      close
+                    </span>
+                  </div>
+                </div>
+                <div class="table-container">
+                  <div class="header-2">
+                    <span class="header-text category draggable" draggable="true">
+                      <span class="label-type-small">Category</span>
+                      <span class="header-text--name red-text">Meeting</span>
+                    </span>
+                    <span class="header-text status draggable" draggable="true">
+                      <span class="label-type-small">Status</span>
+                      <span class="tag tag-grey">
+                        <div class="material-symbols-outlined circle">
+                          circle
+                        </div>
+                        <div class="header-text--name">Planned</div>
+                      </span>
+                    </span>
+                    <span class="header-text external draggable" draggable="true">
+                      <span class="label-type-small">External</span>
+                      <span class="header-text--name">Jacob Johns, FIgma Inc</span>
+                    </span>
+                    <span class="header-text internal draggable" draggable="true">
+                      <span class="label-type-small">Internal</span>
+                      <span class="header-text--name">Dian.K</span>
+                    </span>
+                    <span class="header-text date draggable" draggable="true">
+                      <span class="label-type-small">Date</span>
+                      <span class="header-text--name">3/08/2022 Tu</span>
+                    </span>
+                    <span class="header-long-content">
+                      <h4 class="title">ORDER #883969670 - Your TrustLogo is ready!</h4>
+                      <p class="para">Despite years of fractured relations during the era of former US president Donald
+                        Trump and
+                        the Covid-19
+                        pandemic, the
+                        trans-Atlantic alliance has managed to pull together and reach agreements on financial support
+                        and
+                        the
+                        donation of
+                        weapons to Kyiv, agreements to stop using</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="table-container">
+                  <div class="header-2">
+                    <span class="header-text category draggable" draggable="true">
+                      <span class="label-type-small">Category</span>
+                      <span class="header-text--name red-text">Call</span>
+                    </span>
+                    <span class="header-text status draggable" draggable="true">
+                      <span class="label-type-small">Status</span>
+                      <span class="tag tag-green">
+                        <div class="material-symbols-outlined circle">
+                          circle
+                        </div>
+                        <div class="header-text--name">On going</div>
+                      </span>
+                    </span>
+                    <span class="header-text external draggable" draggable="true">
+                      <span class="label-type-small">External</span>
+                      <span class="header-text--name">Jacob Johns, FIgma Inc</span>
+                    </span>
+                    <span class="header-text internal draggable" draggable="true">
+                      <span class="label-type-small">Internal</span>
+                      <span class="header-text--name">Dian.K</span>
+                    </span>
+                    <span class="header-text date draggable" draggable="true">
+                      <span class="label-type-small">Date</span>
+                      <span class="header-text--name">3/08/2022 Mo</span>
+                    </span>
+                    <span class="header-long-content">
+                      <h4 class="title">A grim winter will test Europe</h4>
+                      <!-- <p class="para"></p> -->
+                    </span>
+                  </div>
+
+                </div>
+                <div class="table-container">
+                  <div class="header-2">
+                    <span class="header-text category draggable" draggable="true">
+                      <span class="label-type-small">Category</span>
+                      <span class="header-text--name red-text">Debit Order</span>
+                    </span>
+                    <span class="header-text status draggable" draggable="true">
+                      <span class="label-type-small">Status</span>
+                      <span class="tag tag-green">
+                        <div class="material-symbols-outlined circle">
+                          circle
+                        </div>
+                        <div class="header-text--name">On going</div>
+                      </span>
+                    </span>
+                    <span class="header-text external draggable" draggable="true">
+                      <span class="label-type-small">External</span>
+                      <span class="header-text--name">Jacob Johns, FIgma Inc</span>
+                    </span>
+                    <span class="header-text internal draggable" draggable="true">
+                      <span class="label-type-small">Internal</span>
+                      <span class="header-text--name">Dian.K</span>
+                    </span>
+                    <span class="header-text date draggable" draggable="true">
+                      <span class="label-type-small">Date</span>
+                      <span class="header-text--name">3/08/2022 Mo</span>
+                    </span>
+                    <span class="header-text total draggable" draggable="true">
+                      <span class="label-type-small">Total</span>
+                      <span class="header-text--name">$9,775.46</span>
+                    </span>
+                    <span class="header-text payment draggable" draggable="true">
+                      <span class="label-type-small">Next Payment</span>
+                      <span class="header-text--name">$9,775.46</span>
+                    </span>
+                    <span class="header-text payment draggable" draggable="true">
+                      <span class="label-type-small">Current Payment</span>
+                      <span class="header-text--name">$3251.82</span>
+                    </span>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Info Expanded -->
+              <div class="links-expanded type-info" id="links-expanded-5">
+                <div class="type-header" id="type-header-small-5">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> info </span>
+                    <div class="title-text" id="title-text-1">Info</div>
+                  </div>
+                  <div class="title-content">
+                    <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-5">
+                      close
+                    </span>
+                  </div>
+                </div>
+                <div class="fields-section__expand--container">
+                  <div class="fields-section__expand">
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Created from </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="Invoice 91191 (391173-1)" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Default price list </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="General" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Sales profile </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="Ceneter" />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- FORM - with label text, without icon -->
+                    <div class="field-container field-container-responsive">
+                      <div class="label-container flex-1">
+                        <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
+                        <label class="label-text light-color">
+                          <nobr> Delay </nobr>
+                        </label>
+                        <!-- <div class="rquired">*</div> -->
+                      </div>
+
+                      <div class="input-container">
+                        <input type="text" class="input" placeholder="Type..." />
+                        <div class="input-type no-background">
+                          <!-- <div class="input-type-text">Personal</div> -->
+                          <span class="material-symbols-outlined collapse-icon input-icon">
+                            expand_more
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Related sales documents -->
+              <div class="links-expanded type" id="links-expanded-6">
+                <div class="type-header" id="type-header-small-6">
+                  <div class="title-content">
+                    <span class="material-symbols-outlined title-icon"> category </span>
+                    <div class="title-text" id="title-text-1">Related sales doccuments</div>
+                  </div>
+                  <div class="title-content">
+                    <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-6">
+                      close
+                    </span>
+                  </div>
+                </div>
+                <div class="fields-section__expand--container">
+                  <!--  *************** Table ******** -->
+                  <div class="fields-section__expand">
+                    <div class="table-container-3">
+                      <div class="header-3">
+                        <span class="category">Category</span>
+                        <span class="total-create">Total</span>
+                        <span class="due">Due</span>
+                        <span class="date">Date</span>
+                        <span class="status">Status</span>
+                      </div>
+                      <div class="row-3-container">
+                        <div class="row-3">
+                          <span class="category">
+                            <div class="label-type-small display-none">Category</div>
+                            <div>receipt</div>
+                          </span>
+                          <span class="total-create">
+                            <div class="label-type-small display-none">Total</div>
+                            <div>$3251.82</div>
+                          </span>
+                          <span class="due">
+                            <div class="label-type-small display-none">Due</div>
+                            <div>12d</div>
+                          </span>
+                          <span class="date">
+                            <div class="label-type-small display-none">Date</div>
+                            <div>16/8/13 Th</div>
+                          </span>
+                          <span class="status">
+                            <div class="label-type-small display-none">Status</div>
+                            <div>Ended</div>
+                          </span>
+                        </div>
+                        <div class="row-3">
+                          <span class="category">
+                            <div class="label-type-small display-none">Category</div>
+                            <div>receipt</div>
+                          </span>
+                          <span class="total-create">
+                            <div class="label-type-small display-none">Total</div>
+                            <div>$3251.82</div>
+                          </span>
+                          <span class="due">
+                            <div class="label-type-small display-none">Due</div>
+                            <div>12d</div>
+                          </span>
+                          <span class="date">
+                            <div class="label-type-small display-none">Date</div>
+                            <div>16/8/13 Th</div>
+                          </span>
+                          <span class="status">
+                            <div class="label-type-small display-none">Status</div>
+                            <div>Ended</div>
+                          </span>
+                        </div>
+                        <div class="row-3">
+                          <span class="category">
+                            <div class="label-type-small display-none">Category</div>
+                            <div>receipt</div>
+                          </span>
+                          <span class="total-create">
+                            <div class="label-type-small display-none">Total</div>
+                            <div>$3251.82</div>
+                          </span>
+                          <span class="due">
+                            <div class="label-type-small display-none">Due</div>
+                            <div>12d</div>
+                          </span>
+                          <span class="date">
+                            <div class="label-type-small display-none">Date</div>
+                            <div>16/8/13 Th</div>
+                          </span>
+                          <span class="status">
+                            <div class="label-type-small display-none">Status</div>
+                            <div>Ended</div>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
             </div>
-            <!-- Info Expanded -->
-            <div class="links-expanded type-info" id="links-expanded-5">
-              <div class="type-header" id="type-header-small-5">
-                <div class="title-content">
-                  <span class="material-symbols-outlined title-icon"> info </span>
-                  <div class="title-text" id="title-text-1">Info</div>
-                </div>
-                <div class="title-content">
-                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-5">
-                    close
-                  </span>
-                </div>
-              </div>
-              <div class="fields-section__expand--container">
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> attach_money </span>
-                    <div class="title-text">Payments</div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Type Of Receipt </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
 
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="Bank Tranfer" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Bank Account </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="Type..." />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Total </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="$ 9,775.46" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Start Date </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="03/08/2021" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--  *************** Period Settings ******** -->
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> repeat </span>
-                    <div class="title-text">Preiod Settings</div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> End Date </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="03/10/2021" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Period </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="Every 1 Month" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> # Of Payments </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="3" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> Payment Amount </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="$3251.82" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- FORM - with label text, without icon -->
-                  <div class="field-container field-container-responsive">
-                    <div class="label-container flex-1">
-                      <!-- <span class="material-symbols-outlined label-icon"> call </span> -->
-                      <label class="label-text light-color">
-                        <nobr> # Of Repetitions </nobr>
-                      </label>
-                      <!-- <div class="rquired">*</div> -->
-                    </div>
-                    <div class="input-container">
-                      <input type="text" class="input" placeholder="1" />
-                      <div class="input-type no-background">
-                        <!-- <div class="input-type-text">Personal</div> -->
-                        <span class="material-symbols-outlined collapse-icon input-icon">
-                          expand_more
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Related sales documents -->
-            <div class="links-expanded type" id="links-expanded-6">
-              <div class="type-header" id="type-header-small-6">
-                <div class="title-content">
-                  <span class="material-symbols-outlined title-icon"> link </span>
-                  <div class="title-text" id="title-text-1">Stages</div>
-                </div>
-                <div class="title-content">
-                  <span class="material-symbols-outlined big-expand-btn" id="close-links-expaned-6">
-                    close
-                  </span>
-                </div>
-              </div>
-              <div class="fields-section__expand--container">
-                <!--  *************** Table ******** -->
-                <div class="fields-section__expand">
-                  <div class="title-content">
-                    <span class="material-symbols-outlined title-icon"> attach_money </span>
-                    <div class="title-text">Payments</div>
-                  </div>
-                  <div class="table-container-3">
-                    <div class="header-3">
-                      <span class="total-create">Total</span>
-                      <span class="due">Due</span>
-                      <span class="date">Date</span>
-                      <span class="status">Status</span>
-                    </div>
-                    <div class="row-3-container">
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                      <div class="row-3">
-                        <span class="total-create">
-                          <div class="label-type-small display-none">Total</div>
-                          <div>$3251.82</div>
-                        </span>
-                        <span class="due">
-                          <div class="label-type-small display-none">Due</div>
-                          <div>12d</div>
-                        </span>
-                        <span class="date">
-                          <div class="label-type-small display-none">Date</div>
-                          <div>16/8/13 Th</div>
-                        </span>
-                        <span class="status">
-                          <div class="label-type-small display-none">Status</div>
-                          <div>Ended</div>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- Expand Section End -->
 

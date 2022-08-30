@@ -4,9 +4,8 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   align-items: center;
-  &-singular {
-    cursor: pointer;
-  }
+  // &-singular {
+  // }
 }
 .type-header {
   display: flex;
@@ -25,6 +24,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
 
   .links-unexpand-tag {
     margin-left: 5px;
@@ -82,19 +82,10 @@
   }
   .links-expanded {
     margin-top: 0;
+    background-color: #f4eff4;
+    padding: 0;
   }
 }
-
-// @include media-tablet {
-//   .expand-section {
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
-// @include media-medium {
-//   .expand-section {
-//     grid-template-columns: repeat(1, 1fr);
-//   }
-// }
 
 @include media-small {
   .links-unexpand,

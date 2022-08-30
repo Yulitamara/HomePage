@@ -7,26 +7,26 @@ $(function () {
 });
 
 // Debit Plan Tabs
-$(function () {
-  $("#tabs").tabs();
-});
+// $(function () {
+//   $("#tabs").tabs();
+// });
 
-$(function () {
-  $(".link").click(function () {
-    if ($(this).hasClass("active-link")) {
-      return;
-    }
-    $(".link").removeClass("active-link");
-    $(this).addClass("active-link");
-  });
-});
+// $(function () {
+//   $(".link").click(function () {
+//     if ($(this).hasClass("active-link")) {
+//       return;
+//     }
+//     $(".link").removeClass("active-link");
+//     $(this).addClass("active-link");
+//   });
+// });
 
-$(function () {
-  $(".close-section").click(function () {
-    $(".tab-content").hide();
-    $(".link").removeClass("active-link");
-  });
-});
+// $(function () {
+//   $(".close-section").click(function () {
+//     $(".tab-content").hide();
+//     $(".link").removeClass("active-link");
+//   });
+// });
 
 // Expand Section
 $(".links-expanded").hide();
@@ -38,6 +38,7 @@ $("#expand-btn-1, #links-unexpand-1").click(function () {
   $("#expand-btn-1").html() == "close"
     ? $("#expand-btn-1").html("expand_more")
     : $("#expand-btn-1").html("close");
+  $("#links-expanded-1").parent().prepend($("#links-expanded-1"));
 });
 
 $("#close-links-expaned-1").click(function () {
@@ -55,7 +56,7 @@ $("#expand-btn-2, #links-unexpand-2").click(function () {
   $("#expand-btn-2").html() == "close"
     ? $("#expand-btn-2").html("expand_more")
     : $("#expand-btn-2").html("close");
-
+  $("#links-expanded-2").parent().prepend($("#links-expanded-2"));
   // if ($(window).width() < 1290) {
   //   $([document.documentElement, document.body]).animate(
   //     {
@@ -81,6 +82,7 @@ $("#expand-btn-3, #links-unexpand-3").click(function () {
   $("#expand-btn-3").html() == "close"
     ? $("#expand-btn-3").html("expand_more")
     : $("#expand-btn-3").html("close");
+  $("#links-expanded-3").parent().prepend($("#links-expanded-3"));
 
   // $([document.documentElement, document.body]).animate(
   //   {
@@ -106,6 +108,7 @@ $("#expand-btn-4, #links-unexpand-4").click(function () {
   $("#expand-btn-4").html() == "close"
     ? $("#expand-btn-4").html("expand_more")
     : $("#expand-btn-4").html("close");
+  $("#links-expanded-4").parent().prepend($("#links-expanded-4"));
 });
 
 $("#close-links-expaned-4").click(function () {
@@ -124,6 +127,7 @@ $("#expand-btn-5, #links-unexpand-5").click(function () {
   $("#expand-btn-5").html() == "close"
     ? $("#expand-btn-5").html("expand_more")
     : $("#expand-btn-5").html("close");
+  $("#links-expanded-5").parent().prepend($("#links-expanded-5"));
 });
 
 $("#close-links-expaned-5").click(function () {
@@ -142,6 +146,7 @@ $("#expand-btn-6, #links-unexpand-6").click(function () {
   $("#expand-btn-6").html() == "close"
     ? $("#expand-btn-6").html("expand_more")
     : $("#expand-btn-6").html("close");
+  $("#links-expanded-6").parent().prepend($("#links-expanded-6"));
 });
 
 $("#close-links-expaned-6").click(function () {
@@ -243,8 +248,6 @@ $(function () {
     helper: "clone",
     revert: "invalid",
   });
-
-  $(".header-2, .draggable").disableSelection();
 });
 
 // table
@@ -281,3 +284,19 @@ $(".create-circle").click(function () {
     ? $(this).html("circle")
     : $(this).html("check_circle");
 });
+
+// Edit btn
+if (
+  $(".edit-btn").click(function () {
+    $(function () {
+      $(".expand-section").sortable({
+        revert: true,
+      });
+      $("#draggable").draggable({
+        connectToSortable: "#sortable",
+        helper: "clone",
+        revert: "invalid",
+      });
+    });
+  })
+);

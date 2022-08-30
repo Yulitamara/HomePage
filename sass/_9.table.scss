@@ -204,6 +204,11 @@
   min-width: 60px;
 }
 
+.stage {
+  flex: 1;
+  // min-width: 80px;
+}
+
 @include media-1290 {
   // table 3
   .row-3 {

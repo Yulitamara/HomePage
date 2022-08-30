@@ -74,6 +74,12 @@ input[type="text"]:focus {
   color: var(--dark-color);
   cursor: pointer;
 }
+
+.edit-btn {
+  font-variation-settings: "FILL" 1, "wght" 900, "GRAD" 0, "opsz" 48;
+  font-size: font-size(font-size-medium);
+  cursor: pointer;
+}
 // Tags
 .tags {
   display: flex;
@@ -170,7 +176,6 @@ input[type="text"]:focus {
 
 .circle-fill {
   font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 48;
-  font-size: small;
 }
 
 .display-none {
