@@ -48,7 +48,7 @@ $("#expand-btn-1, #links-unexpand-1").click(function () {
 
 $("#close-links-expaned-1").click(function () {
   $("#links-unexpand-1").toggleClass("links-unexpand-focus");
-  $("#links-expanded-1").slideToggle();
+  $("#links-expanded-1").toggle();
   $("#expand-btn-1").html() == "close"
     ? $("#expand-btn-1").html("expand_more")
     : $("#expand-btn-1").html("close");
@@ -74,7 +74,7 @@ $("#expand-btn-2, #links-unexpand-2").click(function () {
 
 $("#close-links-expaned-2").click(function () {
   $("#links-unexpand-2").toggleClass("links-unexpand-focus");
-  $("#links-expanded-2").slideToggle();
+  $("#links-expanded-2").toggle();
   $("#expand-btn-2").html() == "close"
     ? $("#expand-btn-2").html("expand_more")
     : $("#expand-btn-2").html("close");
@@ -99,7 +99,7 @@ $("#expand-btn-3, #links-unexpand-3").click(function () {
 
 $("#close-links-expaned-3").click(function () {
   $("#links-unexpand-3").toggleClass("links-unexpand-focus");
-  $("#links-expanded-3").slideToggle();
+  $("#links-expanded-3").toggle();
   $("#expand-btn-3").html() == "close"
     ? $("#expand-btn-3").html("expand_more")
     : $("#expand-btn-3").html("close");
@@ -118,7 +118,7 @@ $("#expand-btn-4, #links-unexpand-4").click(function () {
 
 $("#close-links-expaned-4").click(function () {
   $("#links-unexpand-4").toggleClass("links-unexpand-focus");
-  $("#links-expanded-4").slideToggle();
+  $("#links-expanded-4").toggle();
   $("#expand-btn-4").html() == "close"
     ? $("#expand-btn-4").html("expand_more")
     : $("#expand-btn-4").html("close");
@@ -137,7 +137,7 @@ $("#expand-btn-5, #links-unexpand-5").click(function () {
 
 $("#close-links-expaned-5").click(function () {
   $("#links-unexpand-5").toggleClass("links-unexpand-focus");
-  $("#links-expanded-5").slideToggle();
+  $("#links-expanded-5").toggle();
   $("#expand-btn-5").html() == "close"
     ? $("#expand-btn-5").html("expand_more")
     : $("#expand-btn-5").html("close");
@@ -156,7 +156,7 @@ $("#expand-btn-6, #links-unexpand-6").click(function () {
 
 $("#close-links-expaned-6").click(function () {
   $("#links-unexpand-6").toggleClass("links-unexpand-focus");
-  $("#links-expanded-6").slideToggle();
+  $("#links-expanded-6").toggle();
   $("#expand-btn-6").html() == "close"
     ? $("#expand-btn-6").html("expand_more")
     : $("#expand-btn-6").html("close");
