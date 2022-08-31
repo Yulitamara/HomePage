@@ -811,7 +811,7 @@ input[type=text],
 }
 
 .customer {
-  flex: 1;
+  min-width: 190px;
 }
 
 .fin-account {
