@@ -15,145 +15,135 @@
 
 /*---------------------YuliRegFld-------------------------------------------*/
 .clsYuliRegFldSDel {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: black;
   cursor: pointer;
 }
 
 .clsYuliRegFldSDelCap {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: #0a84cb;
   cursor: pointer;
 }
 
 .clsYuliRegFldTitle {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliRegFldTitleRW {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldTitleNA {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldTitleCH {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldTitleDL {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldValueRW {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #24099b;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: pointer;
 }
 
 .clsYuliRegFldValueNA {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: #6b1396;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueDL {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   text-decoration: line-through;
-  color: red;
+  color: var(--dark-color);
   cursor: pointer;
 }
 
 .clsYuliRegFldValueCH {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: red;
+  font-size: font-size(font-size-regular);
+  color: var(--dark-color);
   cursor: pointer;
 }
 
 .clsYuliRegFldValueMA {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: red;
+  font-size: font-size(font-size-regular);
+  color: var(--dark-color);
   cursor: default;
 }
 
 .clsYuliRegFldValueAS {
-  font-size: calc(var(--fontwidth) * 13 / 16);
+  font-size: font-size(font-size-regular);
   font-family: plcicons;
   color: royalblue;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueVL {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #eaeaea;
+  font-size: font-size(font-size-regular);
   color: #b0b0b0;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueRW:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #def1fd;
+  font-size: font-size(font-size-regular);
   color: #4b4b4b;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueNA:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   text-decoration: none;
   color: #b0b0b0;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueDL:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   text-decoration: line-through;
-  background-color: #e0e0e0;
   text-decoration: underline;
   color: red;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueCH:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #e0e0e0;
+  font-size: font-size(font-size-regular);
   text-decoration: underline;
   color: red;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueVL:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #e0e0e0;
+  font-size: font-size(font-size-regular);
   color: #b0b0b0;
+  cursor: pointer;
+}
+
+// No Color
+.clsYuliNoColorFldValueRW {
+  font-size: font-size(font-size-regular);
+  cursor: pointer;
+}
+
+// Links Title
+.clsYuliLinksTitleFldValueRW {
+  font-size: 16px;
+  color: var(--dark-color);
   cursor: pointer;
 }
 
@@ -162,70 +152,60 @@
 /*---------------------YuliRegFld-------------------------------------------*/
 .clsYuliBigFldSDel {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: black;
   cursor: pointer;
 }
 
 .clsYuliBigFldSDelCap {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: pointer;
 }
 
 .clsYuliBigFldTitle {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleRW {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleNA {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleCH {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleDL {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldValueRW {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #24099b;
   cursor: pointer;
 }
 
 .clsYuliBigFldValueNA {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #6b1396;
   cursor: pointer;
 }
 
 .clsYuliBigFldValueDL {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   text-decoration: line-through;
   color: red;
   cursor: pointer;
@@ -233,14 +213,12 @@
 
 .clsYuliBigFldValueCH {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: red;
   cursor: pointer;
 }
 
 .clsYuliBigFldValueMA {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: red;
   cursor: default;
 }
@@ -254,7 +232,6 @@
 
 .clsYuliBigFldValueVL {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #eaeaea;
   color: #b0b0b0;
   cursor: pointer;
@@ -262,7 +239,6 @@
 
 .clsYuliBigFldValueRW:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #def1fd;
   color: #4b4b4b;
   cursor: pointer;
@@ -270,7 +246,6 @@
 
 .clsYuliBigFldValueNA:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   text-decoration: none;
   color: #b0b0b0;
   cursor: pointer;
@@ -278,7 +253,6 @@
 
 .clsYuliBigFldValueDL:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   text-decoration: line-through;
   background-color: #e0e0e0;
   text-decoration: underline;
@@ -288,7 +262,6 @@
 
 .clsYuliBigFldValueCH:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #e0e0e0;
   text-decoration: underline;
   color: red;
@@ -297,10 +270,12 @@
 
 .clsYuliBigFldValueVL:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #e0e0e0;
   color: #b0b0b0;
   cursor: pointer;
 }
 
 /*----------- YuliRegFld----------YuliRegFld-------------------------------------------*/
+.padding-sides {
+  padding: 0 5px;
+}

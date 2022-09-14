@@ -15,145 +15,133 @@
 
 /*---------------------YuliRegFld-------------------------------------------*/
 .clsYuliRegFldSDel {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: black;
   cursor: pointer;
 }
 
 .clsYuliRegFldSDelCap {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: #0a84cb;
   cursor: pointer;
 }
 
 .clsYuliRegFldTitle {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliRegFldTitleRW {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldTitleNA {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldTitleCH {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldTitleDL {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #0a84cb;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: default;
 }
 
 .clsYuliRegFldValueRW {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: #24099b;
+  font-size: font-size(font-size-regular);
+  color: var(--light-color);
   cursor: pointer;
 }
 
 .clsYuliRegFldValueNA {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   color: #6b1396;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueDL {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   text-decoration: line-through;
-  color: red;
+  color: var(--dark-color);
   cursor: pointer;
 }
 
 .clsYuliRegFldValueCH {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: red;
+  font-size: font-size(font-size-regular);
+  color: var(--dark-color);
   cursor: pointer;
 }
 
 .clsYuliRegFldValueMA {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  color: red;
+  font-size: font-size(font-size-regular);
+  color: var(--dark-color);
   cursor: default;
 }
 
 .clsYuliRegFldValueAS {
-  font-size: calc(var(--fontwidth) * 13 / 16);
+  font-size: font-size(font-size-regular);
   font-family: plcicons;
   color: royalblue;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueVL {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #eaeaea;
+  font-size: font-size(font-size-regular);
   color: #b0b0b0;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueRW:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #def1fd;
+  font-size: font-size(font-size-regular);
   color: #4b4b4b;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueNA:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   text-decoration: none;
   color: #b0b0b0;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueDL:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
+  font-size: font-size(font-size-regular);
   text-decoration: line-through;
-  background-color: #e0e0e0;
   text-decoration: underline;
   color: red;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueCH:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #e0e0e0;
+  font-size: font-size(font-size-regular);
   text-decoration: underline;
   color: red;
   cursor: pointer;
 }
 
 .clsYuliRegFldValueVL:hover {
-  font-size: calc(var(--fontwidth) * 13 / 16);
-  font-family: Arial, DejaVu Sans;
-  background-color: #e0e0e0;
+  font-size: font-size(font-size-regular);
   color: #b0b0b0;
+  cursor: pointer;
+}
+
+.clsYuliNoColorFldValueRW {
+  font-size: font-size(font-size-regular);
+  cursor: pointer;
+}
+
+.clsYuliLinksTitleFldValueRW {
+  font-size: 16px;
+  color: var(--dark-color);
   cursor: pointer;
 }
 
@@ -161,70 +149,60 @@
 /*---------------------YuliRegFld-------------------------------------------*/
 .clsYuliBigFldSDel {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: black;
   cursor: pointer;
 }
 
 .clsYuliBigFldSDelCap {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: pointer;
 }
 
 .clsYuliBigFldTitle {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleRW {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleNA {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleCH {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldTitleDL {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #0a84cb;
   cursor: default;
 }
 
 .clsYuliBigFldValueRW {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #24099b;
   cursor: pointer;
 }
 
 .clsYuliBigFldValueNA {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: #6b1396;
   cursor: pointer;
 }
 
 .clsYuliBigFldValueDL {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   text-decoration: line-through;
   color: red;
   cursor: pointer;
@@ -232,14 +210,12 @@
 
 .clsYuliBigFldValueCH {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: red;
   cursor: pointer;
 }
 
 .clsYuliBigFldValueMA {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   color: red;
   cursor: default;
 }
@@ -253,7 +229,6 @@
 
 .clsYuliBigFldValueVL {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #eaeaea;
   color: #b0b0b0;
   cursor: pointer;
@@ -261,7 +236,6 @@
 
 .clsYuliBigFldValueRW:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #def1fd;
   color: #4b4b4b;
   cursor: pointer;
@@ -269,7 +243,6 @@
 
 .clsYuliBigFldValueNA:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   text-decoration: none;
   color: #b0b0b0;
   cursor: pointer;
@@ -277,7 +250,6 @@
 
 .clsYuliBigFldValueDL:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   text-decoration: line-through;
   background-color: #e0e0e0;
   text-decoration: underline;
@@ -287,7 +259,6 @@
 
 .clsYuliBigFldValueCH:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #e0e0e0;
   text-decoration: underline;
   color: red;
@@ -296,13 +267,16 @@
 
 .clsYuliBigFldValueVL:hover {
   font-size: 22px;
-  font-family: Arial, DejaVu Sans;
   background-color: #e0e0e0;
   color: #b0b0b0;
   cursor: pointer;
 }
 
 /*----------- YuliRegFld----------YuliRegFld-------------------------------------------*/
+.padding-sides {
+  padding: 0 5px;
+}
+
 html {
   --background-color: #f1eef8;
   --title-color: #0e0664;
@@ -392,6 +366,13 @@ input[type=text]:focus {
   cursor: pointer;
 }
 
+.big-icon {
+  color: var(--light-color);
+  font-variation-settings: "wght" 400;
+  font-size: 22px;
+  cursor: pointer;
+}
+
 .big-expand-btn,
 .big-close-btn {
   font-variation-settings: "wght" 600;
@@ -410,6 +391,7 @@ input[type=text]:focus {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 10px 0;
 }
 
 .tag {
@@ -447,8 +429,13 @@ input[type=text]:focus {
 }
 
 .tag-green {
-  color: #fffbff !important;
-  background-color: #006029 !important;
+  color: #118844 !important;
+  background-color: #ddffee !important;
+}
+
+.tag-light-red {
+  color: #690005;
+  background-color: #ffedea;
 }
 
 .tag-grey {
@@ -465,7 +452,7 @@ input[type=text]:focus {
   align-items: center;
   gap: 10px;
   padding: 0 10px;
-  border-radius: 40px;
+  border-radius: 10px;
   font-size: 14px;
   border: 1px solid var(--dark-color);
 }
@@ -484,16 +471,18 @@ input[type=text]:focus {
 }
 
 .amount-tag {
-  background-color: #f3eeff;
   padding: 5px 10px;
   border-radius: 4px;
 }
 
-.amount-tag-red {
+.tag-red {
   color: #690005;
   background-color: #ffb4ab;
-  padding: 5px 10px;
-  border-radius: 4px;
+}
+
+.tag-light-purple {
+  background-color: #f3eeff;
+  color: var(--dark-color);
 }
 
 .opacity-1 {
@@ -836,8 +825,8 @@ input[type=text],
   height: 47px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   cursor: pointer;
+  gap: 5px;
 }
 .links-unexpand .links-unexpand-tag {
   margin-left: 5px;
@@ -847,7 +836,6 @@ input[type=text],
 .stop-icon {
   color: #aac7ff;
   font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
-  padding: 0.3rem;
   font-size: 16px;
 }
 
@@ -928,12 +916,6 @@ input[type=text],
   border: 2px solid;
   border-color: #ffffff;
   border-radius: 4px;
-}
-
-.links-unexpand-focus {
-  border: 2px solid;
-  border-color: rgba(66, 48, 186, 0.5450980392);
-  background-color: rgba(255, 255, 255, 0.749);
 }
 
 .tabs-section {
@@ -1360,8 +1342,8 @@ header .header-content .header-status-scheduled {
 }
 header .header-content .header-details {
   display: flex;
-  align-items: center;
   gap: 10px;
+  flex-direction: column;
 }
 header .header-content .header-details .header-type,
 header .header-content .header-details .header-tags {
@@ -1427,10 +1409,38 @@ header .header-content .header-details .header-tags .type {
 }
 
 .cards-content--notes-display {
-  margin: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 .cards-content--notes-display .note-container {
   padding: 10px;
   background-color: #fff;
-  width: 400px;
+  width: 450px;
+  border-radius: 5px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.cards-content--notes-display .note-container .mail-header {
+  color: #5555a8;
+}
+.cards-content--notes-display .note-container .tabs {
+  color: #ebb8cf;
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+}
+.cards-content--notes-display .note-container .tabs .tab {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.cards-content--notes-display .note-container .tabs .tab:hover {
+  color: #cb94ad;
+}
+.cards-content--notes-display .note-container .icons-bottom-note {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }/*# sourceMappingURL=style.css.map */

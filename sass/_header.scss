@@ -13,9 +13,9 @@ header {
 
     .header-details {
       display: flex;
-      align-items: center;
-      //   flex-direction: column;
       gap: 10px;
+      flex-direction: column;
+
       .header-type,
       .header-tags {
         display: flex;

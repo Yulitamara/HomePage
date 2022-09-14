@@ -66,7 +66,12 @@ input[type="text"]:focus {
 .close-btn {
   cursor: pointer;
 }
-
+.big-icon {
+  color: var(--light-color);
+  font-variation-settings: "wght" 400;
+  font-size: font-size(font-size-medium);
+  cursor: pointer;
+}
 .big-expand-btn,
 .big-close-btn {
   font-variation-settings: "wght" 600;
@@ -85,6 +90,7 @@ input[type="text"]:focus {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 10px 0;
 }
 .tag {
   display: flex;
@@ -118,8 +124,13 @@ input[type="text"]:focus {
 }
 
 .tag-green {
-  color: #fffbff !important;
-  background-color: #006029 !important;
+  color: #118844 !important;
+  background-color: #ddffee !important;
+}
+
+.tag-light-red {
+  color: #690005;
+  background-color: #ffedea;
 }
 
 .tag-grey {
@@ -136,7 +147,7 @@ input[type="text"]:focus {
   align-items: center;
   gap: 10px;
   padding: 0 10px;
-  border-radius: 40px;
+  border-radius: 10px;
   font-size: font-size(font-size-small);
   border: 1px solid var(--dark-color);
 }
@@ -154,16 +165,18 @@ input[type="text"]:focus {
 }
 
 .amount-tag {
-  background-color: #f3eeff;
   padding: 5px 10px;
   border-radius: 4px;
 }
 
-.amount-tag-red {
+.tag-red {
   color: #690005;
   background-color: #ffb4ab;
-  padding: 5px 10px;
-  border-radius: 4px;
+}
+
+.tag-light-purple {
+  background-color: #f3eeff;
+  color: var(--dark-color);
 }
 
 .opacity-1 {

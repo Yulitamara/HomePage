@@ -1,8 +1,36 @@
 .cards-content--notes-display {
-  margin: 10px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+
   .note-container {
     padding: 10px;
     background-color: #fff;
-    width: 400px;
+    width: 450px;
+    border-radius: 5px;
+    // flex: 1 450px;
+    height: min-content;
+    .mail-header {
+      color: #5555a8;
+    }
+    .tabs {
+      color: #ebb8cf;
+      display: flex;
+      gap: 15px;
+      font-weight: 600;
+      .tab {
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+      }
+      .tab:hover {
+        color: #cb94ad;
+      }
+    }
+    .icons-bottom-note {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+    }
   }
 }
