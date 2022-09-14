@@ -38,22 +38,22 @@ $(function () {
   const linksExpanded = $(".links-expanded");
   $(linksExpanded).hide();
 
-  const linksUnexpand1 = $(".expand-section :nth-child(1)");
-  const expandBtn1 = $(".big-expand-btn[0]");
-  const linksExpanded1 = $("#links-expanded-1");
   // links
-  $(linksUnexpand1).click(function () {
-    $(linksExpanded1).toggle().prepend($(linksExpanded1));
-    $(expandBtn1).html() == "close"
-      ? $(expandBtn1).html("expand_more")
-      : $(expandBtn1).html("close");
+  $("#expand-btn-1, #links-unexpand-1").click(function () {
+    $("#links-expanded-1")
+      .slideToggle()
+      .parent()
+      .prepend($("#links-expanded-1"));
+    $("#expand-btn-1").html() == "close"
+      ? $("#expand-btn-1").html("expand_more")
+      : $("#expand-btn-1").html("close");
   });
 
   $("#close-links-expaned-1").click(function () {
-    $(linksExpanded1).toggle();
-    $(expandBtn1).html() == "close"
-      ? $(expandBtn1).html("expand_more")
-      : $(expandBtn1).html("close");
+    $("#links-expanded-1").toggle();
+    $("#expand-btn-1").html() == "close"
+      ? $("#expand-btn-1").html("expand_more")
+      : $("#expand-btn-1").html("close");
   });
 
   // Stages
@@ -266,5 +266,12 @@ $(function () {
     $(this).html() == "check_circle"
       ? $(this).html("circle")
       : $(this).html("check_circle");
+  });
+
+  // Notes Display
+  $("#notes-display").click(function () {
+    $(".cards-content").toggle();
+    $(".cards-content--notes-display").toggleClass("display-none");
+    $(".display-options").toggleClass("opacity-1");
   });
 });

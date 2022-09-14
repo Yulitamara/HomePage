@@ -38,10 +38,10 @@ input[type="text"]:focus {
 // ICONS
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0;
   vertical-align: middle;
   padding-bottom: 0.1rem;
-  font-size: font-size(font-size-regular);
+  // font-size: font-size(font-size-regular);
 }
 .sidebar-icon {
   font-variation-settings: "FILL" 1, "wght" 200, "GRAD" 0, "opsz" 48;
@@ -89,6 +89,7 @@ input[type="text"]:focus {
 .tags {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 10px 0;
 }
@@ -165,7 +166,7 @@ input[type="text"]:focus {
 }
 
 .amount-tag {
-  padding: 5px 10px;
+  padding: 1px 8px;
   border-radius: 4px;
 }
 

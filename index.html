@@ -119,6 +119,7 @@
               <div class="display-options">
                 <div class="option-1">Grid</div>
                 <div class="option-2">Split</div>
+                <div class="option-3" id="notes-display">Notes</div>
               </div>
             </div>
 
@@ -1676,336 +1677,612 @@
       </div>
 
       <div class="cards-content--notes-display display-none">
-        <div class="note-container">
-          <header>
-            <div class="header-content">
-              <div class="header-status">
-                <div class="header-status-scheduled">
-                  <span class="header-date">12/12/2022</span>
-                  <span class="header-time">12:00</span>
-                  <span class="header-duration">1:15h</span>
-                </div>
-                <div class="tags">
-                  <div class="tag-status">
-                    <span class="material-symbols-outlined">
-                      fiber_smart_record
-                    </span>
-                    <span>ON GOING</span>
-                    <span class="material-symbols-outlined">
+        <div class="note-column">
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">12/12/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>ON GOING</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
                       expand_more
                     </span>
                   </div>
-                  <span class="material-symbols-outlined big-expand-btn">
-                    expand_more
-                  </span>
+                </div>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Debit Order</span>
+                    <div class="debit-number">#431027</div>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span style="font-size: 22px;">$9,775.46</span>
+                  <span class="amount-tag tag-light-red">$3251.82, 12d</span>
+                </div>
+                <div class="tags">
+                  <span class="tag small-tag tag-green">Personal</span>
+                  <span class="tag small-tag tag-red">Need attention</span>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
                 </div>
               </div>
-              <div class="header-details">
-                <div class="header-type">
-                  <span class="type">Debit Order</span>
-                  <div class="debit-number">#431027</div>
-                </div>
-              </div>
-              <div class="tags">
-                <span style="font-size: 22px;">$9,775.46</span>
-                <span class="amount-tag tag-light-red">$3251.82, 12d</span>
-              </div>
-              <div class="tags">
-                <span class="tag small-tag tag-green">Personal</span>
-                <span class="tag small-tag tag-red">Need attention</span>
-              </div>
-              <div class="tags">
-                <span class="tag-status">Figma Inc</span>
-                <span class="tag-status">Jacob Johns</span>
-              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Definitions</span>
+              <span class="tab">Payments</span>
+              <span class="tab">Currency</span>
             </div>
-          </header>
-          <div class="tabs">
-            <span class="tab">Definitions</span>
-            <span class="tab">Payments</span>
-            <span class="tab">Currency</span>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
           </div>
-          <div class="icons-bottom-note">
-            <span class="material-symbols-outlined big-icon">
-              add_circle
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              delete
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              forward
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              more_vert
-            </span>
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">12/12/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>Sent</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
+                      expand_more
+                    </span>
+                  </div>
+                </div>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Mail</span>
+                  </div>
+                  <div class="mail-content">
+                    <h4 class="mail-header">
+                      ORDER #883969670 - Your TrustLogo is ready!
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eaque quod incidunt ad. Recusandae
+                      similique expedita itaque aperiam fugit fugiat quibusdam quia veniam ducimus adipisci, atque, non,
+                      cum aliquam quidem numquam provident voluptate velit accusamus? Deleniti nulla doloremque dicta
+                      ad?</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
+                </div>
+              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Related</span>
+              <span class="tab">Stages</span>
+            </div>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply_all
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
+          </div>
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">12/12/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>Sent</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
+                      expand_more
+                    </span>
+                  </div>
+                </div>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Mail</span>
+                  </div>
+                  <div class="mail-content">
+                    <h4 class="mail-header">
+                      ORDER #883969670 - Your TrustLogo is ready!
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellat nam praesentium
+                      repellendus mollitia reprehenderit facere sint quidem modi error.</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
+                </div>
+              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Related</span>
+              <span class="tab">Stages</span>
+            </div>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply_all
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
           </div>
         </div>
-        <div class="note-container">
-          <header>
-            <div class="header-content">
-              <div class="header-status">
-                <div class="header-status-scheduled">
-                  <span class="header-date">12/12/2022</span>
-                  <span class="header-time">12:00</span>
-                  <span class="header-duration">1:15h</span>
-                </div>
-                <div class="tags">
-                  <div class="tag-status">
-                    <span class="material-symbols-outlined">
-                      fiber_smart_record
-                    </span>
-                    <span>Sent</span>
-                    <span class="material-symbols-outlined">
+        <div class="note-column">
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">12/10/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>ON GOING</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
                       expand_more
                     </span>
                   </div>
-                  <span class="material-symbols-outlined big-expand-btn">
-                    expand_more
-                  </span>
+                </div>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Debit Order</span>
+                    <div class="debit-number">#431027</div>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span style="font-size: 22px;">$9,775.46</span>
+                  <span class="amount-tag tag-light-red">$3251.82, 12d</span>
+                </div>
+                <div class="tags">
+                  <span class="tag small-tag tag-green">Personal</span>
+                  <span class="tag small-tag tag-red">Need attention</span>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
                 </div>
               </div>
-              <div class="header-details">
-                <div class="header-type">
-                  <span class="type">Mail</span>
-                </div>
-                <div class="mail-content">
-                  <h4 class="mail-header">
-                    ORDER #883969670 - Your TrustLogo is ready!
-                  </h4>
-                  <p>Dear yb@impactsoft.co.il,
-                    Thank you for selecting Sectigo as your SSL security provider...</p>
-                </div>
-              </div>
-              <div class="tags">
-                <span class="tag-status">Figma Inc</span>
-                <span class="tag-status">Jacob Johns</span>
-              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Definitions</span>
+              <span class="tab">Payments</span>
+              <span class="tab">Currency</span>
             </div>
-          </header>
-          <div class="tabs">
-            <span class="tab">Related</span>
-            <span class="tab">Stages</span>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
           </div>
-          <div class="icons-bottom-note">
-            <span class="material-symbols-outlined big-icon">
-              add_circle
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              delete
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              forward
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply_all
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              more_vert
-            </span>
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">02/09/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>Sent</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
+                      expand_more
+                    </span>
+                  </div>
+                </div>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Mail</span>
+                  </div>
+                  <div class="mail-content">
+                    <h4 class="mail-header">
+                      ORDER #883969670 - Your TrustLogo is ready!
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit vitae quia
+                      expedita quaerat ea velit ex perspiciatis odio minima, porro et neque similique, adipisci minus
+                      aliquam! Et consequatur facere repellendus! Suscipit asperiores eos ullam doloribus ex velit animi
+                      magni quisquam explicabo quia? Consectetur magni sequi laborum assumenda fugit rem!</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
+                </div>
+              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Related</span>
+              <span class="tab">Stages</span>
+            </div>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply_all
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
+          </div>
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">12/12/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>Sent</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
+                      expand_more
+                    </span>
+                  </div>
+                </div>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Mail</span>
+                  </div>
+                  <div class="mail-content">
+                    <h4 class="mail-header">
+                      ORDER #883969670 - Your TrustLogo is ready!
+                    </h4>
+                    <p>Dear yb@impactsoft.co.il,
+                      Thank you for selecting Sectigo as your SSL security provider...</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
+                </div>
+              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Related</span>
+              <span class="tab">Stages</span>
+            </div>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply_all
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
           </div>
         </div>
-        <div class="note-container">
-          <header>
-            <div class="header-content">
-              <div class="header-status">
-                <div class="header-status-scheduled">
-                  <span class="header-date">12/12/2022</span>
-                  <span class="header-time">12:00</span>
-                  <span class="header-duration">1:15h</span>
-                </div>
-                <div class="tags">
-                  <div class="tag-status">
-                    <span class="material-symbols-outlined">
-                      fiber_smart_record
-                    </span>
-                    <span>Sent</span>
-                    <span class="material-symbols-outlined">
+        <div class="note-column">
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">15/12/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>ON GOING</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
                       expand_more
                     </span>
                   </div>
-                  <span class="material-symbols-outlined big-expand-btn">
-                    expand_more
-                  </span>
                 </div>
-              </div>
-              <div class="header-details">
-                <div class="header-type">
-                  <span class="type">Mail</span>
-                </div>
-                <div class="mail-content">
-                  <h4 class="mail-header">
-                    ORDER #883969670 - Your TrustLogo is ready!
-                  </h4>
-                  <p>Dear yb@impactsoft.co.il,
-                    Thank you for selecting Sectigo as your SSL security provider...</p>
-                </div>
-              </div>
-              <div class="tags">
-                <span class="tag-status">Figma Inc</span>
-                <span class="tag-status">Jacob Johns</span>
-              </div>
-            </div>
-          </header>
-          <div class="tabs">
-            <span class="tab">Related</span>
-            <span class="tab">Stages</span>
-          </div>
-          <div class="icons-bottom-note">
-            <span class="material-symbols-outlined big-icon">
-              add_circle
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              delete
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              forward
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply_all
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              more_vert
-            </span>
-          </div>
-        </div>
-        <div class="note-container">
-          <header>
-            <div class="header-content">
-              <div class="header-status">
-                <div class="header-status-scheduled">
-                  <span class="header-date">12/12/2022</span>
-                  <span class="header-time">12:00</span>
-                  <span class="header-duration">1:15h</span>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Debit Order</span>
+                    <div class="debit-number">#431027</div>
+                  </div>
                 </div>
                 <div class="tags">
-                  <div class="tag-status">
-                    <span class="material-symbols-outlined">
-                      fiber_smart_record
-                    </span>
-                    <span>Sent</span>
-                    <span class="material-symbols-outlined">
+                  <span style="font-size: 22px;">$9,775.46</span>
+                  <span class="amount-tag tag-light-red">$3251.82, 12d</span>
+                </div>
+                <div class="tags">
+                  <span class="tag small-tag tag-green">Personal</span>
+                  <span class="tag small-tag tag-red">Need attention</span>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Lora Mara</span>
+                  <span class="tag-status">Noa Stern</span>
+                  <span class="tag-status">Mina Fix</span>
+                  <span class="tag-status">Dor Goren</span>
+                  <span class="tag-status">Lea Maor</span>
+                </div>
+              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Definitions</span>
+              <span class="tab">Payments</span>
+              <span class="tab">Currency</span>
+            </div>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
+          </div>
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">12/12/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>Sent</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
                       expand_more
                     </span>
                   </div>
-                  <span class="material-symbols-outlined big-expand-btn">
-                    expand_more
-                  </span>
                 </div>
-              </div>
-              <div class="header-details">
-                <div class="header-type">
-                  <span class="type">Mail</span>
-                </div>
-                <div class="mail-content">
-                  <h4 class="mail-header">
-                    ORDER #883969670 - Your TrustLogo is ready!
-                  </h4>
-                  <p>Dear yb@impactsoft.co.il,
-                    Thank you for selecting Sectigo as your SSL security provider...</p>
-                </div>
-              </div>
-              <div class="tags">
-                <span class="tag-status">Figma Inc</span>
-                <span class="tag-status">Jacob Johns</span>
-              </div>
-            </div>
-          </header>
-          <div class="tabs">
-            <span class="tab">Related</span>
-            <span class="tab">Stages</span>
-          </div>
-          <div class="icons-bottom-note">
-            <span class="material-symbols-outlined big-icon">
-              add_circle
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              delete
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              forward
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply_all
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              more_vert
-            </span>
-          </div>
-        </div>
-        <div class="note-container">
-          <header>
-            <div class="header-content">
-              <div class="header-status">
-                <div class="header-status-scheduled">
-                  <span class="header-date">12/12/2022</span>
-                  <span class="header-time">12:00</span>
-                  <span class="header-duration">1:15h</span>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Mail</span>
+                  </div>
+                  <div class="mail-content">
+                    <h4 class="mail-header">
+                      ORDER #883969670 - Your TrustLogo is ready!
+                    </h4>
+                    <p>Dear yb@impactsoft.co.il,
+                      Thank you for selecting Sectigo as your SSL security provider...</p>
+                  </div>
                 </div>
                 <div class="tags">
-                  <div class="tag-status">
-                    <span class="material-symbols-outlined">
-                      fiber_smart_record
-                    </span>
-                    <span>Sent</span>
-                    <span class="material-symbols-outlined">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
+                </div>
+              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Related</span>
+              <span class="tab">Stages</span>
+            </div>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply_all
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
+          </div>
+          <div class="note">
+            <header>
+              <div class="header-content">
+                <div class="header-status">
+                  <div class="header-status-scheduled">
+                    <span class="header-date">12/12/2022</span>
+                    <span class="header-time">12:00</span>
+                    <span class="header-duration">1:15h</span>
+                  </div>
+                  <div class="tags">
+                    <div class="tag-status">
+                      <span class="material-symbols-outlined">
+                        fiber_smart_record
+                      </span>
+                      <span>Sent</span>
+                      <span class="material-symbols-outlined">
+                        expand_more
+                      </span>
+                    </div>
+                    <span class="material-symbols-outlined big-expand-btn">
                       expand_more
                     </span>
                   </div>
-                  <span class="material-symbols-outlined big-expand-btn">
-                    expand_more
-                  </span>
+                </div>
+                <div class="header-details">
+                  <div class="header-type">
+                    <span class="type">Mail</span>
+                  </div>
+                  <div class="mail-content">
+                    <h4 class="mail-header">
+                      ORDER #883969670 - Your TrustLogo is ready!
+                    </h4>
+                    <p>Dear yb@impactsoft.co.il,
+                      Thank you for selecting Sectigo as your SSL security provider...</p>
+                  </div>
+                </div>
+                <div class="tags">
+                  <span class="tag-status">Figma Inc</span>
+                  <span class="tag-status">Jacob Johns</span>
                 </div>
               </div>
-              <div class="header-details">
-                <div class="header-type">
-                  <span class="type">Mail</span>
-                </div>
-                <div class="mail-content">
-                  <h4 class="mail-header">
-                    ORDER #883969670 - Your TrustLogo is ready!
-                  </h4>
-                  <p>Dear yb@impactsoft.co.il,
-                    Thank you for selecting Sectigo as your SSL security provider...</p>
-                </div>
-              </div>
-              <div class="tags">
-                <span class="tag-status">Figma Inc</span>
-                <span class="tag-status">Jacob Johns</span>
-              </div>
+            </header>
+            <div class="tabs">
+              <span class="tab">Related</span>
+              <span class="tab">Stages</span>
             </div>
-          </header>
-          <div class="tabs">
-            <span class="tab">Related</span>
-            <span class="tab">Stages</span>
-          </div>
-          <div class="icons-bottom-note">
-            <span class="material-symbols-outlined big-icon">
-              add_circle
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              delete
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              forward
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              reply_all
-            </span>
-            <span class="material-symbols-outlined big-icon">
-              more_vert
-            </span>
+            <div class="icons-bottom-note">
+              <span class="material-symbols-outlined big-icon">
+                add_circle
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                delete
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                forward
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                reply_all
+              </span>
+              <span class="material-symbols-outlined big-icon">
+                more_vert
+              </span>
+            </div>
           </div>
         </div>
       </div>

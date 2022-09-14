@@ -16,7 +16,7 @@
 /*---------------------YuliRegFld-------------------------------------------*/
 .clsYuliRegFldSDel {
   font-size: font-size(font-size-regular);
-  color: black;
+  color: #ff7800;
   cursor: pointer;
 }
 
@@ -337,10 +337,9 @@ input[type=text]:focus {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0;
   vertical-align: middle;
   padding-bottom: 0.1rem;
-  font-size: 16px;
 }
 
 .sidebar-icon {
@@ -390,6 +389,7 @@ input[type=text]:focus {
 .tags {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 10px 0;
 }
@@ -471,7 +471,7 @@ input[type=text]:focus {
 }
 
 .amount-tag {
-  padding: 5px 10px;
+  padding: 1px 8px;
   border-radius: 4px;
 }
 
@@ -834,9 +834,9 @@ input[type=text],
 }
 
 .stop-icon {
-  color: #aac7ff;
+  color: #d9d9d9;
   font-variation-settings: "FILL" 1, "wght" 100, "GRAD" 0, "opsz" 48;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .links-expanded {
@@ -1249,6 +1249,9 @@ input[type=text],
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
   opacity: 0;
 }
+.bottom-navbar-display .display-options-container .display-options > div {
+  cursor: pointer;
+}
 .bottom-navbar-pages {
   display: flex;
   align-items: center;
@@ -1334,6 +1337,7 @@ header {
 header .header-content .header-status {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 6px;
 }
 header .header-content .header-status-scheduled {
@@ -1410,36 +1414,46 @@ header .header-content .header-details .header-tags .type {
 
 .cards-content--notes-display {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   padding: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.cards-content--notes-display .note-container {
-  padding: 10px;
+.cards-content--notes-display .note-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cards-content--notes-display .note-column .note {
   background-color: #fff;
   width: 450px;
-  border-radius: 5px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
 }
-.cards-content--notes-display .note-container .mail-header {
+.cards-content--notes-display .note-column .note .mail-header {
   color: #5555a8;
 }
-.cards-content--notes-display .note-container .tabs {
+.cards-content--notes-display .note-column .note .tabs {
   color: #ebb8cf;
   display: flex;
   gap: 15px;
   font-weight: 600;
 }
-.cards-content--notes-display .note-container .tabs .tab {
+.cards-content--notes-display .note-column .note .tabs .tab {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-.cards-content--notes-display .note-container .tabs .tab:hover {
+.cards-content--notes-display .note-column .note .tabs .tab:hover {
   color: #cb94ad;
 }
-.cards-content--notes-display .note-container .icons-bottom-note {
+.cards-content--notes-display .note-column .note .icons-bottom-note {
   display: flex;
   justify-content: flex-end;
   gap: 15px;

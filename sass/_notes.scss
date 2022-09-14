@@ -1,36 +1,44 @@
 .cards-content--notes-display {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   padding: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 
-  .note-container {
-    padding: 10px;
-    background-color: #fff;
-    width: 450px;
-    border-radius: 5px;
-    // flex: 1 450px;
-    height: min-content;
-    .mail-header {
-      color: #5555a8;
-    }
-    .tabs {
-      color: #ebb8cf;
-      display: flex;
-      gap: 15px;
-      font-weight: 600;
-      .tab {
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
+  .note-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .note {
+      background-color: #fff;
+      width: 450px;
+      border-radius: 7px;
+      box-shadow: 0 2px 5px rgb(175, 175, 175);
+      padding: 10px;
+      height: fit-content;
+
+      height: min-content;
+      .mail-header {
+        color: #5555a8;
       }
-      .tab:hover {
-        color: #cb94ad;
+      .tabs {
+        color: #ebb8cf;
+        display: flex;
+        gap: 15px;
+        font-weight: 600;
+        .tab {
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+        }
+        .tab:hover {
+          color: #cb94ad;
+        }
       }
-    }
-    .icons-bottom-note {
-      display: flex;
-      justify-content: flex-end;
-      gap: 15px;
+      .icons-bottom-note {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+      }
     }
   }
 }
