@@ -1,44 +1,52 @@
 .cards-content--notes-display {
-  display: flex;
-  gap: 16px;
+  columns: 3 200px;
+  column-gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
 
-  .note-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    .note {
-      background-color: #fff;
-      width: 450px;
-      border-radius: 7px;
-      box-shadow: 0 2px 5px rgb(175, 175, 175);
-      padding: 10px;
-      height: fit-content;
+  .note {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgb(175, 175, 175);
+    padding: 10px;
+    height: 100%;
 
-      height: min-content;
-      .mail-header {
-        color: #5555a8;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 100%;
+    .mail-header {
+      color: #5555a8;
+    }
+    .tabs {
+      color: #ebb8cf;
+      display: flex;
+      gap: 15px;
+      font-weight: 600;
+      .tab {
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
       }
-      .tabs {
-        color: #ebb8cf;
-        display: flex;
-        gap: 15px;
-        font-weight: 600;
-        .tab {
-          cursor: pointer;
-          transition: 0.2s ease-in-out;
-        }
-        .tab:hover {
-          color: #cb94ad;
-        }
-      }
-      .icons-bottom-note {
-        display: flex;
-        justify-content: flex-end;
-        gap: 15px;
+      .tab:hover {
+        color: #cb94ad;
       }
     }
+    .icons-bottom-note {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+  }
+}
+
+@include media-1550 {
+  .cards-content--notes-display {
+    columns: 2 200px;
+  }
+}
+
+@include media-1290 {
+  .cards-content--notes-display {
+    columns: 1 200px;
   }
 }
