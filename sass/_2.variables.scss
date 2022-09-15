@@ -44,6 +44,8 @@ $break-points: (
   "break-point-1290": 1290px,
   "break-point-1550": 1550px,
   "break-point-desktop": 1300px,
+  "break-point-2400": 2400px,
+
 );
 
 @function break-point($break-point-limit) {

@@ -1414,8 +1414,8 @@ header .header-content .header-details .header-tags .type {
 }
 
 .cards-content--notes-display {
-  -moz-columns: 3 200px;
-       columns: 3 200px;
+  -moz-columns: 4 200px;
+       columns: 4 200px;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   width: 100%;
@@ -1454,6 +1454,12 @@ header .header-content .header-details .header-tags .type {
   gap: 15px;
 }
 
+@media screen and (max-width: 2400px) {
+  .cards-content--notes-display {
+    -moz-columns: 3 200px;
+         columns: 3 200px;
+  }
+}
 @media screen and (max-width: 1550px) {
   .cards-content--notes-display {
     -moz-columns: 2 200px;
