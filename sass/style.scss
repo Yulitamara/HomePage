@@ -12,12 +12,12 @@
   }
 }
 
-//*-*-*-*-*-*-*-*-*-*-- The 1300px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
-@mixin media-desktop {
-  @media screen and (min-width: break-point(break-point-desktop)) {
+@mixin media-min-1550 {
+  @media screen and (min-width: break-point(break-point-min-1550)) {
     @content;
   }
 }
+
 //*-*-*-*-*-*-*-*-*-*-- The 1290px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
 @mixin media-1290 {
   @media screen and (max-width: break-point(break-point-1290)) {

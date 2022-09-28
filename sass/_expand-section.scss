@@ -20,7 +20,7 @@
   align-items: center;
   flex-flow: row wrap;
   font-size: font-size(font-size-regular);
-  height: 47px;
+  height: 46px;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
@@ -44,10 +44,10 @@
   padding: 5px;
 }
 
-.fields-section__expand--container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+// .fields-section__expand--container {
+// display: grid;
+// grid-template-columns: repeat(2, 1fr);
+// }
 
 /* Was fields-section before */
 .fields-section__expand {

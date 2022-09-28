@@ -823,7 +823,7 @@ input[type=text],
   align-items: center;
   flex-flow: row wrap;
   font-size: 16px;
-  height: 47px;
+  height: 46px;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
@@ -844,11 +844,6 @@ input[type=text],
   margin-top: 1rem;
   background-color: #f4eff4;
   padding: 5px;
-}
-
-.fields-section__expand--container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Was fields-section before */
@@ -1091,11 +1086,11 @@ input[type=text],
 }
 
 .customer {
-  min-width: 190px;
+  min-width: 200px;
 }
 
 .fin-account {
-  flex: 1;
+  min-width: 140px;
 }
 
 .owner {
@@ -1137,12 +1132,40 @@ input[type=text],
   flex: 1;
 }
 
-@media screen and (max-width: 1290px) {
+.label-type-small {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--light-color);
+  height: 17px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.table-card,
+.header-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerdot {
+  display: none;
+}
+
+@media screen and (max-width: 1550px) {
+  .header {
+    display: none;
+  }
   .row {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
     margin: 0;
     padding: 0;
     gap: 0;
@@ -1178,16 +1201,35 @@ input[type=text],
     flex: 1;
   }
 }
-.label-type-small {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--light-color);
-  height: 17px;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1550px) {
+  .label-type-small {
+    display: none;
+  }
 }
-
+@media screen and (max-width: 600px) {
+  .row {
+    background-color: rgb(223, 223, 223);
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .table-nav-btns {
+    text-align: center;
+  }
+  .footerdot {
+    display: block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+  .active,
+.footerdot:hover {
+    background-color: var(--dark-color);
+  }
+}
 .inner-sidebar {
   min-width: 200px;
   background-color: #fffbff;
@@ -1248,7 +1290,6 @@ input[type=text],
   background-color: #fff;
   padding: 5px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-  opacity: 0;
 }
 .bottom-navbar-display .display-options-container .display-options > div {
   cursor: pointer;
@@ -1335,6 +1376,9 @@ input[type=text],
 header {
   margin-bottom: 1rem;
 }
+header .header-content {
+  line-height: 35px;
+}
 header .header-content .header-status {
   display: flex;
   justify-content: space-between;
@@ -1347,14 +1391,14 @@ header .header-content .header-status-scheduled {
 }
 header .header-content .header-details {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   flex-direction: column;
 }
 header .header-content .header-details .header-type,
 header .header-content .header-details .header-tags {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 5px;
 }
 header .header-content .header-details .header-type .type,
 header .header-content .header-details .header-tags .type {
@@ -1377,6 +1421,34 @@ header .header-content .header-details .header-tags .type {
     align-items: flex-start;
     justify-content: center;
   }
+}
+.create-section .create-mail {
+  background-color: #d8d6d9;
+  padding: 5px;
+  width: 50%;
+}
+.create-section .create-mail .mail-header {
+  display: flex;
+  justify-content: space-between;
+}
+.create-section .create-mail .recipients {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 4px;
+}
+.create-section .create-mail textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
 }
 .create-section .create-header {
   display: flex;
@@ -1419,6 +1491,7 @@ header .header-content .header-details .header-tags .type {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   width: 100%;
+  max-width: 3000px;
   margin: 0 auto;
   padding: 10px;
 }

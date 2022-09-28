@@ -1,6 +1,7 @@
 header {
   margin-bottom: 1rem;
   .header-content {
+    line-height: 35px;
     .header-status {
       display: flex;
       justify-content: space-between;
@@ -14,14 +15,14 @@ header {
 
     .header-details {
       display: flex;
-      gap: 10px;
+      gap: 5px;
       flex-direction: column;
 
       .header-type,
       .header-tags {
         display: flex;
         align-items: center;
-        gap: 7px;
+        gap: 5px;
         .type {
           color: var(--dark-color);
           font-size: font-size(font-size-medium);
