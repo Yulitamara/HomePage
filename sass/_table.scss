@@ -266,8 +266,7 @@
     transition: background-color 0.5s ease;
   }
 
-  .active,
-  .footerdot:hover {
+  .active {
     background-color: var(--dark-color);
   }
 }
