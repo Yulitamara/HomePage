@@ -2,7 +2,7 @@ var slideIndex = 1;
 var mobileMediaQuery = window.matchMedia("(max-width: 600px)");
 
 function displaySlidesForBreakpoint(mobileMediaQuery) {
-  if (mobileMedia.matches) {
+  if (mobileMediaQuery.matches) {
     displaySlide(1);
   } else {
     showAllSlides();
