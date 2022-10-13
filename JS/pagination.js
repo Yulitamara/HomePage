@@ -11,3 +11,7 @@ function scrollParent(event, offset) {
     behavior: "smooth",
   });
 }
+
+for (let i = 0; i < slider.length; i++) {
+  console.log(slider[i]);
+}
