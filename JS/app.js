@@ -5,28 +5,6 @@ $(function () {
     $(".main-content").addClass("active-sidebar");
   });
 
-  // Debit Plan Tabs
-  // $(function () {
-  //   $("#tabs").tabs();
-  // });
-
-  // $(function () {
-  //   $(".link").click(function () {
-  //     if ($(this).hasClass("active-link")) {
-  //       return;
-  //     }
-  //     $(".link").removeClass("active-link");
-  //     $(this).addClass("active-link");
-  //   });
-  // });
-
-  // $(function () {
-  //   $(".close-section").click(function () {
-  //     $(".tab-content").hide();
-  //     $(".link").removeClass("active-link");
-  //   });
-  // });
-
   if ($(window).width() > 1290) {
     $(".big-expand-btn, .expand-click").click(function () {
       $(".expand-section").toggle();
@@ -146,14 +124,6 @@ $(function () {
       ? $("#expand-btn-6").html("expand_more")
       : $("#expand-btn-6").html("close");
   });
-
-  if ($(window).width() < 900) {
-    $(".field-container-responsive").addClass("flex-column");
-    $(".label-container").addClass("height-small");
-    $(".label-text").addClass("small-font");
-    $(".input-container__expand").addClass("height-big");
-    $(".input-container").addClass("height-big");
-  }
 
   // Category hide headers
   $("#headers-visibilty-btn").click(function () {

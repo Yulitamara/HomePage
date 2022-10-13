@@ -160,7 +160,22 @@ input:focus {
   flex: auto;
   height: 35px;
 }
-
+@include media-tablet {
+  .field-container-responsive {
+    flex-direction: column;
+  }
+  .label-container {
+    height: 30px;
+  }
+  .label-text {
+    font-size: font-size(font-size-small) !important;
+  }
+  .input-container__expand,
+  .input-container {
+    flex: auto;
+    height: 35px;
+  }
+}
 @include media-small {
   .title-content,
   .title-content .title-text,

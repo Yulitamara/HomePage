@@ -290,6 +290,7 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.9;
   background-color: var(--background-color);
+  display: inline-block;
 }
 
 a:link,
@@ -788,6 +789,22 @@ input:focus {
   height: 35px;
 }
 
+@media screen and (max-width: 900px) {
+  .field-container-responsive {
+    flex-direction: column;
+  }
+  .label-container {
+    height: 30px;
+  }
+  .label-text {
+    font-size: 14px !important;
+  }
+  .input-container__expand,
+.input-container {
+    flex: auto;
+    height: 35px;
+  }
+}
 @media screen and (max-width: 420px) {
   .title-content,
 .title-content .title-text,
@@ -978,6 +995,8 @@ input[type=text],
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow: hidden;
+  position: relative;
 }
 
 .table-container {
@@ -1018,7 +1037,6 @@ input[type=text],
 .header-2 {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   font-size: 16px;
   margin-bottom: 10px;
   width: 100%;
@@ -1142,16 +1160,21 @@ input[type=text],
   align-items: center;
 }
 
-.table-card,
-.header-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+.table-btn {
+  position: absolute;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: 700;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 100;
+  opacity: 50%;
 }
 
-.footerdot {
-  display: none;
+/* Button Right */
+.table-btn--right {
+  right: 0;
 }
 
 @media screen and (max-width: 1550px) {
@@ -1206,27 +1229,18 @@ input[type=text],
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .row {
-    background-color: rgb(223, 223, 223);
     padding: 10px;
     border-radius: 4px;
+    flex-wrap: nowrap;
+    overflow: scroll;
   }
-  .table-nav-btns {
-    text-align: center;
+  .row span {
+    position: relative;
   }
-  .footerdot {
+  .table-btn {
     display: block;
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.5s ease;
-  }
-  .active {
-    background-color: var(--dark-color);
   }
 }
 .inner-sidebar {
@@ -1519,6 +1533,9 @@ header .header-content .header-details .header-tags .type {
 }
 .cards-content--notes-display .note .tabs .tab:hover {
   color: #cb94ad;
+}
+.cards-content--notes-display .note .expand-note {
+  padding-bottom: 8px;
 }
 .cards-content--notes-display .note .icons-bottom-note {
   display: flex;

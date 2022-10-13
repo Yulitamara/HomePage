@@ -1612,86 +1612,69 @@
       <!-- Cards Content End -->
       <div class="cards-content--grid-display">
         <div class="table-container">
+          <span class="material-symbols-outlined table-btn table-btn--left" onclick="scrollParent(event, -1)">
+            navigate_before
+          </span>
           <div class="header">
-            <div class="header-card">
-              <span class="hashtag">#</span>
-              <span class="type">Type</span>
-              <span class="status">Status</span>
-            </div>
-            <div class="header-card">
-              <span class="customer"><strong>Customer</strong></span>
-              <span class="fin-account">
-                <nobr>Fin Account</nobr>
-              </span>
-              <span class="owner">Owner</span>
-            </div>
-            <div class="header-card">
-              <span class="close-date">
-                <nobr>close date</nobr>
-              </span>
-              <span class="total">Total</span>
-              <span class="total-no-tax">
-                <nobr>Total...tax</nobr>
-              </span>
-            </div>
+            <span class="hashtag">#</span>
+            <span class="type">Type</span>
+            <span class="status">Status</span>
+            <span class="customer"><strong>Customer</strong></span>
+            <span class="fin-account">
+              <nobr>Fin Account</nobr>
+            </span>
+            <span class="owner">Owner</span>
+            <span class="close-date">
+              <nobr>close date</nobr>
+            </span>
+            <span class="total">Total</span>
+            <span class="total-no-tax">
+              <nobr>Total...tax</nobr>
+            </span>
           </div>
           <div class="row-container">
-            <div class="row">
-              <div class="table-card">
-                <span class="hashtag">
-                  <div class="label-type-small">#</div>
-                  <div class="header-text--name">3247891116</div>
-                </span>
-                <span class="type">
-                  <div class="label-type-small">Type</div>
-                  <div class="header-text--name">Quote</div>
-                </span>
-                <span class="status">
-                  <div class="label-type-small">Status</div>
-                  <div class="header-text--name">Close</div>
-                </span>
-              </div>
-              <div class="table-card">
-                <span class="customer text-overflow">
-                  <div class="label-type-small">Customer</div>
-                  <div class="header-text--name">Apple company orange</div>
-                </span>
-                <span class="fin-account">
-                  <div class="label-type-small">Fin Account</div>
-                  <div class="header-text--name">BA9212320</div>
-                </span>
-                <span class="owner">
-                  <div class="label-type-small">Owenr</div>
-                  <div class="header-text--name">Yael Avraham</div>
-                </span>
-              </div>
-              <div class="table-card">
-                <span class="close-date">
-                  <div class="label-type-small">Close Date</div>
-                  <div class="header-text--name">16/08/2013 Th</div>
-                </span>
-                <span class="total">
-                  <div class="label-type-small">Total</div>
-                  <div class="header-text--name">$10,000,000</div>
-                </span>
-                <span class="total-no-tax">
-                  <div class="label-type-small">Total...Tax</div>
-                  <div class="header-text--name">$710.68</div>
-                </span>
-              </div>
-            </div>
-            <div class="table-nav-btns">
-              <span class="material-symbols-outlined footerdot" onclick="setActiveSlide(1)">
-                circle
+            <div class="row slider">
+              <span class="hashtag">
+                <div class="label-type-small">#</div>
+                <div class="header-text--name">3247891116</div>
               </span>
-              <span class="material-symbols-outlined footerdot" onclick="setActiveSlide(2)">
-                circle
+              <span class="type">
+                <div class="label-type-small">Type</div>
+                <div class="header-text--name">Quote</div>
               </span>
-              <span class="material-symbols-outlined footerdot" onclick="setActiveSlide(3)">
-                circle
+              <span class="status">
+                <div class="label-type-small">Status</div>
+                <div class="header-text--name">Close</div>
+              </span>
+              <span class="customer text-overflow">
+                <div class="label-type-small">Customer</div>
+                <div class="header-text--name">Apple company orange</div>
+              </span>
+              <span class="fin-account">
+                <div class="label-type-small">Fin Account</div>
+                <div class="header-text--name">BA9212320</div>
+              </span>
+              <span class="owner">
+                <div class="label-type-small">Owenr</div>
+                <div class="header-text--name">Yael Avraham</div>
+              </span>
+              <span class="close-date">
+                <div class="label-type-small">Close Date</div>
+                <div class="header-text--name">16/08/2013 Th</div>
+              </span>
+              <span class="total">
+                <div class="label-type-small">Total</div>
+                <div class="header-text--name">$10,000,000</div>
+              </span>
+              <span class="total-no-tax">
+                <div class="label-type-small">Total...Tax</div>
+                <div class="header-text--name">$710.68</div>
               </span>
             </div>
           </div>
+          <span class="material-symbols-outlined table-btn table-btn--right" onclick="scrollParent(event, 1)">
+            navigate_next
+          </span>
         </div>
       </div>
 
@@ -1740,6 +1723,72 @@
             <span class="tab">Definitions</span>
             <span class="tab">Payments</span>
             <span class="tab">Currency</span>
+          </div>
+          <div class="expand-note">
+            <div class="table-container">
+              <div class="header">
+                <span class="total-create">Total</span>
+                <span class="due">Due</span>
+                <span class="date">Date</span>
+                <span class="status">Status</span>
+              </div>
+              <div class="row-container">
+                <div class="row">
+                  <span class="total-create">
+                    <div class="label-type-small">Total</div>
+                    <div>$3251.82</div>
+                  </span>
+                  <span class="due">
+                    <div class="label-type-small">Due</div>
+                    <div>12d</div>
+                  </span>
+                  <span class="date">
+                    <div class="label-type-small">Date</div>
+                    <div>16/8/13 Th</div>
+                  </span>
+                  <span class="status">
+                    <div class="label-type-small">Status</div>
+                    <div>Ended</div>
+                  </span>
+                </div>
+                <div class="row">
+                  <span class="total-create">
+                    <div class="label-type-small">Total</div>
+                    <div>$3251.82</div>
+                  </span>
+                  <span class="due">
+                    <div class="label-type-small">Due</div>
+                    <div>12d</div>
+                  </span>
+                  <span class="date">
+                    <div class="label-type-small">Date</div>
+                    <div>16/8/13 Th</div>
+                  </span>
+                  <span class="status">
+                    <div class="label-type-small">Status</div>
+                    <div>Ended</div>
+                  </span>
+                </div>
+                <div class="row">
+                  <span class="total-create">
+                    <div class="label-type-small">Total</div>
+                    <div>$3251.82</div>
+                  </span>
+                  <span class="due">
+                    <div class="label-type-small">Due</div>
+                    <div>12d</div>
+                  </span>
+                  <span class="date">
+                    <div class="label-type-small">Date</div>
+                    <div>16/8/13 Th</div>
+                  </span>
+                  <span class="status">
+                    <div class="label-type-small">Status</div>
+                    <div>Ended</div>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="icons-bottom-note">
             <span class="material-symbols-outlined big-icon">
