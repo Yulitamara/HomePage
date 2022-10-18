@@ -27,8 +27,9 @@
 
     .cards-content--grid-display {
       display: flex;
+      flex-direction: column;
       width: 100%;
-      padding: 1rem;
+      padding: 10px;
     }
   }
 }
@@ -38,6 +39,11 @@
     padding: 0;
     width: 100%;
     left: 0;
+    .cards {
+      .cards-content--grid-display {
+        padding: 0;
+      }
+    }
   }
 }
 
@@ -45,5 +51,3 @@
   width: 100%;
   left: 0;
 }
-
-
